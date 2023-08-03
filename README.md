@@ -1,108 +1,331 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Little White Dress
 
-Welcome USER_NAME,
+Summary of site
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Image of ]()
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+[Visit the  live website here]()
 
-## Gitpod Reminders
+<br>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Contents
+----
 
-`python3 -m http.server`
+### [User Experience (UX)](#user-experience-ux-1)
+- [Purpose](#purpose)
+- [User Stories](#user-stories)
+  - [First Time Visitors](#first-time-visitor-goals)
+  - [Returning Visitors](#returning-visitor-goals)
+  - [Frequent Users](#frequent-visitor-goals)
 
-A blue button should appear to click: _Make Public_,
+### [Design](#design-1)
+- [Colour Scheme](#colour-scheme)
+- [Typography](#typography)
+- [Imagery](#imagery)
+- [Wireframes](#wireframes)
 
-Another blue button should appear to click: _Open Browser_.
+### [Features](#features-1)
+- [Existing Features](#existing-features)
+  - [Homepage](#homepage)
+  - [Next page](#next_page)
+- [Accessibility](#accessibility)
+- [Future Features](#future-features)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### [Technologies](#technologies-1)
 
-A blue button should appear to click: _Make Public_,
+### [Version Control](#version-control-1)
 
-Another blue button should appear to click: _Open Browser_.
+### [Deployment](#deployment-1)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### [Testing](#testing-1)
+- [Function Testing](#function-testing)
+- [User Story Testing](#user-story-testing)
+- [Lighthouse](#lighthouse)
+- [Validator Testing](#validator-testing)
+- [Bugs](#bugs)
 
-To log into the Heroku toolbelt CLI:
+### [Credits](#credits-1)
+- [Resources](#resources)
+- [Acknowledgements](#acknowledgements)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+<br>
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+----
 
-------
+<br>
 
-## Release History
+## User Experience (UX)
+### **Purpose**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Enter purpose description 
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+<br>
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### User Stories
+### **Client Goals**
+- As site admin I want to be able to upload and remove any dress products from the site
+- As site admin I want to be able to view any bookings by customers to come and try on dresses
+- As site admin I want to be able to amend any bookings by customers to come and try on dresses
+- As site admin I want to be able to cancel any bookings by customers to come and try on dresses
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+<br>
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+### **First Time Visitor Goals** 
+- As a first time user I want to browse available wedding dresses
+- As a first time user I want to book an appointment to try on dresses
+- As a first time user I want to save my favourite dresses so I can refer back to them later
+- As a first time user I want to be able to contact the store
+- As a first time user I want to be able to filter my search by dress style and price
+- As a first time user I want to view details about the dress such as price and available sizes
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+<br>
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### **Returning Visitor Goals**
+- As a returning user I want to see my favourite dresses
+- As a returning user I want to view any current bookings I have to try on dresses
+- As a returning user I want to amend any current bookings I have to try on dresses
+- As a returning user I want to cancel any current bookings I have to try on dresses
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+<br>
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+----
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Design
+### **Colour Scheme**
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+<br>
 
-------
+### **Typography**
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+<br>
 
-**How will this affect me?**
+### **Imagery**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+<br>
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### **Wireframes**
+[Balsamiq Wireframing Software](https://balsamiq.com/) was used to create the wireframes.
+<details>
+<summary>Homepage (mobile)</summary>
 
-**So….?**
+![Wireframe image of homepage design on mobile]()
+</details>
+<details>
+<summary>Homepage (desktop)</summary>
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![Wireframe image of homepage design on desktop]()
+</details>
 
-**Can I opt out?**
+<br>
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+<details>
+<summary>Next Page (mobile)</summary>
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![Wireframe image of next page design on mobile]()
+</details>
+<details>
+<summary>Next Page (desktop)</summary>
 
-**Anything more?**
+![Wireframe image of next page design on desktop]()
+</details>
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+<br>
 
----
 
-Happy coding!
+For a full PDF of all wireframes (mobile, tablet, desktop) click [here]().
+
+----
+
+## Features
+### **Existing Features**
+
+
+<br>
+
+### **Accessibility**
+In addition to being best practice, having an accessible website is extremely high on the list of requirements for the target audience. Close attention has been paid to the following in order to ensure the site is as accessible as possible:
+- Clear and simple font styling, avoiding any cursive or calligraphic scripts.
+- Contrasting colour scheme, but avoiding colours that are too bold.
+- Use of semantic HTML
+- Ensuring all images have an alt description for screen readers or where the image cannot be loaded. Also ensuring that these are as descriptive as possible.
+
+<br>
+
+### **Future Features**
+In the future there are features and developments that it would be useful to consider adding to create an even better user experience of this website. They include:
+
+- 
+
+<br>
+
+----
+
+## Technologies
+### **Languages Used**
+This website has been written in .
+
+<br>
+
+**Frameworks, Libraries and Programs Used**
+- 
+
+<br>
+
+----
+
+## Version Control
+Version control has been maintained using Git. The code written for this website has been updated via regular commits to Github. These serve as a record of development and changes made.
+
+The commit history can be viewed [here]()
+
+<br>
+
+----
+
+## Deployment
+
+<br>
+
+----
+
+## Testing
+Testing was performed across a range of devices, including:
+- 
+
+### **Function Testing**
+
+| Page | Test | Successfully Completed |
+| :----| :---| :----------------------:|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+
+<br>
+
+### **User Story Testing**
+
+| Client Goal | Solution | Tested & Successfully Completed |
+| :----| :---| :----------------------:|
+|   |  |  |
+|   |  |  |
+|   |  |  |
+|   |  |  |
+|   |  |  |
+
+<br>
+
+| First Time Visitor Goal | Solution | Tested & Successfully Completed |
+| :----| :---| :----------------------:|
+|   |  |  |
+|   |  |  |
+|   |  |  |
+|   |  |  |
+
+<br>
+
+| Returning Visitor Goal | Solution | Tested & Successfully Completed |
+| :----| :---| :----------------------:|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+<br>
+
+| Frequent Visitor Goal | Solution | Tested & Successfully Completed |
+| :----| :---| :----------------------:|
+|  |  |  |
+|  |  |  |
+|  |  |  |
+
+<br>
+
+### **Lighthouse**
+
+For Mobile Devices
+<details>
+<summary>Homepage</summary>
+
+![Screenshot of Lighthouse testing for homepage on mobile devices]()
+</details>
+<details>
+<summary>Dates Page</summary>
+
+![Screenshot of Lighthouse testing for next page on mobile devices]()
+</details>
+<details>
+
+<br>
+
+For Desktop
+<details>
+<summary>Homepage</summary>
+
+![Screenshot of Lighthouse testing for homepage on desktop]()
+</details>
+<details>
+<summary>Dates Page</summary>
+
+![Screenshot of Lighthouse testing for next page on desktop]()
+</details>
+
+<br>
+
+### **Validator Testing**
+HTML
+<details>
+<summary>Homepage</summary>
+
+![Screenshot of WC3 testing for homepage]()
+</details>
+<details>
+<summary>Dates Page</summary>
+
+![Screenshot of WC3 testing for next page]()
+</details>
+<details>
+
+<br>
+
+CSS
+<details>
+<summary>Stylesheet</summary>
+
+![Screenshot of W3C Jigsaw testing for CSS Stylesheet]()
+</details>
+
+  <br>
+
+### **Bugs**
+  
+  | Raised by | Bug | Solution |
+  | :---      | :---| :---     |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+  |  |  |  |
+
+<br>
+
+----
+
+## Credits
+### **Resources**
+- 
+
+<br>
+
+### **Acknowledgements**
