@@ -1,1 +1,1 @@
-web: gunicorn little-white-dress.wsgi
+web: gunicorn littlewhitedress.wsgi
