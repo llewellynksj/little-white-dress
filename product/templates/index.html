@@ -47,7 +47,24 @@
         <div class="row">
 
             <!-- Collections Category Row -->
-            
+            <div class="col-12">
+                <div class="row category row-cols-2 row-cols-md-3 collection-container">
+                    {% for category in category_list %}
+                    <div class="card-body">
+                        <a href="#" class="category-link">
+                            <div>
+                                <img src=" {{ category.category_image.url }}" alt="category image">
+                            </div>
+                            <h3 class="card-title">{{ category.category_name }}</h3>
+                        </a>
+                    </div>
+                    {% if forloop.counter|divisibleby:6 %}
+                </div>
+                <div class="row category-row">
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
         </div>
     </div>
 </div>
