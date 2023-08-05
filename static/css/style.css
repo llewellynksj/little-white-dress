@@ -23,6 +23,8 @@ button {
     margin-bottom: 8px;
 }
 
+/* Navbar styles */
+
 .brand {
     font-family: "Julius Sans One", sans-serif;
     font-size: 2vh;
@@ -73,7 +75,37 @@ img {
     white-space: pre;
 }
 
+/* Homepage category list styles */
 .section-title {
     text-align: center;
     padding: 15px 0 5px 0;
+}
+
+.collection-container {
+    margin-bottom: 15px;
+    /* background: #ffffff;
+    box-shadow: 140px 140px 135px #FCF6F4,
+             -140px -140px 135px rgba(0, 0, 0, 0); */
+}
+
+.category-link {
+    text-decoration: none;
+    color: #252525;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 8px 0;
+}
+
+.card-body {
+    padding: 5px;
+    border: 1px #efefef solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.card-body img {
+    border-radius: 15px;
 }
