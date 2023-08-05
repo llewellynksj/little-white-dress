@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Julius+Sans+One&display=swap');
+
+body {
+    font-family: "Crimson Text", sans-serif;
+}
+
+.body-content, .navbar {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.link-no-decor, .product-link {
+    text-decoration: none;
+    color: #252525;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    background-color: #EFEFEF;
+    font-family: "Crimson Text", sans-serif;
+    padding: 5px 8px;
+    margin-bottom: 8px;
+}
+
+.brand {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 2vh;
+    font-weight: 700;
+    color: #4A4A4F;
+}
+
+.navbar {
+    --bs-navbar-toggler-padding-x: 0.50rem;
+    --bs-navbar-toggler-font-size: 1rem;
+}
+
+.navbar-toggler-icon {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    margin: auto;
+}
+
+.hero-image {
+    max-width: 1400px;
+    max-height: auto;
+}
+
+/* code adapted from stackoverflow answer here: https://bit.ly/46t7RfQ */
+.carousel-overlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 11;
+    color: #252525;
+    overflow: wrap;
+}
+
+.carousel-overlay button {
+    font-size: 12px;
+}
+
+#hero-text1::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.section-title {
+    text-align: center;
+    padding: 15px 0 5px 0;
+}

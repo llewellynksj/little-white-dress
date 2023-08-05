@@ -2,6 +2,54 @@
 
 {% block content %}
 
-<h1>This is the homepage</h1>
+<!-- Carousel hero images -->
+<div class="body-content container-fluid">
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://res.cloudinary.com/ksjl86/image/upload/v1687773094/AdobeStock_277523283_2_azx1ve.webp"
+                    class="d-block w-100 hero-image" alt="...">
+                <div class="carousel-overlay">
+                    <h2><em><span id="hero-text1">Find your</span><span id="hero-text2"> perfect gown</span></em></h2>
+                    <button type="button">
+                        <a href="" class="link-no-decor">Book an appointment</a>
+                    </button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/ksjl86/image/upload/v1687773094/AdobeStock_277523283_2_azx1ve.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="https://res.cloudinary.com/ksjl86/image/upload/v1687773094/AdobeStock_277523283_2_azx1ve.webp"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Collections title -->
+    <div class="section-title">
+        <h2><em>Our Collections</em></h2>
+        <button type="button">
+            <a href="#" class="link-no-decor">Shop all styles</a>
+        </button>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Collections Category Row -->
+            
+        </div>
+    </div>
+</div>
 
 {% endblock %}
