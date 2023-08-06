@@ -83,9 +83,6 @@ img {
 
 .collection-container {
     margin-bottom: 15px;
-    /* background: #ffffff;
-    box-shadow: 140px 140px 135px #FCF6F4,
-             -140px -140px 135px rgba(0, 0, 0, 0); */
 }
 
 .category-link {
@@ -108,4 +105,14 @@ img {
 
 .card-body img {
     border-radius: 15px;
+}
+
+/* All products page styles */
+.product-link * {
+    margin-bottom: 0;
+    margin-left: 4px;
+}
+
+.product-link h3 {
+    margin-top: 4px;
 }
