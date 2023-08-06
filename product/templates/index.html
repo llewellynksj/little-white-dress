@@ -51,7 +51,7 @@
                 <div class="row category row-cols-2 row-cols-md-3 collection-container">
                     {% for category in category_list %}
                     <div class="card-body">
-                        <a href="#" class="category-link">
+                        <a href="{% url 'category' category.category_name %}" class="category-link">
                             <div>
                                 <img src=" {{ category.category_image.url }}" alt="category image">
                             </div>
