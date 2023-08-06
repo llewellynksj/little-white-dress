@@ -116,3 +116,8 @@ img {
 .product-link h3 {
     margin-top: 4px;
 }
+
+/* Product details page styles */
+.image-container {
+    max-width: 500px;
+}

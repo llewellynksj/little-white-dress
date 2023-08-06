@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="body-content container-fluid">
+    <br>
+    
+    <div class="row">
+        <div class="image-container product-image col-sm">
+            <img src=" {{ product.main_image.url }}" alt="category image">
+        </div>  
+        <div class="col-sm">
+            <h2>{{ product.item_name }}</h2>
+            <p>{{ product.description }}</p>
+            <p>Collection: {{ product.category }}</p>
+            <p>Colours: {{ product.colours }}</p>
+            <p>Available in sizes: {{ product.sizes_avail }}</p>
+            <p>Price: £{{ product.price }}</p>
+            {% if user.is_authenticated %}
+                <form action="#" method="POST">
+                    {% csrf_token %}
+
+                    {% if liked %}
+                        <button type="submit", name="product_id", value="{{ product.id }}", class="btn btn-outline-primary btn-sm">Remove from Favourites</button>
+                    {% else %}
+                        <button type="submit", name="product_id", value="{{ product.id }}", class="btn btn-outline-danger btn-sm">Add to Favourites</button>
+                    {% endif %}
+                    
+                </form>
+            {% else %}
+                <p><em><a href="#">Login</a> to save this dress to your Favourites</em></p>
+            {% endif %}
+        </div>
+    </div>
+
+</div>
+
+{% endblock %} 
