@@ -1,7 +1,18 @@
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm
 from django.contrib.auth.models import User
 from django import forms
-# from .models import Customer
+from .models import Customer
+
+
+class CreateNewProfileForm(forms.ModelForm):
+    class Meta:
+        model = Customer
+        fields = ('profile_pic', 'date_of_wedding', 'website_url')
+        widgets = {
+            # 'profile_pic':
+            'date_of_wedding': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
+            'website_url': forms.TextInput(attrs={'class': 'form-control'}),
+        }
 
 
 class EditAccountSettingsForm(UserChangeForm):
