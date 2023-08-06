@@ -7,6 +7,6 @@ urlpatterns = [
     path('password/', views.UpdatePassword.as_view(template_name='registration/update_password.html')),
     path('create_profile/', views.CreateNewProfile.as_view(), name='create_profile'),
     path('<int:pk>/profile/', views.CustomerProfile.as_view(), name='profile'),
-    # path('<int:pk>/update_profile/', views.UpdateProfileView.as_view(), name='update_profile'),
+    path('<int:pk>/update_profile/', views.UpdateCustomerProfile.as_view(), name='update_profile'),
     
 ]

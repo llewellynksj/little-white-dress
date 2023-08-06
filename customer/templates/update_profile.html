@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}Update Profile{% endblock %}
+{% block content %}
+
+{% if user.is_authenticated %}
+    <div class="body-content">
+        {% if user.id == customer.user.id %}
+            <h1>Update Your Profile</h1>
+            <div class="form-group">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-secondary">Update</button>
+                </form>
+            </div>
+        {% else %}
+            <br>
+            <h3>You are not registered to edit this account. Please <a href="{% url 'login' %}">Login</a>.</h3>
+        {% endif %}
+    </div>
+{% endif %}
+{% endblock %}

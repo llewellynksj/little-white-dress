@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    <div class="body-content container-fluid">
+        <h1>My Account</h1>
+        <h3>Welcome to your profile page {{ user.first_name }}</h3>
+        <br />
+        <div>
+            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}">Update Your Profile</a></button>
+            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="">Book An Appointment</a></button>
+            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="{% url 'settings' %}">Go To Account Settings</a></button>
+        </div>
+            <br />
+        <div class="profile-section">
+            <img src="{{ user.customer.profile_pic.url }}" alt="" class="rounded-circle profile-pic">
+            <br><br><br>
+            <h3>My Details</h3>
+            <p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+            <p>Email Address: {{ user.email }}</p>
+            <p>Date of Wedding: {{ user.customer.date_of_wedding }}</p>
+            {% if user.customer.website_url %}
+                <p><a href="{{ user.customer.website_url }}">Visit my Wedding Website</a></p>
+            {% endif %}
+        </div>
+        <br><br>
+        {% if user.fav_products %}
+            <h3 class="favs-title">My Favourites</h3>
+            <br>
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
+                    {% for product in user.fav_products.all %}
+                        <div class="col">
+                            <a href="{% url 'product_details' product.pk %}" class="product-link">
+                                <img src=" {{ product.main_image.url }}" alt="category image" class="img-thumbnail">
+                                <h3 class="">{{ product.item_name }}</h3>
+                                <p>{{ product.category }}</p>
+                                <p>£{{ product.price }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endif %}
+    </div>
+{% endif %}
+
+{% endblock %}

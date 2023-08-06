@@ -45,7 +45,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 {% if user.customer.id %}
-                                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                                 {% else %}
                                     <li><a class="dropdown-item" href="{% url 'create_profile' %}">Create Profile</a></li>
                                 {% endif %}

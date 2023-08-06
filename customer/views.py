@@ -1,14 +1,22 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views import generic
 # from django.views.generic import CreateView
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm
 from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from .forms import RegistrationForm, UpdatePasswordForm, EditAccountSettingsForm, CreateNewProfileForm
-# EditProfileForm, PasswordUpdateForm, CreateProfileForm
 from django.contrib.auth.models import User
 from .models import Customer
 from django.http import HttpResponseRedirect
+
+
+class UpdateCustomerProfile(generic.UpdateView):
+    model = Customer
+    template_name = 'update_profile.html'
+    fields = ['profile_pic', 'date_of_wedding', 'website_url']
+
+    def get_success_url(self) -> str:
+        return reverse_lazy('profile', kwargs={'pk': self.object.pk})
 
 
 class CustomerProfile(generic.ListView):
@@ -17,7 +25,7 @@ class CustomerProfile(generic.ListView):
 
     # code from Codemy 'Create a Blog Profile Page' Video: http://bit.ly/3OsUgy8:
     def get_context_data(self, *args, **kwargs):
-        context = super(UserProfileView, self).get_context_data(*args, **kwargs)
+        context = super(CustomerProfile, self).get_context_data(*args, **kwargs)
         customer_profile = get_object_or_404(Customer, id=self.kwargs['pk'])
         context['customer_profile'] = customer_profile
         return context
