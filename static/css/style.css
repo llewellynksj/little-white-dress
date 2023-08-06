@@ -121,3 +121,24 @@ img {
 .image-container {
     max-width: 500px;
 }
+
+/* Login page styles */
+.hover-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Profile page styles */
+.profile-pic {
+    height: 200px;
+    width: auto;
+}
+
+.favs-title, .profile-section {
+    margin-left: 20px;
+}
+
+.img-thumbnail {
+    width: 200px;
+    height: auto;
+}
