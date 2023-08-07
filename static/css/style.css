@@ -112,6 +112,12 @@ img {
     border-radius: 15px;
 }
 
+/* Homepage 'come and see us' section styles */
+.section-image {
+    height: 500px;
+    width: auto;
+}
+
 /* All products page styles */
 .product-link * {
     margin-bottom: 0;
