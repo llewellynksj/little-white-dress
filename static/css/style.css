@@ -56,6 +56,7 @@ img {
     max-height: auto;
 }
 
+/* Carousel styles */
 /* code adapted from stackoverflow answer here: https://bit.ly/46t7RfQ */
 .carousel-overlay {
     position: absolute;
@@ -68,6 +69,10 @@ img {
 
 .carousel-overlay button {
     font-size: 12px;
+}
+
+#hero-text1, #hero-text2 {
+    font-size: 18px;
 }
 
 #hero-text1::after {
@@ -141,4 +146,26 @@ img {
 .img-thumbnail {
     width: 200px;
     height: auto;
+}
+
+/* Media queries */
+@media (min-width: 576px) {
+    #hero-text1::after, .section-txt1::after {
+        content: none;
+        white-space: pre;
+    }
+
+    #hero-text1, #hero-text2 {
+        font-size: 28px;
+    }
+
+    .carousel-overlay button {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel-overlay button {
+        font-size: 20px;
+    }
 }
