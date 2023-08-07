@@ -12,4 +12,5 @@ urlpatterns = [
         'product/<int:pk>',
         views.ProductDetails.as_view(),
         name='product_details'),
+    path('like/<int:pk>', views.CustomerFavourites, name='customer_fav'),
 ]

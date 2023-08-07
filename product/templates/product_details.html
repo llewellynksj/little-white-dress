@@ -16,7 +16,7 @@
             <p>Available in sizes: {{ product.sizes_avail }}</p>
             <p>Price: £{{ product.price }}</p>
             {% if user.is_authenticated %}
-                <form action="#" method="POST">
+                <form action="{% url 'customer_fav' product.pk %}" method="POST">
                     {% csrf_token %}
 
                     {% if liked %}
@@ -27,7 +27,7 @@
                     
                 </form>
             {% else %}
-                <p><em><a href="#">Login</a> to save this dress to your Favourites</em></p>
+                <p><em><a href="{% url 'login' %}">Login</a> to save this dress to your Favourites</em></p>
             {% endif %}
         </div>
     </div>

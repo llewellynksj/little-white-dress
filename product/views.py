@@ -1,6 +1,20 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Category, Product
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+
+
+def CustomerFavourites(request, pk):
+    product = get_object_or_404(Product, id=request.POST.get('product_id'))
+    liked = False
+    if product.likes.filter(id=request.user.id).exists():
+        product.likes.remove(request.user)
+        liked = False
+    else:
+        product.likes.add(request.user)
+        liked = True
+    return HttpResponseRedirect(reverse('product_details', args=[str(pk)]))
 
 
 class ProductDetails(generic.DetailView):
