@@ -8,10 +8,6 @@ body {
     padding: 0;
 }
 
-/* .body-content, .navbar {
-    margin: auto;
-} */
-
 .link-no-decor, .product-link {
     text-decoration: none;
     color: #252525;
@@ -24,6 +20,11 @@ button {
     font-family: "Crimson Text", sans-serif;
     padding: 5px 8px;
     margin-bottom: 8px;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 10px;
 }
 
 /* Navbar styles */
@@ -50,11 +51,10 @@ img {
     height: auto;
 }
 
+/* Carousel styles */
 .carousel-inner img {
     margin: auto;
 }
-
-/* Carousel styles */
 /* code adapted from stackoverflow answer here: https://bit.ly/46t7RfQ */
 .carousel-overlay {
     position: absolute;
@@ -79,15 +79,10 @@ img {
 }
 
 /* Homepage category list styles */
-.section-title {
-    text-align: center;
-    padding: 15px 0 5px 0;
+.category-section {
+    padding-top: 20px;
+    padding-bottom: 0;
 }
-
-/* .category-section {
-    margin-bottom: 0;
-} */
-
 
 .category-link {
     text-decoration: none;
@@ -114,7 +109,6 @@ img {
 /* Homepage 'come and see us' section styles */
 .appt-section {
     background-color: #F4E9E5;
-    padding: 30px 10px;
 }
 
 .appt-btn {
