@@ -4,10 +4,6 @@ body {
     font-family: "Crimson Text", sans-serif;
 }
 
-.hero-container {
-    padding: 0;
-}
-
 .link-no-decor, .product-link {
     text-decoration: none;
     color: #252525;
@@ -16,7 +12,7 @@ body {
 button {
     border: none;
     border-radius: 20px;
-    background-color: #EFEFEF;
+    background-color: #F4E9E5;
     font-family: "Crimson Text", sans-serif;
     padding: 5px 8px;
     margin-bottom: 8px;
@@ -52,6 +48,10 @@ img {
 }
 
 /* Carousel styles */
+.hero-container {
+    padding: 0;
+}
+
 .carousel-inner img {
     margin: auto;
 }
@@ -69,13 +69,9 @@ img {
     font-size: 12px;
 }
 
-#hero-text1, #hero-text2 {
+#hero-text {
+    display: none;
     font-size: 18px;
-}
-
-#hero-text1::after {
-    content: "\a";
-    white-space: pre;
 }
 
 /* Homepage category list styles */
@@ -116,6 +112,18 @@ img {
 }
 
 /* Homepage 'our brides' section styles */
+.brides-section {
+    max-width: 1400px;
+}
+
+.brides-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding: 30px 30px 0 30px;
+}
+
 .brides-img img {
     width: 300px;
     height: 300px;
@@ -159,17 +167,12 @@ img {
 
 /* Media queries */
 @media (min-width: 576px) {
-    #hero-text1::after, .section-txt1::after {
-        content: none;
-        white-space: pre;
-    }
-
-    #hero-text1, #hero-text2 {
-        font-size: 28px;
-    }
-
     .carousel-overlay button {
         font-size: 15px;
+    }
+
+    .brides-second-txt {
+        order: 2;
     }
 }
 
