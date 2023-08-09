@@ -115,6 +115,12 @@ img {
     background-color: white;
 }
 
+/* Homepage 'our brides' section styles */
+.brides-img img {
+    width: 300px;
+    height: 300px;
+}
+
 /* All products page styles */
 .product-link * {
     margin-bottom: 0;
