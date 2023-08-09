@@ -194,7 +194,7 @@ footer {
 }
 
 /* Media queries */
-@media (min-width: 320px) {
+@media (min-width: 360px) {
     .big-btn {
         display: none;
     }
