@@ -26,7 +26,7 @@ button {
 /* Navbar styles */
 .brand {
     font-family: "Julius Sans One", sans-serif;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: 700;
     color: #4A4A4F;
 }
@@ -74,6 +74,17 @@ img {
     font-size: 18px;
 }
 
+.hero-btn {
+    display: none;
+}
+
+.big-btn button {
+    margin-bottom: 5px;
+    font-size: 15px;
+    border-radius: 0;
+    width: 100%;
+}
+
 /* Homepage category list styles */
 .category-section {
     padding-top: 20px;
@@ -116,17 +127,24 @@ img {
     max-width: 1400px;
 }
 
-.brides-text {
+.brides-text-first, .brides-text-second {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-self: center;
     padding: 30px 30px 0 30px;
 }
 
+/* .brides-text-first * {
+    text-align: end;
+}
+
+.brides-text-second * {
+    text-align: start;
+} */
+
 .brides-img img {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
 }
 
 /* All products page styles */
@@ -166,13 +184,31 @@ img {
 }
 
 /* Media queries */
+@media (min-width: 320px) {
+    .big-btn {
+        display: none;
+    }
+
+    .hero-btn {
+        display: block;
+    }
+}
+
 @media (min-width: 576px) {
     .carousel-overlay button {
         font-size: 15px;
     }
 
-    .brides-second-txt {
+    .brides-text-first * {
+        text-align: end;
+    }
+
+    .brides-text-second {
         order: 2;
+    }
+    
+    .brides-text-second * {
+        text-align: start;
     }
 }
 
