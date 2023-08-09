@@ -4,8 +4,12 @@ body {
     font-family: "Crimson Text", sans-serif;
 }
 
+.hero-container {
+    padding: 0;
+}
+
 .body-content, .navbar {
-    max-width: 1400px;
+    /* max-width: 1400px; */
     margin: auto;
 }
 
@@ -24,7 +28,6 @@ button {
 }
 
 /* Navbar styles */
-
 .brand {
     font-family: "Julius Sans One", sans-serif;
     font-size: 2vh;
@@ -35,6 +38,7 @@ button {
 .navbar {
     --bs-navbar-toggler-padding-x: 0.50rem;
     --bs-navbar-toggler-font-size: 1rem;
+    padding: 5px 20px;
 }
 
 .navbar-toggler-icon {
@@ -49,11 +53,6 @@ img {
 
 .carousel-inner img {
     margin: auto;
-}
-
-.hero-image {
-    max-width: 1400px;
-    max-height: auto;
 }
 
 /* Carousel styles */
@@ -86,9 +85,10 @@ img {
     padding: 15px 0 5px 0;
 }
 
-.collection-container {
-    margin-bottom: 15px;
-}
+/* .category-section {
+    margin-bottom: 0;
+} */
+
 
 .category-link {
     text-decoration: none;
@@ -103,7 +103,7 @@ img {
 
 .card-body {
     padding: 5px;
-    border: 1px #efefef solid;
+    /* border: 1px #efefef solid; */
     border-radius: 15px;
     margin: 5px;
 }
@@ -113,9 +113,13 @@ img {
 }
 
 /* Homepage 'come and see us' section styles */
-.section-image {
-    height: 500px;
-    width: auto;
+.appt-section {
+    background-color: #F4E9E5;
+    padding: 30px 10px;
+}
+
+.appt-btn {
+    background-color: white;
 }
 
 /* All products page styles */
