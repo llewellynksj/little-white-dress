@@ -8,10 +8,9 @@ body {
     padding: 0;
 }
 
-.body-content, .navbar {
-    /* max-width: 1400px; */
+/* .body-content, .navbar {
     margin: auto;
-}
+} */
 
 .link-no-decor, .product-link {
     text-decoration: none;
