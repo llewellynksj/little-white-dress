@@ -183,6 +183,16 @@ img {
     height: auto;
 }
 
+/* Footer styles */
+footer {
+    background-color: #F4E9E5;
+}
+
+.social-media-links i {
+    font-size: 25px;
+    padding: 0 5px;
+}
+
 /* Media queries */
 @media (min-width: 320px) {
     .big-btn {
