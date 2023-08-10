@@ -88,7 +88,7 @@ img {
 /* Homepage category list styles */
 .category-section {
     padding-top: 20px;
-    padding-bottom: 0;
+    padding-bottom: 50px;
 }
 
 .category-link {
@@ -115,16 +115,20 @@ img {
 
 /* Homepage 'come and see us' section styles */
 .appt-section {
-    background-color: #F4E9E5;
+    background: #F4E9E5;
+    box-shadow:  8px 8px 44px #b5aca9,
+                -8px -8px 44px #ffffff;
 }
 
 .appt-btn {
+    font-size: 20px;
     background-color: white;
 }
 
 /* Homepage 'our brides' section styles */
 .brides-section {
     max-width: 900px;
+    padding-top: 50px;
 }
 
 .brides-text-first, .brides-text-second {
@@ -133,14 +137,6 @@ img {
     align-self: center;
     padding: 30px 30px 0 30px;
 }
-
-/* .brides-text-first * {
-    text-align: end;
-}
-
-.brides-text-second * {
-    text-align: start;
-} */
 
 .brides-img img {
     width: 280px;
