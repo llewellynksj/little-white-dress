@@ -1,4 +1,5 @@
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm, PasswordChangeForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.models import User
 from django import forms
 from .models import Customer
@@ -10,17 +11,24 @@ class CreateNewProfileForm(forms.ModelForm):
         fields = ('profile_pic', 'date_of_wedding', 'website_url')
         widgets = {
             # 'profile_pic':
-            'date_of_wedding': forms.DateInput(attrs={'class': 'form-control', 'type': 'date'}),
-            'website_url': forms.TextInput(attrs={'class': 'form-control'}),
+            'date_of_wedding': forms.DateInput(
+                attrs={'class': 'form-control', 'type': 'date'}),
+            'website_url': forms.TextInput(
+                attrs={'class': 'form-control'}),
         }
 
 
 class EditAccountSettingsForm(UserChangeForm):
-    email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control'}))
-    telephone = forms.IntegerField(widget=forms.NumberInput(attrs={'class': 'form-control'}))
-    first_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    last_name = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control'}))
-    username = forms.CharField(max_length=100, widget=forms.TextInput(attrs={'class': 'form-control'}))
+    email = forms.EmailField(widget=forms.EmailInput(
+        attrs={'class': 'form-control'}))
+    telephone = forms.IntegerField(widget=forms.NumberInput(
+        attrs={'class': 'form-control'}))
+    first_name = forms.CharField(max_length=100, widget=forms.TextInput(
+        attrs={'class': 'form-control'}))
+    last_name = forms.CharField(max_length=100, widget=forms.TextInput(
+        attrs={'class': 'form-control'}))
+    username = forms.CharField(max_length=100, widget=forms.TextInput(
+        attrs={'class': 'form-control'}))
 
     class Meta:
         model = User
@@ -28,9 +36,12 @@ class EditAccountSettingsForm(UserChangeForm):
 
 
 class UpdatePasswordForm(PasswordChangeForm):
-    old_password = forms.CharField(widget=forms.PasswordInput(attrs={'class': 'form-control', 'type': 'password'}))
-    new_password1 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={'class': 'form-control', 'type': 'password'}))
-    new_password2 = forms.CharField(max_length=100, widget=forms.PasswordInput(attrs={'class': 'form-control', 'type': 'password'}))
+    old_password = forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'form-control', 'type': 'password'}))
+    new_password1 = forms.CharField(max_length=100, widget=forms.PasswordInput(
+        attrs={'class': 'form-control', 'type': 'password'}))
+    new_password2 = forms.CharField(max_length=100, widget=forms.PasswordInput(
+        attrs={'class': 'form-control', 'type': 'password'}))
 
     class Meta:
         model = User

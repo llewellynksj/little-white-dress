@@ -6,14 +6,23 @@ from django.urls import reverse
 
 
 def DisplayAbout(request):
+    """
+    Displays the About Us page
+    """
     return render(request, 'about.html')
 
 
 def DisplayContact(request):
+    """
+    Displays the Contact page
+    """
     return render(request, 'contact.html')
 
 
 def CustomerFavourites(request, pk):
+    """
+    Adds liked products to customer record
+    """
     product = get_object_or_404(Product, id=request.POST.get('product_id'))
     liked = False
     if product.likes.filter(id=request.user.id).exists():
@@ -26,7 +35,9 @@ def CustomerFavourites(request, pk):
 
 
 class ProductDetails(generic.DetailView):
-    # Displays individual product details
+    """
+    Displays individual product details
+    """
     model = Product
     template_name = 'product_details.html'
 
@@ -43,7 +54,9 @@ class ProductDetails(generic.DetailView):
 
 
 def CategoryProducts(request, selected_cat):
-    # Displays all products within the selected category
+    """
+    Displays all products within the selected category
+    """
     category_products = Product.objects.filter(
         category__category_name=selected_cat)
     return render(
@@ -53,12 +66,16 @@ def CategoryProducts(request, selected_cat):
 
 
 class ProductList(generic.ListView):
-    # Displays all products when 'all styles' is selected
+    """
+    Displays all products when 'all styles' is selected
+    """
     model = Product
     template_name = 'all_products.html'
 
 
 class CategoryList(generic.ListView):
-    # Displays the product categorys on the homepage
+    """
+    Displays the product categorys on the homepage
+    """
     model = Category
     template_name = 'index.html'
