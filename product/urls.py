@@ -13,4 +13,6 @@ urlpatterns = [
         views.ProductDetails.as_view(),
         name='product_details'),
     path('like/<int:pk>', views.CustomerFavourites, name='customer_fav'),
+    path('about/', views.DisplayAbout, name='about'),
+    path('contact/', views.DisplayContact, name='contact'),
 ]

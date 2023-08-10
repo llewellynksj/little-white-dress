@@ -5,6 +5,14 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 
+def DisplayAbout(request):
+    return render(request, 'about.html')
+
+
+def DisplayContact(request):
+    return render(request, 'contact.html')
+
+
 def CustomerFavourites(request, pk):
     product = get_object_or_404(Product, id=request.POST.get('product_id'))
     liked = False
