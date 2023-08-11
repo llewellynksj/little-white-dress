@@ -180,6 +180,16 @@ img {
     height: auto;
 }
 
+/* About us styles */
+.about-section, .map-section {
+    max-width: 900px;
+    margin: auto;
+}
+
+.about-text * {
+    text-align: start;
+}
+
 /* Footer styles */
 footer {
     background-color: #F4E9E5;
