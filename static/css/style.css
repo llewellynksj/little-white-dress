@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Julius+Sans+One&display=swap');
 
+:root {
+    --main-bg-color: #F4E9E5;
+  }
+
 body {
     font-family: "Crimson Text", sans-serif;
 }
@@ -12,7 +16,7 @@ body {
 button {
     border: none;
     border-radius: 18px;
-    background-color: #F4E9E5;
+    background-color: var(--main-bg-color);
     font-family: "Crimson Text", sans-serif;
     padding: 5px 15px;
     margin-bottom: 8px;
@@ -115,7 +119,7 @@ img {
 /* Homepage 'come and see us' section styles */
 .appt-section {
     /* Code created using Neumorphism tool: https://neumorphism.io/#e0e0e0 */
-    background: #F4E9E5;
+    background: var(--main-bg-color);
     box-shadow:  8px 8px 44px #b5aca9,
                 -8px -8px 44px #ffffff;
 }
@@ -200,7 +204,7 @@ img {
 
 /* Footer styles */
 footer {
-    background-color: #F4E9E5;
+    background-color: var(--main-bg-color);
 }
 
 .social-media-links i {
