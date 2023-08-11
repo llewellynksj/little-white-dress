@@ -32,7 +32,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '8000-llewellynks-littlewhite-hbfm93ebiwl.ws-eu102.gitpod.io',
+    '8000-llewellynks-littlewhite-hbfm93ebiwl.ws-eu103.gitpod.io',
     'localhost',
     'little-white-dress.herokuapp.com',
     'little-white-dress-ad94e830edef.herokuapp.com']
