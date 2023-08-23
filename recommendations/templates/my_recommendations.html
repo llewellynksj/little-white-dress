@@ -7,18 +7,22 @@
         <h1>My Contributions to the LWD Community</h1>
         <div class="col-12">
             <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4">
-                {% for item in user_recommendations %}
-                <div class="card-body">
-                    <a href="#" class="">
-                        <h3 class="link-no-decor">{{ item.title }}</h3>
-                        <p class="link-no-decor">{{ item.location }}</p>
-                        <!-- <p class="link-no-decor"><a href=""></a>{{ item.link }}</p> -->
-                        <p class="link-no-decor">{{ item.summary }}</p>
-                        <p class="link-no-decor">{{ item.date_posted }}</p>
-                        <p class="link-no-decor">{{ item.posted_by }}</p>
-                    </a>
-                </div>
-                {% endfor %}
+                {% if not user_recommendations %}
+                    <p class="lead">You have not yet made any recommendations</p>
+                {% else %}
+                    {% for item in user_recommendations %}
+                        <div class="card-body">
+                            <a href="#" class="">
+                                <h3 class="link-no-decor">{{ item.title }}</h3>
+                                <p class="link-no-decor">{{ item.location }}</p>
+                                <!-- <p class="link-no-decor"><a href=""></a>{{ item.link }}</p> -->
+                                <p class="link-no-decor">{{ item.summary }}</p>
+                                <p class="link-no-decor">{{ item.date_posted }}</p>
+                                <p class="link-no-decor">{{ item.posted_by }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
+                {% endif %}
             </div>
         </div>
 {% else %}

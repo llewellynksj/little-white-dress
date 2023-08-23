@@ -26,9 +26,9 @@ class AddRecommendations(generic.CreateView):
 
 
 class MyRecommendationsList(generic.ListView):
-#     """
-#     Displays all recommendation posts by User
-#     """
+    """
+    Displays all recommendation posts by User
+    """
     model = Recommendation
     template_name = 'my_recommendations.html'
 
@@ -40,14 +40,9 @@ class MyRecommendationsList(generic.ListView):
                 *args, **kwargs)
         user_recommendations = Recommendation.objects.all
         context['user_recommendations'] = user_recommendations
+        # objects_in_context = len(context)
         return context
-    
-    # Make the user id available to be able to be saved to the form
-    # Code from Codemy 'Profile Account Creation - Django Blog #32' video:
-    # https://bit.ly/44Ymcjg
-    # def form_valid(self, form):
-    #     form.instance.user = self.request.user
-    #     return super().form_valid(form)
+        # return objects_in_context
 
 
 class RecommendationList(generic.ListView):
