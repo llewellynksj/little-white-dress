@@ -66,7 +66,7 @@ class AccountSettings(generic.UpdateView):
     """
     form_class = EditAccountSettingsForm
     template_name = 'registration/account_settings.html'
-    success_url = reverse_lazy('home')
+    success_url = reverse_lazy('profile')
 
     def get_object(self):
         return self.request.user
