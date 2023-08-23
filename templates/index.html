@@ -97,7 +97,11 @@
             </div>
         </div> -->
         <div>
-            <a href="{% url 'community' %}">Read more recommendations now, or contribute your own!</a>
+            {% if user.is_authenticated %}
+                <a class="link-no-decor link-hover" href="{% url 'community' %}"><h3>Read more recommendations now, or contribute your own!</h3></a>
+            {% else %}
+                <a class="link-no-decor link-hover" href="{% url 'login' %}"><h3>Read more recommendations now, or contribute your own!</h3></a>
+            {% endif %}
         </div>
     </div>
     
