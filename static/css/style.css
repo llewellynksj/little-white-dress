@@ -139,6 +139,10 @@ img {
 }
 
 /* Homepage 'our brides' section styles */
+.outer-section {
+    background-color: #FAF6F4;
+    width: 100%;
+}
 .brides-section {
     max-width: 900px;
     padding-top: 50px;
