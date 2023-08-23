@@ -189,7 +189,7 @@ img {
 }
 
 /* About us styles */
-.about-section, .map-section, .location-section {
+.about-section, .map-section, .location-section, .community-section {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 80px;
@@ -205,6 +205,16 @@ img {
 
 .about-img {
     border-radius: 15px;
+}
+
+/* Reccomendations/Community Page */
+.recommendation-cards {
+    border: 1px solid #252525;
+    border-radius: 15px;
+    max-width: 280px;
+    background: #FAF6F4;
+    box-shadow:  18px 18px 17px #a39c99,
+                -18px -18px 17px #ffffff;
 }
 
 /* Footer styles */
