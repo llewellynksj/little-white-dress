@@ -11,7 +11,7 @@ class Recommendation(models.Model):
         ('Photobooths', 'Photobooths'),
         ('Decor', 'Decor'),
         ('Bridesmaid dresses', 'Bridesmaid dresses'),
-        ('Accesories', 'Accesories'),
+        ('Accessories', 'Accessories'),
         ('Catering', 'Catering'),
     ]
 
