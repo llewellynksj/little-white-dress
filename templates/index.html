@@ -2,16 +2,16 @@
 
 {% block content %}
 
-<!-- Carousel hero images -->
+<!-- Hero image -->
 <div class="container-fluid hero-container">
     <div class="text-center big-btn">
         <button class="mb-0" type="button">
             <a href="" class="link-no-decor"><em>Book an appointment</em></a>
         </button>
     </div>
-    <div id="carouselExample" class="carousel slide">
+    <div>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div>
                 <img src="https://res.cloudinary.com/ksjl86/image/upload/v1691570875/hero_3_em3ezd.webp"
                     class="d-block w-100 hero-image" alt="...">
                 <div class="carousel-overlay">
@@ -21,23 +21,6 @@
                     </button>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="https://res.cloudinary.com/ksjl86/image/upload/v1687773094/AdobeStock_277523283_2_azx1ve.webp"
-                    class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="https://res.cloudinary.com/ksjl86/image/upload/v1687773094/AdobeStock_277523283_2_azx1ve.webp"
-                    class="d-block w-100" alt="...">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
     <!-- Collections section -->
@@ -86,6 +69,37 @@
             {% endif %}
         </button>
     </div>
+
+    <!-- Community section -->
+    <div class="container-fluid section-title">
+        <h2><em>Join our community of Brides</em></h2>
+        <h2><em>to get in-the-know recommendations and share your knowledge too!</em></h2>
+        <p class="lead"><a class="link-no-decor link-hover" href="{% url 'register' %}">Register</a> or <a class="link-no-decor link-hover" href="{% url 'login' %}">Login</a> now to read more and contribute your recommendations to other brides</p>
+        <!-- Sample Recommendations Row -->
+        <!-- <div class="row">
+            <div class="col-12">
+                <div class="row category row-cols-sm-3 row-cols-md-4 collection-container">
+                    {% for category in category_list %}
+                    <div class="card-body">
+                        <a href="{% url 'category' category.category_name %}" class="category-link">
+                            <div>
+                                <img src=" {{ category.category_image.url }}" alt="category image">
+                            </div>
+                            <h3 class="card-title">{{ category.category_name }}</h3>
+                        </a>
+                    </div>
+                    {% if forloop.counter|divisibleby:6 %}
+                </div>
+                <div class="row category-row">
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div> -->
+        <div>
+            <a href="{% url 'community' %}">Read more recommendations now, or contribute your own!</a>
+        </div>
+    </div>
     
     <!-- Testimonials section -->
     <div class="container-fluid section-title brides-section">
@@ -109,6 +123,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 {% endblock %}

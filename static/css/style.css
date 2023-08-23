@@ -51,7 +51,7 @@ img {
     height: auto;
 }
 
-/* Carousel styles */
+/* Hero style */
 .hero-container {
     padding: 0;
 }
@@ -127,6 +127,11 @@ img {
 .appt-btn {
     font-size: 20px;
     background-color: white;
+}
+
+/* Homepage 'Join our community of brides' styles */
+.link-hover:hover {
+    color: blue;
 }
 
 /* Homepage 'our brides' section styles */
