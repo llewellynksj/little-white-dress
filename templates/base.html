@@ -66,9 +66,13 @@
                             Community
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{% url 'community' %}">Community Recommendations</a></li>
-                                <li><a class="dropdown-item" href="{% url 'add_recommendations' user.customer.id %}">Add a Recommendation</a></li>
-                                <li><a class="dropdown-item" href="{% url 'my_recommendations' user.customer.id %}">View my Recommendations</a></li>
+                                {% if user.customer.id %}
+                                    <li><a class="dropdown-item" href="{% url 'community' %}">Community Recommendations</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'add_recommendations' user.customer.id %}">Add a Recommendation</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'my_recommendations' user.customer.id %}">View my Recommendations</a></li>
+                                {% else %}
+                                    <li><a class="dropdown-item" href="{% url 'create_profile' %}">Create Profile</a></li>
+                                {% endif %}
                             </ul>
                         </li>
                     {% else %}

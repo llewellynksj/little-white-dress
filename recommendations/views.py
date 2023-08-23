@@ -32,18 +32,6 @@ class MyRecommendationsList(generic.ListView):
     model = Recommendation
     template_name = 'my_recommendations.html'
 
-    # code from Codemy 'Create a Blog Profile Page' Video:
-    # http://bit.ly/3OsUgy8:
-    def get_context_data(self, *args, **kwargs):
-        context = super(
-            MyRecommendationsList, self).get_context_data(
-                *args, **kwargs)
-        user_recommendations = Recommendation.objects.all
-        context['user_recommendations'] = user_recommendations
-        # objects_in_context = len(context)
-        return context
-        # return objects_in_context
-
 
 class RecommendationList(generic.ListView):
     """
@@ -51,3 +39,13 @@ class RecommendationList(generic.ListView):
     """
     model = Recommendation
     template_name = 'community.html'
+
+    # code from Codemy 'Create a Blog Profile Page' Video:
+    # http://bit.ly/3OsUgy8:
+    def get_context_data(self, *args, **kwargs):
+        context = super(
+            RecommendationList, self).get_context_data(
+                *args, **kwargs)
+        user_recommendations = Recommendation.objects.all
+        context['user_recommendations'] = user_recommendations
+        return context

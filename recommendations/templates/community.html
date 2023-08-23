@@ -4,29 +4,40 @@
 
 <div class="container-fluid">
     <h1 class="text-center"><em>Our Bridal Community</em></h1>
-    <div>
-        <div>
-            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="{% url 'my_recommendations' user.customer.id %}">View your Contributions</a></button>
-            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="{% url 'add_recommendations' user.customer.id %}">Add a Recommendation</a></button>
-            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="{% url 'profile' user.customer.id %}">Go to your Profile</a></button>
+    <div class="d-flex my-3 py-3 justify-content-center">
+        <div class="flex-column">
+            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
+                    href="{% url 'my_recommendations' user.customer.id %}">View your Contributions</a></button>
+            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
+                    href="{% url 'add_recommendations' user.customer.id %}">Add a Recommendation</a></button>
+            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
+                    href="{% url 'profile' user.customer.id %}">Go to your Profile</a></button>
         </div>
     </div>
-    <!-- <div class="col-12">
-        <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 collection-container">
-            {% for product in product_list %}
-            <div class="card-body">
-                <a href="{% url 'product_details' product.pk %}" class="product-link">
-                    <div class="image-container product-image">
-                        <img src=" {{ product.main_image.url }}" alt="category image">
+
+    <div class="col-12 community-section my-3 py-3">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
+            {% if not user_recommendations %}
+                <p class="lead">There are currently no recommendations</p>
+            {% else %}
+                {% for item in user_recommendations %}
+                    <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
+                        <div class="card-body recommendation-cards">
+                            <div class="p-4">
+                                <h3 class="link-no-decor">{{ item.title }}</h3>
+                                <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
+                                <h4 class="link-no-decor link-hover"><a href=""></a><i class="fa-light fa-globe-pointer"></i> Visit
+                                    Website</h4>
+                                <p class="link-no-decor lead">{{ item.summary }}</p>
+                                <p class="link-no-decor"><em>Posted on: {{ item.date_posted }}</em></p>
+                                <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
+                            </div>
+                        </div>    
                     </div>
-                    <h3 class="link-no-decor">{{ product.item_name }}</h3>
-                    <p class="link-no-decor">{{ product.category }}</p>
-                    <p class="link-no-decor">£{{ product.price }}</p>
-                </a>
-            </div>
-            {% endfor %}
-        </div>  
-    </div> -->
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
 </div>
 
 {% endblock %}

@@ -22,6 +22,10 @@ button {
     margin-bottom: 8px;
 }
 
+.page-button {
+    min-width: 235px;
+}
+
 .section-title {
     text-align: center;
     padding: 30px 10px;
@@ -207,12 +211,13 @@ img {
     border-radius: 15px;
 }
 
-/* Reccomendations/Community Page */
+/* Reccomendations Community Page */
 .recommendation-cards {
     border: 1px solid #252525;
     border-radius: 15px;
-    max-width: 280px;
+    min-width: 250px;
     background: #FAF6F4;
+    /* Code created using Neumorphism tool: https://neumorphism.io/ */
     box-shadow:  18px 18px 17px #a39c99,
                 -18px -18px 17px #ffffff;
 }
