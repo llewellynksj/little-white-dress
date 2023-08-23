@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    <div class="container-fluid">
+        <h1>My Contributions to the LWD Community</h1>
+        <div class="col-12">
+            <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4">
+                {% for item in user_recommendations %}
+                <div class="card-body">
+                    <a href="#" class="">
+                        <h3 class="link-no-decor">{{ item.title }}</h3>
+                        <p class="link-no-decor">{{ item.location }}</p>
+                        <!-- <p class="link-no-decor"><a href=""></a>{{ item.link }}</p> -->
+                        <p class="link-no-decor">{{ item.summary }}</p>
+                        <p class="link-no-decor">{{ item.date_posted }}</p>
+                        <p class="link-no-decor">{{ item.posted_by }}</p>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+{% else %}
+    You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
+{% endif %}
+    </div>
+
+    {% endblock %}
