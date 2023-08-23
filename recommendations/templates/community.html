@@ -15,26 +15,28 @@
         </div>
     </div>
 
-    <div class="col-12 community-section my-3 py-3">
-        <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
+    <div class="community-section my-3 py-3">
+        <div class="justify-content-center">
             {% if not user_recommendations %}
                 <p class="lead">There are currently no recommendations</p>
             {% else %}
-                {% for item in user_recommendations %}
+                <div class="col-12">
                     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
-                        <div class="card-body recommendation-cards">
-                            <div class="p-4">
-                                <h3 class="link-no-decor">{{ item.title }}</h3>
-                                <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
-                                <h4 class="link-no-decor link-hover"><a href=""></a><i class="fa-light fa-globe-pointer"></i> Visit
-                                    Website</h4>
-                                <p class="link-no-decor lead">{{ item.summary }}</p>
-                                <p class="link-no-decor"><em>Posted on: {{ item.date_posted }}</em></p>
-                                <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
-                            </div>
-                        </div>    
+                        {% for item in user_recommendations %}
+                            <div class="card-body recommendation-cards mx-2">
+                                <div class="p-4">
+                                    <h3 class="link-no-decor">{{ item.title }}</h3>
+                                    <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
+                                    <h4 class="link-no-decor link-hover"><a href=""></a><i class="fa-light fa-globe-pointer"></i> Visit
+                                        Website</h4>
+                                    <p class="link-no-decor lead">{{ item.summary }}</p>
+                                    <p class="link-no-decor"><em>Posted on: {{ item.date_posted }}</em></p>
+                                    <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
+                                </div>
+                            </div> 
+                        {% endfor %}   
                     </div>
-                {% endfor %}
+                </div>
             {% endif %}
         </div>
     </div>
