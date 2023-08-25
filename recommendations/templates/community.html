@@ -17,12 +17,12 @@
 
     <div class="community-section my-3 py-3">
         <div class="justify-content-center">
-            {% if not user_recommendations %}
+            {% if not all_recommendations %}
                 <p class="lead">There are currently no recommendations</p>
             {% else %}
                 <div class="col-12">
                     <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
-                        {% for item in user_recommendations %}
+                        {% for item in all_recommendations %}
                             <div class="card-body recommendation-cards mx-2">
                                 <div class="p-4">
                                     <h3 class="link-no-decor">{{ item.title }}</h3>
