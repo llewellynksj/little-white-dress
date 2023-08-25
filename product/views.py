@@ -74,17 +74,11 @@ class ProductList(generic.ListView):
     template_name = 'all_products.html'
 
 
-# class CategoryList(generic.ListView):
-#     """
-#     Displays the product categorys on the homepage
-#     """
-#     model = Category
-#     template_name = 'index.html'
-
-
 def DisplayHomepage(request):
     """
     Displays Homepage
+    Passes in all objects from Category model
+    Passes in first
     """
     category_list = Category.objects.all()
     recommendation_list = Recommendation.objects.all()
