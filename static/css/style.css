@@ -219,7 +219,7 @@ img {
 .recommendation-cards {
     border: 1px solid #252525;
     border-radius: 15px;
-    max-width: 350px;
+    width: 350px;
     background: #FAF6F4;
     /* Code created using Neumorphism tool: https://neumorphism.io/ */
     box-shadow:  18px 18px 17px #a39c99,

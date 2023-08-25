@@ -11,7 +11,7 @@
                 <p class="lead">You have not yet made any recommendations</p>
                 {% else %}
                 {% for item in user_recommendations %}
-                <div class="card-body recommendation-cards">
+                <div class="card-body recommendation-cards m-4">
                     <div class="p-4">
                         <h3 class="link-no-decor">{{ item.title }}</h3>
                         <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
