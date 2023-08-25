@@ -5,25 +5,39 @@
 {% if user.is_authenticated %}
     <div class="container-fluid">
         <h1 class="section-title">My Recommendations</h1>
-        <div class="col-12 community-section">
-            <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
-                {% if not user_recommendations %}
-                <p class="lead">You have not yet made any recommendations</p>
-                {% else %}
-                {% for item in user_recommendations %}
-                <div class="card-body recommendation-cards m-4">
-                    <div class="p-4">
-                        <h3 class="link-no-decor">{{ item.title }} - {{ item.type_of_recommendation }}</h3>
-                        <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
-                        <h4><a class="link-no-decor link-hover" href="http://{{ item.web_link }}" target="_blank" rel="noopener"><i class="fa-light fa-globe-pointer"></i> Visit Website</a></h4>
-                        <p class="link-no-decor lead">{{ item.summary }}</p>
-                        <p class="link-no-decor"><em>Posted on: {{ item.date_posted }}</em></p>
-                        <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
-                    </div>
-                </div>
-                {% endfor %}
-                {% endif %}
+        <div class="d-flex my-3 py-3 justify-content-center">
+            <div class="flex-column">
+                <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
+                        href="{% url 'my_recommendations' user.customer.id %}">Community Recommendations</a></button>
+                <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
+                        href="{% url 'add_recommendations' user.customer.id %}">Add a Recommendation</a></button>
+                <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
+                        href="{% url 'profile' user.customer.id %}">My Profile</a></button>
             </div>
+        </div>
+        <div class="col-12 community-section">
+            {% if not user_recommendations %}
+                <p class="lead text-center">You have not yet added any recommendations</p>
+            {% else %}
+                <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
+                    {% for item in user_recommendations %}
+                    <div class="card-body recommendation-cards m-4">
+                        <div class="p-4">
+                            <h3 class="link-no-decor">{{ item.title }} - {{ item.type_of_recommendation }}</h3>
+                            <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
+                            <h4><a class="link-no-decor link-hover" href="http://{{ item.web_link }}" target="_blank" rel="noopener"><i class="fa-light fa-globe-pointer"></i> Visit Website</a></h4>
+                            <p class="link-no-decor lead">{{ item.summary }}</p>
+                            <p class="link-no-decor"><em>Posted on: {{ item.date_posted }}</em></p>
+                            <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
+                        </div>
+                        {% if user.id == item.user.id %}
+                        <a class="link-no-decor" href=""><button class="btn btn-outline-secondary mb-4 mx-4">Edit</button></a>
+                            <button class="btn btn-outline-danger mb-4">Delete</button>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
         </div>
 {% else %}
     You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
