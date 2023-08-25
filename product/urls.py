@@ -4,7 +4,7 @@ from . import views
 urlpatterns = [
     path(
         '',
-        views.CategoryList.as_view(),
+        views.DisplayHomepage,
         name='index'),
     path(
         'products/',

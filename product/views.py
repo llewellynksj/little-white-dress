@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from .models import Category, Product
+from recommendations.models import Recommendation
 from django.http import HttpResponseRedirect
 from django.urls import reverse
 
@@ -73,9 +74,23 @@ class ProductList(generic.ListView):
     template_name = 'all_products.html'
 
 
-class CategoryList(generic.ListView):
+# class CategoryList(generic.ListView):
+#     """
+#     Displays the product categorys on the homepage
+#     """
+#     model = Category
+#     template_name = 'index.html'
+
+
+def DisplayHomepage(request):
     """
-    Displays the product categorys on the homepage
+    Displays Homepage
     """
-    model = Category
-    template_name = 'index.html'
+    category_list = Category.objects.all()
+    recommendation_list = Recommendation.objects.all()
+
+    context = {
+        'category_list': category_list,
+        'recommendation_list': recommendation_list,
+    }
+    return render(request, 'index.html', context)
