@@ -79,7 +79,7 @@
         <!-- Sample Recommendations Row -->
         <div class="col-12">
             <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 justify-content-center">
-                {% for item in recommendation_list|slice:"0:6" %}
+                {% for item in recommendation_list|slice:"0:4" %}
                     <div class="card-body recommendation-cards m-4">
                         <div class="p-4">
                             <h3 class="link-no-decor">{{ item.title }} - {{ item.type_of_recommendation }}</h3>
