@@ -3,14 +3,14 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <div class="container-fluid">
+    <div class="container-fluid body-content">
         <h1>My Account</h1>
         <h3>Welcome to your profile page {{ user.first_name }}</h3>
         <br />
         <div>
-            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}">Update Your Profile</a></button>
-            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor" href="">Book An Appointment</a></button>
-            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor" href="{% url 'community' %}">Community Recommendations</a></button>
+            <a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Update Your Profile</button></a>
+            <a class="link-no-decor" href=""><button class="btn btn-outline-secondary mx-2 page-button">Book An Appointment</button></a>
+            <a class="link-no-decor" href="{% url 'community' %}"><button class="btn btn-outline-secondary mx-2 page-button">Community Recommendations</button></a>
         </div>
             <br />
         <div class="profile-section">
@@ -25,12 +25,14 @@
             {% endif %}
         </div>
         <div>
-            <button class="btn btn-outline-secondary mx-2"><a class="link-no-decor" href="{% url 'settings' %}">Go To Account Settings</a></button>
+            <a class="link-no-decor" href="{% url 'settings' %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
         </div>
         <br><br>
-        {% if user.fav_products %}
-            <h3 class="favs-title">My Favourites</h3>
+        <h3 class="favs-title">My Favourites</h3>
+        {% if not user.fav_products %}
             <br>
+            <p class="lead">You have not yet selected any favourites</p>
+        {% else %}
             <div class="container-fluid">
                 <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
                     {% for product in user.fav_products.all %}
