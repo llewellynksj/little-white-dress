@@ -6,6 +6,25 @@ from .models import Recommendation
 from .forms import AddNewRecommendationForm
 
 
+class EditRecommendation(generic.UpdateView):
+    """
+    Displays form for user to update thier recommendation
+    """
+    model = Recommendation
+    template_name = 'edit_recommendation.html'
+    fields = (
+        'type_of_recommendation',
+        'title',
+        'location',
+        'web_link',
+        'summary',
+        'posted_by',
+    )
+
+    def get_success_url(self) -> str:
+        return reverse_lazy('my_recommendations', kwargs={'pk': self.object.pk})
+
+
 class AddRecommendations(generic.CreateView):
     """
     Links to custom add recommendations form

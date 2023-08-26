@@ -31,7 +31,7 @@
                             <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
                         </div>
                         {% if user.id == item.user.id %}
-                        <a class="link-no-decor" href=""><button class="btn btn-outline-secondary mb-4 mx-4">Edit</button></a>
+                        <a class="link-no-decor" href="{% url 'edit_recommendation' item.pk %}"><button class="btn btn-outline-secondary mb-4 mx-4">Edit</button></a>
                             <button class="btn btn-outline-danger mb-4">Delete</button>
                         {% endif %}
                     </div>
