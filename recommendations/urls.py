@@ -17,5 +17,9 @@ urlpatterns = [
     path(
         '<int:pk>/edit_recommendation/',
         views.EditRecommendation.as_view(),
-        name='edit_recommendation')
+        name='edit_recommendation'),
+    path(
+        '<int:pk>/delete_recommendation/',
+        views.DeleteRecommendation.as_view(),
+        name='delete_recommendation'),
 ]

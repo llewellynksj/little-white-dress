@@ -3,17 +3,18 @@
 {% block content %}
 {% if user.is_authenticated %}
         <div class="container-fluid">
-            <h1>Edit</h1>
+            <h1>Delete</h1>
             {% if user.id == recommendation.user.id %}
+                <h3>WARNING: You are deleting your recommendation titled <em>'{{ recommendation.title }}'</em></h3>
                 <div class="form-group">
                     <form method="POST">
                         {% csrf_token %}
-                        {{ form.as_p }}
-                        <button class="btn btn-secondary">Update</button>
+                        <h3>Are you sure you want to delete this recommendation?</h3>
+                        <button class="btn btn-danger">CONFIRM</button>
                     </form>
                 </div>
             {% else %}
-            <p class="lead">You are not able to edit this recommendation as you are not the owner</p>
+                <p class="lead">You are not able to delete this recommendation as you are not the owner</p>
         </div>
             {% endif %}
 {% else %}

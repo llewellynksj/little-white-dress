@@ -6,20 +6,22 @@ from .models import Recommendation
 from .forms import AddNewRecommendationForm
 
 
+class DeleteRecommendation(generic.DeleteView):
+    """
+    Delete Recommendation
+    """
+    model = Recommendation
+    template_name = 'delete_recommendation.html'
+    success_url = reverse_lazy('community')
+
+
 class EditRecommendation(generic.UpdateView):
     """
     Displays form for user to update thier recommendation
     """
     model = Recommendation
+    form_class = AddNewRecommendationForm
     template_name = 'edit_recommendation.html'
-    fields = (
-        'type_of_recommendation',
-        'title',
-        'location',
-        'web_link',
-        'summary',
-        'posted_by',
-    )
 
     def get_success_url(self) -> str:
         return reverse_lazy(
