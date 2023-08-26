@@ -22,7 +22,9 @@ class EditRecommendation(generic.UpdateView):
     )
 
     def get_success_url(self) -> str:
-        return reverse_lazy('my_recommendations', kwargs={'pk': self.object.pk})
+        return reverse_lazy(
+            'my_recommendations', kwargs={'pk': self.object.pk}
+        )
 
 
 class AddRecommendations(generic.CreateView):
@@ -41,7 +43,9 @@ class AddRecommendations(generic.CreateView):
         return super().form_valid(form)
 
     def get_success_url(self) -> str:
-        return reverse_lazy('my_recommendations', kwargs={'pk': self.object.pk})
+        return reverse_lazy(
+            'my_recommendations', kwargs={'pk': self.object.pk}
+        )
 
 
 class MyRecommendationsList(generic.ListView):
@@ -57,7 +61,9 @@ class MyRecommendationsList(generic.ListView):
         context = super(
             MyRecommendationsList, self).get_context_data(
                 *args, **kwargs)
-        user_recommendations = Recommendation.objects.filter(user=self.request.user)
+        user_recommendations = Recommendation.objects.filter(
+            user=self.request.user
+        )
         context['user_recommendations'] = user_recommendations
         return context
 
@@ -69,8 +75,6 @@ class RecommendationList(generic.ListView):
     model = Recommendation
     template_name = 'community.html'
 
-    # code adapted from Codemy 'Create a Blog Profile Page' Video:
-    # http://bit.ly/3OsUgy8:
     def get_context_data(self, *args, **kwargs):
         context = super(
             RecommendationList, self).get_context_data(
