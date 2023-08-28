@@ -13,6 +13,7 @@ class AddNewRecommendationForm(forms.ModelForm):
             'web_link',
             'summary',
             'posted_by',
+            'decleration_of_consent',
         )
         widgets = {
             'type_of_recommendation': forms.Select(
@@ -27,4 +28,6 @@ class AddNewRecommendationForm(forms.ModelForm):
                 attrs={'class': 'form-control'}),
             'posted_by': forms.TextInput(
                 attrs={'class': 'form-control'}),
+            'decleration_of_consent': forms.CheckboxInput(
+                attrs={'class': 'form-check', 'required': 'True'}),
         }

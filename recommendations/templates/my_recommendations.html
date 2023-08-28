@@ -23,7 +23,8 @@
                     {% for item in user_recommendations %}
                     <div class="card-body recommendation-cards m-4">
                         <div class="p-4">
-                            <h3 class="link-no-decor">{{ item.title }} - {{ item.type_of_recommendation }}</h3>
+                            <h3 class="link-no-decor text-uppercase">{{ item.type_of_recommendation }}</h3>
+                            <h3 class="link-no-decor">{{ item.title }}</h3>
                             <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
                             <h4><a class="link-no-decor link-hover" href="http://{{ item.web_link }}" target="_blank" rel="noopener"><i class="fa-light fa-globe-pointer"></i> Visit Website</a></h4>
                             <p class="link-no-decor lead">{{ item.summary }}</p>
