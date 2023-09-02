@@ -179,6 +179,16 @@ img {
     max-width: 500px;
 }
 
+.product-summary {
+    max-width: 500px;
+}
+
+.product-info {
+    border: 3px #F4E9E5 double;
+    max-width: 500px;
+    border-radius: 18px;
+}
+
 /* Login page styles */
 .hover-link:hover {
     text-decoration: underline;
