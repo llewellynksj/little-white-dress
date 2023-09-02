@@ -2,14 +2,14 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container-fluid body-content">
     {% if category_products %}
         <h1 class="text-center"><em>{{ selected_cat }}</em></h1>
         
         <div class="col-12">
             <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 collection-container">
                 {% for product in category_products %}
-                    <div class="card-body">
+                    <div class="card-body m-3">
                         <a href="{% url 'product_details' product.pk %}" class="product-link">
                             <div class="image-container product-image">
                                 <img src=" {{ product.main_image.url }}" alt="category image">

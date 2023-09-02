@@ -248,7 +248,7 @@ img {
 }
 
 /* Media queries */
-@media (min-width: 360px) {
+/* @media (min-width: 360px) {
     .big-btn {
         display: none;
     }
@@ -256,11 +256,23 @@ img {
     .hero-btn {
         display: block;
     }
-}
+} */
 
 @media (min-width: 576px) {
+    .big-btn {
+        display: none;
+    }
+
+    .hero-btn {
+        display: block;
+    }
+
     .carousel-overlay button {
         font-size: 15px;
+    }
+
+    .brides-row-1 {
+        padding: 15px;
     }
 
     .brides-text-first * {
