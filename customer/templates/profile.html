@@ -27,27 +27,26 @@
         <div>
             <a class="link-no-decor" href="{% url 'settings' %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
         </div>
-        <br><br>
-        <h3 class="favs-title">My Favourites</h3>
-        {% if not user.fav_products %}
-            <br>
-            <p class="lead">You have not yet selected any favourites</p>
-        {% else %}
-            <div class="container-fluid">
-                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
-                    {% for product in user.fav_products.all %}
-                        <div class="col">
-                            <a href="{% url 'product_details' product.pk %}" class="product-link">
-                                <img src=" {{ product.main_image.url }}" alt="category image" class="img-thumbnail">
-                                <h3 class="">{{ product.item_name }}</h3>
-                                <p>{{ product.category }}</p>
-                                <p>£{{ product.price }}</p>
-                            </a>
-                        </div>
-                    {% endfor %}
+
+        <h3 class="mt-2 p-4 favs-title">My Favourites</h3>
+            {% if not user.fav_products %}
+                <p class="lead">You have not yet selected any favourites</p>
+            {% else %}
+                <div class="container-fluid">
+                    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4">
+                        {% for product in user.fav_products.all %}
+                            <div class="col">
+                                <a href="{% url 'product_details' product.pk %}" class="product-link">
+                                    <img src=" {{ product.main_image.url }}" alt="category image" class="img-thumbnail">
+                                    <h3 class="">{{ product.item_name }}</h3>
+                                    <p>{{ product.category }}</p>
+                                    <p>£{{ product.price }}</p>
+                                </a>
+                            </div>
+                        {% endfor %}
+                    </div>
                 </div>
-            </div>
-        {% endif %}
+            {% endif %}
     </div>
 {% endif %}
 
