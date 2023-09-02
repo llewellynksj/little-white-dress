@@ -5,7 +5,8 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from .forms import RegistrationForm, UpdatePasswordForm
-from .forms import EditAccountSettingsForm, CreateNewProfileForm, UpdateProfileForm
+from .forms import EditAccountSettingsForm, CreateNewProfileForm
+from .forms import UpdateProfileForm
 from django.contrib.auth.models import User
 from .models import Customer
 from django.http import HttpResponseRedirect
