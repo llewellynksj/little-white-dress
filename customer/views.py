@@ -5,7 +5,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth.views import PasswordChangeView
 from django.urls import reverse_lazy
 from .forms import RegistrationForm, UpdatePasswordForm
-from .forms import EditAccountSettingsForm, CreateNewProfileForm
+from .forms import EditAccountSettingsForm, CreateNewProfileForm, UpdateProfileForm
 from django.contrib.auth.models import User
 from .models import Customer
 from django.http import HttpResponseRedirect
@@ -17,7 +17,11 @@ class UpdateCustomerProfile(generic.UpdateView):
     """
     model = Customer
     template_name = 'update_profile.html'
-    fields = ['profile_pic', 'date_of_wedding', 'website_url']
+    form_class = UpdateProfileForm
+
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        return super().form_valid(form)
 
     def get_success_url(self) -> str:
         return reverse_lazy('profile', kwargs={'pk': self.object.pk})

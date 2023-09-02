@@ -5,12 +5,27 @@ from django import forms
 from .models import Customer
 
 
+class UpdateProfileForm(forms.ModelForm):
+    class Meta:
+        model = Customer
+        fields = ('profile_pic', 'date_of_wedding', 'website_url')
+        widgets = {
+            'profile_pic': forms.FileInput(
+                attrs={'class': 'form-control', 'type': 'file'}),
+            'date_of_wedding': forms.DateInput(
+                attrs={'class': 'form-control', 'type': 'date'}),
+            'website_url': forms.TextInput(
+                attrs={'class': 'form-control'}),
+        }
+
+
 class CreateNewProfileForm(forms.ModelForm):
     class Meta:
         model = Customer
         fields = ('profile_pic', 'date_of_wedding', 'website_url')
         widgets = {
-            # 'profile_pic':
+            'profile_pic': forms.FileInput(
+                attrs={'class': 'form-control', 'type': 'file'}),
             'date_of_wedding': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}),
             'website_url': forms.TextInput(

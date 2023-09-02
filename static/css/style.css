@@ -31,6 +31,10 @@ button {
     padding: 30px 10px;
 }
 
+.form-control {
+    width: 75%;
+}
+
 /* Navbar styles */
 .brand {
     font-family: "Julius Sans One", sans-serif;
