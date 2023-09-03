@@ -6,20 +6,6 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 
-def DisplayAbout(request):
-    """
-    Displays the About Us page
-    """
-    return render(request, 'about.html')
-
-
-def DisplayContact(request):
-    """
-    Displays the Contact page
-    """
-    return render(request, 'contact.html')
-
-
 def CustomerFavourites(request, pk):
     """
     Adds liked products to customer record
