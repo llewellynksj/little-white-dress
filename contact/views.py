@@ -2,6 +2,8 @@ from django.shortcuts import render
 from django.views import generic
 from django.urls import reverse_lazy, reverse
 from .models import ContactDetail, Enquiry
+from django.core.mail import send_mail
+from django.conf import settings
 
 
 def DisplayContact(request):
@@ -11,12 +13,22 @@ def DisplayContact(request):
         full_name = request.POST['fullName']
         email_address = request.POST['emailAddress']
         message = request.POST['message']
+
+        # send email
+        # send_mail(
+        #     'LWD Enquiry Received from ' + full_name,
+        #     message + 'FROM' + full_name,
+        #     email_address,
+        #     ['llewellyn.ksj@gmail.com'],
+        # )
+
         return render(request, 'contact_details.html', {
             'details_list': details_list,
             'full_name': full_name,
         })
     else:
-        return render(request, 'contact_details.html', {})
+        return render(
+            request, 'contact_details.html', {'details_list': details_list})
 
 
 def DisplayAbout(request):

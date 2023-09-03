@@ -77,7 +77,6 @@
         {% else %}
             <a class="link-no-decor link-hover" href="{% url 'login' %}"><h2><em>Join our community of Brides</em></h2></a>
         {% endif %}
-        <h3><em>Find and make recommendations for other wedding services</em></h3>
         <p class="lead"><a class="link-no-decor link-hover" href="{% url 'register' %}">Register</a> or <a class="link-no-decor link-hover" href="{% url 'login' %}">Login</a> now to read more and contribute your recommendations to other brides</p>
 
         <!-- Sample of Recommendations -->
@@ -98,20 +97,22 @@
                 {% endfor %}   
             </div>
         </div>
-
         <div class="mt-4 pt-2">
             {% if user.is_authenticated %}
-                <a class="link-no-decor link-hover" href="{% url 'community' %}"><h3>Read more recommendations now, or contribute your own!</h3></a>
+                <a class="link-no-decor link-hover" href="{% url 'community' %}"><h3>Read more recommendations now, or add your own!</h3></a>
             {% else %}
-                <a class="link-no-decor link-hover" href="{% url 'login' %}"><h3>Read more recommendations now, or contribute your own!</h3></a>
+                <a class="link-no-decor link-hover" href="{% url 'login' %}"><h3>Read more recommendations now, or add your own!</h3></a>
             {% endif %}
         </div>
     </div>
+
+    <!-- Page Divider -->
+    <div class="divider"><div class="divider-inner"></div><span><i class="fa-thin fa-circle-heart"></i></span></div>
     
     <!-- Testimonials section -->
     <div class="outer-section">
         <div class="container-fluid section-title brides-section">
-            <h2><em>Our Brides</em></h2>
+            <h2><em>Meet Our Brides</em></h2>
             <div class="row brides-row-1">
                 <div class="brides-text-first col-12 col-sm-6">
                     <h3>Kate & James</h3>
