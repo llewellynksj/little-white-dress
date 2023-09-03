@@ -11,3 +11,12 @@ class ContactDetail(models.Model):
 
     def __str__(self):
         return self.first_line_of_address
+
+
+class Enquiry(models.Model):
+    full_name = models.CharField(max_length=100)
+    email = models.EmailField()
+    message = models.TextField(max_length=800)
+
+    def __str__(self):
+        return str('Message from' + self.full_name)

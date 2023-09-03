@@ -7,17 +7,26 @@
 
     <!-- Contact Form -->
     <div class="row location-section">
+        <!-- Address -->
         <div class="col-12 col-md-4">
             <div class="contact-information">
                 {% for item in details_list %}
                     <h3>Address</h3>
-                    <p>{{ item.first_line_of_address }}</p>
+                    <p>{{ item.first_line_of_address }}<br>{{ item.city }}<br>{{ item.county }}<br>{{ item.postcode }}</p>
                     <h4>Telephone</h4>
                     <p>0{{ item.telephone }}</p>
                     <h4>Email</h4>
                     <p>{{ item.email }}</p>
                 {% endfor %}
               </div>
+        </div>
+        <!-- Form -->
+        <div class="col-12 col-md-8 form-group">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button class="btn btn-secondary">Send</button>
+            </form>
         </div>
     </div>
 
