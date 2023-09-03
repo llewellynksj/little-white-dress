@@ -4,8 +4,16 @@
     --main-bg-color: #F4E9E5;
   }
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: "Crimson Text", sans-serif;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 7.75rem;
 }
 
 .link-no-decor, .product-link {
@@ -130,6 +138,7 @@ img {
     background: var(--main-bg-color);
     box-shadow:  8px 8px 44px #b5aca9,
                 -8px -8px 44px #ffffff;
+    min-height: 315px;
 }
 
 .appt-btn {
@@ -241,6 +250,12 @@ img {
 }
 
 /* Footer styles */
+footer {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
 
 .social-media-links i {
     font-size: 25px;
@@ -248,16 +263,6 @@ img {
 }
 
 /* Media queries */
-/* @media (min-width: 360px) {
-    .big-btn {
-        display: none;
-    }
-
-    .hero-btn {
-        display: block;
-    }
-} */
-
 @media (min-width: 576px) {
     .big-btn {
         display: none;
