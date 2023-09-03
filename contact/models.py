@@ -19,4 +19,4 @@ class Enquiry(models.Model):
     message = models.TextField(max_length=800)
 
     def __str__(self):
-        return str('Message from' + self.full_name)
+        return self.full_name
