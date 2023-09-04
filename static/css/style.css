@@ -157,7 +157,7 @@ img {
 }
 .brides-section {
     max-width: 900px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .brides-text-first, .brides-text-second {
@@ -246,6 +246,7 @@ img {
     /* Code created using Neumorphism tool: https://neumorphism.io/ */
     box-shadow:  18px 18px 17px #a39c99,
                 -18px -18px 17px #ffffff;
+    position: relative;
 }
 
 /* Page divider */
@@ -253,7 +254,7 @@ img {
 https://codepen.io/isabelc/pen/MmrJgx */
 .divider {
     margin: 40px auto;
-    width: 400px; 
+    width: 700px; 
     max-width: 100%;
     position: relative;
   }
@@ -322,6 +323,10 @@ footer {
 
 /* Media queries */
 @media (min-width: 576px) {
+    .brand {
+        font-size: 2vh;
+    }
+
     .big-btn {
         display: none;
     }
@@ -349,15 +354,17 @@ footer {
     .brides-text-second * {
         text-align: start;
     }
-}
 
-@media (min-width: 576px) {
     iframe {
         height: 460px;
     }
 }
 
 @media (min-width: 992px) {
+    .brand {
+        font-size: 2.3vh;
+    }
+
     .carousel-overlay button {
         font-size: 20px;
     }
