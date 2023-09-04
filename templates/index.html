@@ -5,9 +5,9 @@
 <!-- Hero image -->
 <div class="container-fluid hero-container">
     <div class="text-center big-btn">
-        <button class="mb-0" type="button">
-            <a href="" class="link-no-decor"><em>Book an appointment</em></a>
-        </button>
+        <a href="" class="link-no-decor">
+            <button class="mb-0" type="button"><em>Book an appointment</em></button>
+        </a>
     </div>
     <div>
         <div class="carousel-inner">
@@ -16,9 +16,9 @@
                     class="d-block w-100 hero-image" alt="...">
                 <div class="carousel-overlay">
                     <h2 id="hero-text"><em>Find your perfect gown</em></h2>
-                    <button class="hero-btn" type="button">
-                        <a href="" class="link-no-decor"><em>Book an appointment</em></a>
-                    </button>
+                    <a href="" class="link-no-decor">
+                        <button class="hero-btn" type="button"><em>Book an appointment</em></button>
+                    </a>
                 </div>
             </div>
     </div>
@@ -26,9 +26,9 @@
     <!-- Collections section -->
     <div class="text-center mt-3 pt-4 pb-1">
         <h2><em>Our Collections</em></h2>
-        <button type="button">
-            <a href="{% url 'products' %}" class="link-no-decor">Shop all styles</a>
-        </button>
+        <a href="{% url 'products' %}" class="link-no-decor">
+            <button type="button">Shop all styles</button>
+        </a>
     </div>
 
     <div class="container-fluid category-section">
@@ -61,13 +61,15 @@
         <h2 class="pt-3"><em>Come and See Us</em></h2>
         <p class="lead">Trying on dresses is a right of passage for any bride. We'll make your experience as special as it should be.</p>
         <p class="lead">Bring up to 5 guests, enjoy a glass of fizz, and let's see if we can find your <em>'one' </em>!</p>
-        <button class="appt-btn" type="button">
-            {% if user.is_authenticated %}
-                <a href="#" class="link-no-decor">Book an Appointment</a>
-            {% else %}
-            <a href="{% url 'login' %}" class="link-no-decor">Book an Appointment</a>
-            {% endif %}
-        </button>
+        {% if user.is_authenticated %}
+            <a href="#" class="link-no-decor">
+                <button class="appt-btn" type="button">Book an Appointment</button>
+            </a>
+        {% else %}
+            <a href="{% url 'login' %}" class="link-no-decor">
+                <button class="appt-btn" type="button">Book an Appointment</button>
+            </a>
+        {% endif %}     
     </div>
 
     <!-- Community section -->
@@ -119,7 +121,7 @@
                     <p><em>"As a plus size bride I was really nervous about trying on dresses, but Samantha was so incredibly welcoming and made me feel just as special and deserving as any bride that walked through her door"</em></p>
                 </div>
                 <div class="brides-img col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start">
-                    <img class="rounded-circle" src="https://res.cloudinary.com/ksjl86/image/upload/v1691575581/katejames_ycuqt7_sugd3w.webp" alt="">
+                    <img class="rounded-circle" src="https://res.cloudinary.com/ksjl86/image/upload/v1691575581/katejames_ycuqt7_sugd3w.webp" alt="Image of bride and groom Kate & James on their wedding day">
                 </div>
             </div>
             <div class="row pt-2">
@@ -128,7 +130,7 @@
                     <p><em>"If it wasn't for Samantha at Little White Dress I would never have even tried on the style that I ended up having. I'm so grateful to her for all her patience and honest advice!"</em></p>
                 </div>
                 <div class="brides-img col-12 col-sm-6 d-flex justify-content-center justify-content-sm-end">
-                    <img class="rounded-circle" src="https://res.cloudinary.com/ksjl86/image/upload/v1691584723/janemike_bvwgnx.webp" alt="">
+                    <img class="rounded-circle" src="https://res.cloudinary.com/ksjl86/image/upload/v1691584723/janemike_bvwgnx.webp" alt="Image of bride and groom Jane & Mike on their wedding day">
                 </div>
             </div>
             <div class="row pt-2">
@@ -137,7 +139,7 @@
                     <p><em>"I was so pleased that I was able to find a truly unique dress that really reflected my personality. Samantha went to such lengths to listen to my long list of must-haves and helped me find the one!"</em></p>
                 </div>
                 <div class="brides-img col-12 col-sm-6 d-flex justify-content-center justify-content-sm-start">
-                    <img class="rounded-circle" src="https://res.cloudinary.com/ksjl86/image/upload/v1693650802/bride2_dp4xja.webp" alt="">
+                    <img class="rounded-circle" src="https://res.cloudinary.com/ksjl86/image/upload/v1693650802/bride2_dp4xja.webp" alt="Image of bride and groom Lizzie & Henry on their wedding day">
                 </div>
                 </div>
             </div>

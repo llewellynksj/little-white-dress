@@ -6,12 +6,15 @@
     <h1 class="text-center"><em>Our Bridal Community</em></h1>
     <div class="d-flex my-3 py-3 justify-content-center">
         <div class="flex-column">
-            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
-                    href="{% url 'my_recommendations' user.customer.id %}">My Contributions</a></button>
-            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
-                    href="{% url 'add_recommendations' user.customer.id %}">Add a Recommendation</a></button>
-            <button class="btn btn-outline-secondary mx-2 page-button"><a class="link-no-decor"
-                    href="{% url 'profile' user.customer.id %}">My Profile</a></button>
+            <a class="link-no-decor" href="{% url 'my_recommendations' user.customer.id %}">
+                <button class="btn btn-outline-secondary mx-2 page-button">My Contributions</button>
+            </a>
+            <a class="link-no-decor" href="{% url 'add_recommendations' user.customer.id %}">
+                <button class="btn btn-outline-secondary mx-2 page-button">Add a Recommendation</button>
+            </a>
+            <a class="link-no-decor" href="{% url 'profile' user.customer.id %}">
+                <button class="btn btn-outline-secondary mx-2 page-button">My Profile</button>
+            </a>
         </div>
     </div>
 
@@ -28,7 +31,7 @@
                                     <h3 class="link-no-decor text-uppercase">{{ item.type_of_recommendation }}</h3>
                                     <h3 class="link-no-decor">{{ item.title }}</h3>
                                     <p class="link-no-decor"><em>Location: {{ item.location }}</em></p>
-                                    <h4><a class="link-no-decor link-hover" href="http://{{ item.web_link }}" target="_blank" rel="noopener"><i class="fa-light fa-globe-pointer"></i> Visit Website</a></h4>
+                                    <a class="link-no-decor link-hover" href="http://{{ item.web_link }}" target="_blank" rel="noopener"><h4><i class="fa-light fa-globe-pointer"></i> Visit Website</h4></a>
                                     <p class="link-no-decor lead">{{ item.summary }}</p>
                                     <p class="link-no-decor"><em>Posted on: {{ item.date_posted }}</em></p>
                                     <p class="link-no-decor"><em>Posted by: {{ item.posted_by }}</em></p>
