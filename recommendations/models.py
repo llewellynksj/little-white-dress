@@ -36,7 +36,7 @@ class Recommendation(models.Model):
         default='www.google.com'
     )
     summary = models.TextField(
-        max_length=400,
+        max_length=250,
         help_text="Tell us a bit about why you're recommending this service"
     )
     date_posted = models.DateField(
@@ -52,4 +52,4 @@ class Recommendation(models.Model):
     )
 
     def __str__(self):
-        return self.title + self.user
+        return self.title
