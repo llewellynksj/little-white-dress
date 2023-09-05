@@ -3,41 +3,49 @@
 {% block content %}
 
 <div class="container-fluid">
-    <h1 class="text-center"><em>Contact</em></h1>
-
-    <!-- Contact Form -->
-    <div class="row location-section">
-        <!-- Address -->
-        <div class="col-12 col-md-4">
-            <div class="contact-information">
-                {% for item in details_list %}
-                    <h3>Address</h3>
-                    <p>{{ item.first_line_of_address }}<br>{{ item.city }}<br>{{ item.county }}<br>{{ item.postcode }}</p>
-                    <h4>Telephone</h4>
-                    <p>0{{ item.telephone }}</p>
-                    <h4>Email</h4>
-                    <p>{{ item.email }}</p>
-                {% endfor %}
-              </div>
+    <h1 class="text-center mb-3 pb-4"><em>Contact</em></h1>
+    <div class="contact-section pt-4">
+        <!-- Contact Form -->
+        <div class="row location-section">
+            <!-- Address -->
+            <div class="col-12 col-md-3">
+                <div class="contact-information pb-3 form-box">
+                    {% for item in details_list %}
+                        <h3>Address</h3>
+                        <p>
+                            {{ item.first_line_of_address }}
+                            <br>{{ item.second_line_address }}
+                            <br>{{ item.city }}
+                            <br>{{ item.county }}
+                            <br>{{ item.postcode }}
+                        </p>
+                        <h4>Telephone</h4>
+                        <p>0{{ item.telephone }}</p>
+                        <h4>Email</h4>
+                        <p>{{ item.email }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- Form -->
+            <div class="col-12 col-md-9">
+                <h3 class="form-box">Get in Touch</h3>
+                <form action="{% url 'contact_details' %}" method="POST">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <input type="text" class="form-control form-box" name="fullName" placeholder="Enter your full name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control form-box" name="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted form-text"><em>We'll never share your email with anyone else.</em></small>
+                    </div>
+                    <div class="form-group form-box">
+                        <textarea name="message" name="message" cols="60" rows="10" placeholder="Enter your message"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-secondary form-box" value="Send">
+                </form>
+            </div>
         </div>
-        <!-- Form -->
-        <div class="col-12 col-md-8">
-            <form action="{% url 'contact_details' %}" method="POST">
-                {% csrf_token %}
-                <div class="form-group">
-                    <input type="text" class="form-control" name="fullName" placeholder="Enter your full name">
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" name="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
-                </div>
-                <input type="submit" class="btn btn-secondary">
-            </form>
-        </div>
-    </div>
+    </div>  
 
     <!-- Find us section -->
     <div class="row location-section">

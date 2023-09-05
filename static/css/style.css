@@ -300,6 +300,33 @@ https://codepen.io/isabelc/pen/MmrJgx */
   }
 
 /* Contact Page styles */
+.contact-section {
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 10px;
+    /* border: 1px solid #252525; */
+    border-radius: 18px;
+    background-color: #FBF7F6;
+}
+
+.location-section {
+    margin-bottom: 30px;
+}
+
+.form-box {
+    margin: 8px;
+    max-width: 450px;
+}
+
+.form-text {
+    margin: 2px 8px 8px 8px;
+}
+
+textarea {
+    max-width: 100%;
+}
+
 iframe {
     position: relative;
     z-index: 1;
@@ -309,7 +336,7 @@ iframe {
 
 /* Footer styles */
 footer {
-    background-color: #FAF6F4;
+    background-color: #fff;
     position: absolute;
     right: 0;
     left: 0;

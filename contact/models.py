@@ -3,6 +3,8 @@ from django.db import models
 
 class ContactDetail(models.Model):
     first_line_of_address = models.CharField(max_length=200)
+    second_line_address = models.CharField(
+        max_length=200, default='Enter second line of address')
     city = models.CharField(max_length=50)
     county = models.CharField(max_length=50)
     postcode = models.CharField(max_length=15)
