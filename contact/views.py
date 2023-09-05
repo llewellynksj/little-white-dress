@@ -4,6 +4,7 @@ from django.urls import reverse_lazy, reverse
 from .models import ContactDetail, Enquiry
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib import messages
 
 
 def DisplayContact(request):
@@ -21,7 +22,7 @@ def DisplayContact(request):
         #     email_address,
         #     ['llewellyn.ksj@gmail.com'],
         # )
-
+        messages.success(request, ('Your message has been sent!'))
         return render(request, 'contact_details.html', {
             'details_list': details_list,
             'full_name': full_name,

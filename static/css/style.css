@@ -67,6 +67,21 @@ img {
     height: auto;
 }
 
+/* Messages */
+.message-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.close {
+    float: right;
+}
+
+.alert {
+    font-family: "Crimson Text", sans-serif;
+    font-size: 20px;
+}
+
 /* Hero style */
 .hero-container {
     padding: 0;
@@ -305,9 +320,9 @@ https://codepen.io/isabelc/pen/MmrJgx */
     margin: auto;
     margin-bottom: 30px;
     padding: 10px;
-    /* border: 1px solid #252525; */
+    border: 1px solid #252525;
     border-radius: 18px;
-    background-color: #FBF7F6;
+    /* background-color: #FBF7F6; */
 }
 
 .location-section {
