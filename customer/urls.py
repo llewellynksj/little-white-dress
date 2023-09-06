@@ -7,7 +7,7 @@ urlpatterns = [
         views.CustomerRegistration.as_view(),
         name='register'),
     path(
-        '<int:pk>/settings/',
+        'settings/',
         views.AccountSettings.as_view(),
         name='settings'),
     path(

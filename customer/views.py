@@ -74,16 +74,16 @@ class AccountSettings(SuccessMessageMixin, generic.UpdateView):
     """
     form_class = EditAccountSettingsForm
     template_name = 'registration/account_settings.html'
-    success_url = reverse_lazy('profile')
     success_message = 'Your account settings have been updated successfully'
 
     def get_object(self):
         return self.request.user
-    
+
     def form_valid(self, form):
         form.instance.user = self.request.user
         return super().form_valid(form)
-    
+
+    # Direct user to their Profile page when form submitted
     def get_success_url(self) -> str:
         return reverse_lazy('profile', kwargs={'pk': self.object.pk})
 
@@ -93,8 +93,8 @@ class UpdatePassword(SuccessMessageMixin, PasswordChangeView):
     Links to custom password form
     """
     form_class = UpdatePasswordForm
-    success_url = reverse_lazy('profile')
-    success_message = 'Your password was updated successfully'
+    success_url = reverse_lazy('settings')
+    success_message = 'Your password has been updated successfully'
 
 
 class CustomerRegistration(SuccessMessageMixin, generic.CreateView):
@@ -104,4 +104,4 @@ class CustomerRegistration(SuccessMessageMixin, generic.CreateView):
     form_class = RegistrationForm
     template_name = 'registration/registration.html'
     success_url = reverse_lazy('login')
-    success_message = "Your registration was successful"
+    success_message = 'Your registration was successful'
