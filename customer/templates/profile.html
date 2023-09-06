@@ -27,7 +27,7 @@
             {% endif %}
         </div>
         <div>
-            <a class="link-no-decor" href="{% url 'settings' %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
+            <a class="link-no-decor" href="{% url 'settings' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
         </div>
 
         <!-- Favourites -->

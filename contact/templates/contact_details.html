@@ -3,13 +3,13 @@
 {% block content %}
 
 <div class="container-fluid">
-    <h1 class="text-center mb-3 pb-4"><em>Contact</em></h1>
+    <h1 class="text-center mb-3 pb-1"><em>Contact</em></h1>
     <div class="contact-section pt-4">
         <!-- Contact Form -->
         <div class="row location-section">
             <!-- Address -->
             <div class="col-12 col-md-3">
-                <div class="contact-information pb-3 form-box">
+                <div class="contact-information form-box">
                     {% for item in details_list %}
                         <h3>Address</h3>
                         <p>
@@ -39,7 +39,7 @@
                         <small id="emailHelp" class="form-text text-muted form-text"><em>We'll never share your email with anyone else.</em></small>
                     </div>
                     <div class="form-group form-box">
-                        <textarea name="message" name="message" cols="60" rows="10" placeholder="Enter your message"></textarea>
+                        <textarea name="message" name="message" cols="80" rows="10" placeholder="Enter your message"></textarea>
                     </div>
                     <input type="submit" class="btn btn-secondary form-box" value="Send">
                 </form>

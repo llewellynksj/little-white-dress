@@ -320,7 +320,7 @@ https://codepen.io/isabelc/pen/MmrJgx */
     margin: auto;
     margin-bottom: 30px;
     padding: 10px;
-    border: 1px solid #252525;
+    /* border: 1px solid #252525; */
     border-radius: 18px;
     /* background-color: #FBF7F6; */
 }
@@ -331,7 +331,7 @@ https://codepen.io/isabelc/pen/MmrJgx */
 
 .form-box {
     margin: 8px;
-    max-width: 450px;
+    max-width: 600px;
 }
 
 .form-text {
@@ -399,6 +399,12 @@ footer {
 
     iframe {
         height: 460px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-information {
+        padding-top: 20px;
     }
 }
 
