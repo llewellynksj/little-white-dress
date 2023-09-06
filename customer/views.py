@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.views import generic
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.contrib.auth.forms import PasswordChangeForm
@@ -9,7 +9,6 @@ from .forms import EditAccountSettingsForm, CreateNewProfileForm
 from .forms import UpdateProfileForm
 from django.contrib.auth.models import User
 from .models import Customer
-from django.http import HttpResponseRedirect
 
 
 class UpdateCustomerProfile(generic.UpdateView):
@@ -24,6 +23,7 @@ class UpdateCustomerProfile(generic.UpdateView):
         form.instance.user = self.request.user
         return super().form_valid(form)
 
+    # Direct user to their Profile page when form submitted
     def get_success_url(self) -> str:
         return reverse_lazy('profile', kwargs={'pk': self.object.pk})
 

@@ -1,6 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.urls import reverse_lazy
-from django.http import HttpResponseRedirect
 from django.views import generic
 from .models import Recommendation
 from .forms import AddNewRecommendationForm
