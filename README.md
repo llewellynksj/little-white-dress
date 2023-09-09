@@ -109,22 +109,33 @@ The site has been built with a mobile-first responsive design. The needs of the 
 ### **Colour Scheme**
 The colour scheme for this site has been kept fairly simple with just a couple of really key shades. This is in keeping with the sophisticated and clean brand identity.
 
-The main colour (F4E9E5) was selected as it reflects the soft feminine feel connected to the word 'bridal'.
+The main colour (F4E9E5) was selected as it reflects the soft feminine feel that relates to being 'bridal'.
 
 The darker colour (4A4A4F) was used as the font colour for the logo.
+
+The colour palette was created using the [Coolors](https://coolors.co/) website.
 
 ![Image of colour palette](readme_assets/lwd_palette.webp)
 
 <br>
 
 ### **Typography**
+All fonts were sourced from [Google Fonts](https://fonts.google.com/)
+#### Logo
+The font used for the logo is 'Julius Sans One' and was 
 
+![Image of the Little White Dress logo](readme_assets/lwd_logo.webp)
+
+#### Web Content
+The font used for the body content throughout the site is called 'Crimson Text'
 
 
 <br>
 
 ### **Imagery**
+All images were sourced from [Adobe Stock](https://stock.adobe.com/uk/) and [iStock Photo](https://www.istockphoto.com/), with the exception of the owner image on the contact page. This image is a personal image belonging to Samantha Landy, who gave permission for it's use on this site.
 
+Images have been specifically chosen to be in keeping with the brand identity. They are light, clean and professional.
 
 <br>
 
