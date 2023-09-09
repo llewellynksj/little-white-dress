@@ -107,7 +107,13 @@ The site has been built with a mobile-first responsive design. The needs of the 
 
 ## Design
 ### **Colour Scheme**
+The colour scheme for this site has been kept fairly simple with just a couple of really key shades. This is in keeping with the sophisticated and clean brand identity.
 
+The main colour (F4E9E5) was selected as it reflects the soft feminine feel connected to the word 'bridal'.
+
+The darker colour (4A4A4F) was used as the font colour for the logo.
+
+![Image of colour palette](readme_assets/lwd_palette.webp)
 
 <br>
 
