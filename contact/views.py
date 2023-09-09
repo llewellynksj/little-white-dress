@@ -2,23 +2,25 @@ from django.shortcuts import render
 from django.views import generic
 from .models import ContactDetail, Enquiry
 from django.contrib import messages
+from .forms import EnquiryForm
 
 
 def DisplayContact(request):
     details_list = ContactDetail.objects.all()
 
     if request.method == "POST":
-        full_name = request.POST['fullName']
-        email_address = request.POST['emailAddress']
-        message = request.POST['message']
-        messages.success(request, ('Your message has been sent!'))
-        return render(request, 'contact_details.html', {
-            'details_list': details_list,
-            'full_name': full_name,
-        })
+        form = EnquiryForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, ('Your message has been sent!'))
+            return render(request, 'contact_details.html', {
+                'details_list': details_list,
+                'full_name': full_name,
+            })
     else:
+        form = EnquiryForm()
         return render(
-            request, 'contact_details.html', {'details_list': details_list})
+            request, 'contact_details.html', {'details_list': details_list, 'form': form})
 
 
 def DisplayAbout(request):

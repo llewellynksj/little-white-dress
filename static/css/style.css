@@ -319,10 +319,8 @@ https://codepen.io/isabelc/pen/MmrJgx */
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
-    padding: 10px;
-    /* border: 1px solid #252525; */
+    /* padding: 10px; */
     border-radius: 18px;
-    /* background-color: #FBF7F6; */
 }
 
 .location-section {
@@ -336,10 +334,6 @@ https://codepen.io/isabelc/pen/MmrJgx */
 
 .form-text {
     margin: 2px 8px 8px 8px;
-}
-
-textarea {
-    max-width: 100%;
 }
 
 iframe {

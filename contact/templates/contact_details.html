@@ -5,8 +5,8 @@
 <div class="container-fluid">
     <h1 class="text-center mb-3 pb-1"><em>Contact</em></h1>
     <div class="contact-section pt-4">
-        <!-- Contact Form -->
         <div class="row location-section">
+
             <!-- Address -->
             <div class="col-12 col-md-3">
                 <div class="contact-information form-box">
@@ -26,12 +26,14 @@
                     {% endfor %}
                 </div>
             </div>
+
             <!-- Form -->
             <div class="col-12 col-md-9">
                 <h3 class="form-box">Get in Touch</h3>
                 <form action="{% url 'contact_details' %}" method="POST">
                     {% csrf_token %}
-                    <div class="form-group">
+                    {{ form.as_p }}
+                    <!-- <div class="form-group">
                         <input type="text" class="form-control form-box" name="fullName" placeholder="Enter your full name">
                     </div>
                     <div class="form-group">
@@ -40,11 +42,12 @@
                     </div>
                     <div class="form-group form-box">
                         <textarea name="message" name="message" cols="80" rows="10" placeholder="Enter your message"></textarea>
-                    </div>
+                    </div> -->
                     <input type="submit" class="btn btn-secondary form-box" value="Send">
                 </form>
             </div>
         </div>
+        
     </div>  
 
     <!-- Find us section -->
