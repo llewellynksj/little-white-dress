@@ -1,6 +1,8 @@
 # Little White Dress
 
-Summary of site
+Little White Dress (LWD) is a website developed as part of a Portfolio Project for my Full Stack Software Development course delivered by Code Institute. The idea was born out of a real-world need; a close friend who is a wedding planner with a dream to open their own wedding dress store.
+
+A visitor to the LWD website can easily browse the products on sale, make a booking to attend the store and try on dresses, and join a community of brides who share recommendations.
 
 ![Image of ]()
 
@@ -57,16 +59,24 @@ Summary of site
 ## User Experience (UX)
 ### **Purpose**
 
-Enter purpose description 
+As the Little White Dress website has been created for a business *idea*, the UX and UI have been developed closely with the prospective business owner's input throughout. A strong brand identity has been central to decisions around typography, imagery and colours, to create a feeling of sophisticated luxury but with a welcoming warmth.
+
+The main purposes of the webpage is to provide visitors with the ability to view products for sale, book appointments, and join a community of other brides.
+
+The site has been built with a mobile-first responsive design. The needs of the user and the brand identity have been kept at the forefront of the design process.
+
 
 <br>
 
 ### User Stories
 ### **Client Goals**
 - As site admin I want to be able to upload and remove any dress products from the site
+- As a site admin I want to be able to view any enquiries sent via the website contact form
 - As site admin I want to be able to view any bookings by customers to come and try on dresses
 - As site admin I want to be able to amend any bookings by customers to come and try on dresses
 - As site admin I want to be able to cancel any bookings by customers to come and try on dresses
+- The website should create a strong brand identity
+- The website should be responsive across different devices
 
 <br>
 
@@ -77,6 +87,7 @@ Enter purpose description
 - As a first time user I want to be able to contact the store
 - As a first time user I want to be able to filter my search by dress style and price
 - As a first time user I want to view details about the dress such as price and available sizes
+- As a first time user I want to be able to find recommendations for other wedding services in the bridal community
 
 
 <br>
@@ -86,6 +97,7 @@ Enter purpose description
 - As a returning user I want to view any current bookings I have to try on dresses
 - As a returning user I want to amend any current bookings I have to try on dresses
 - As a returning user I want to cancel any current bookings I have to try on dresses
+- As a returning user I want to be able to post recommendations for other wedding services to the bridal community
 
 
 <br>
