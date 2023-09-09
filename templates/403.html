@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="text-center pt-4">
+    <h1>Oops, you don't have the necessary permissions to access this page!</h1>
+    <h1 class="mb-4 pb-4">403 - forbidden</h1>
+
+    <a class="" aria-current="page" href="{% url 'index' %}"><button>Home</button></a>
+</div>
+
+{% endblock %}
