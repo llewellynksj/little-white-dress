@@ -13,14 +13,11 @@ def DisplayContact(request):
         if form.is_valid():
             form.save()
             messages.success(request, ('Your message has been sent!'))
-            return render(request, 'contact_details.html', {
-                'details_list': details_list,
-                'full_name': full_name,
-            })
-    else:
-        form = EnquiryForm()
-        return render(
-            request, 'contact_details.html', {'details_list': details_list, 'form': form})
+
+    form = EnquiryForm()
+    return render(
+        request, 'contact_details.html', {
+            'details_list': details_list, 'form': form})
 
 
 def DisplayAbout(request):
