@@ -142,27 +142,49 @@ Images have been specifically chosen to be in keeping with the brand identity. T
 ### **Wireframes**
 [Balsamiq Wireframing Software](https://balsamiq.com/) was used to create the wireframes.
 <details>
-<summary>Homepage (mobile)</summary>
+<summary>Homepage</summary>
 
-![Wireframe image of homepage design on mobile]()
-</details>
-<details>
-<summary>Homepage (desktop)</summary>
-
-![Wireframe image of homepage design on desktop]()
-</details>
+![Wireframe image of homepage design](readme_assets/index1.webp)
 
 <br>
 
-<details>
-<summary>Next Page (mobile)</summary>
-
-![Wireframe image of next page design on mobile]()
+![Wireframe image of homepage design](readme_assets/index2.webp)
 </details>
-<details>
-<summary>Next Page (desktop)</summary>
 
-![Wireframe image of next page design on desktop]()
+<details>
+<summary>About</summary>
+
+![Wireframe image of about page design](readme_assets/about.webp)
+</details>
+
+<details>
+<summary>Contact</summary>
+
+![Wireframe image of contact page design](readme_assets/contact.webp)
+</details>
+
+<details>
+<summary>Products</summary>
+
+![Wireframe image of products page design](readme_assets/products.webp)
+</details>
+
+<details>
+<summary>Product Details</summary>
+
+![Wireframe image of product details page design](readme_assets/product_detail.webp)
+</details>
+
+<details>
+<summary>Profile</summary>
+
+![Wireframe image of profile page design](readme_assets/profile.webp)
+</details>
+
+<details>
+<summary>Appointments</summary>
+
+![Wireframe image of appointments page design](readme_assets/appointments.webp)
 </details>
 
 <br>
