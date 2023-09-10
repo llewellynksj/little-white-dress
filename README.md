@@ -26,6 +26,13 @@ A visitor to the LWD website can easily browse the products on sale, make a book
 - [Imagery](#imagery)
 - [Wireframes](#wireframes)
 
+### [Database and Logic](#database-and-logic-1)
+- [User Journey](#user-journey)
+- [Epics](#epics)
+- [Kanban Board](#kanban-board)
+- [Database](#database)
+- [Project and App Structure](#project-and-app-structure)
+
 ### [Features](#features-1)
 - [Existing Features](#existing-features)
   - [Homepage](#homepage)
@@ -191,6 +198,28 @@ Images have been specifically chosen to be in keeping with the brand identity. T
 
 
 For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_assets/wireframes_all.pdf).
+
+----
+
+## Database and Logic
+### **User Journey**
+![Image of user journey map](readme_assets/lwd_user_journey.webp)
+
+<br>
+
+![Image of admin journey map](readme_assets/lwd_admin_journey.webp)
+
+### **Epics**
+![Image of epics chart](readme_assets/lwd_epics.webp)
+
+### **Kanban Board**
+![Image of kanban project hub from Github]()
+
+### **Database**
+![Image of entity relationship diagram](readme_assets/lwd_erd.webp)
+
+### **Project and App Structure**
+
 
 ----
 
