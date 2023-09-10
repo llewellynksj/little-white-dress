@@ -190,7 +190,7 @@ Images have been specifically chosen to be in keeping with the brand identity. T
 <br>
 
 
-For a full PDF of all wireframes (mobile, tablet, desktop) click [here]().
+For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_assets/wireframes_all.pdf).
 
 ----
 
