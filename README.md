@@ -213,7 +213,7 @@ For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_a
 ![Image of epics chart](readme_assets/lwd_epics.webp)
 
 ### **Kanban Board**
-![Image of kanban project hub from Github]()
+![Image of kanban project hub from Github](readme_assets/kanban.webp)
 
 ### **Database**
 ![Image of entity relationship diagram](readme_assets/lwd_erd.webp)
