@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+    <div class="container-fluid">
+        <h1 class="section-title">My Appointments</h1>
+        <div class="d-flex my-3 py-3 justify-content-center">
+            <div class="flex-column">
+                <a class="link-no-decor" href="{% url 'book' user.customer.id %}">
+                    <button class="btn btn-outline-secondary mx-2 page-button">Make a new Appointment</button>
+                </a>
+                <a class="link-no-decor" href="{% url 'profile' user.customer.id %}">
+                    <button class="btn btn-outline-secondary mx-2 page-button">My Profile</button>
+                </a>
+            </div>
+        </div>
+        <div class="col-12 community-section">
+            {% if not user_appointments %}
+                <p class="lead text-center">You do not currently have any appointments booked</p>
+            {% else %}
+                <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
+                    {% for item in user_appointments %}
+                    <div class="card-body m-4">
+                        <div class="p-4">
+                            <h3 class="link-no-decor text-uppercase">{{ item.date }}, {{ item.time }}</h3>
+                            <h3 class="link-no-decor">Date of Wedding: {{ item.date_of_wedding}}</h3>
+                            <h3 class="link-no-decor">Number attending appointment: {{ item.no_in_party }}</h3>
+                        </div>
+                        {% if user.id == item.user.id %}
+                        <a class="link-no-decor" href="{% url 'edit_appointment' item.pk %}"><button class="btn btn-outline-secondary mb-4 mx-4">Reschedule</button></a>
+                        <a href="{% url 'cancel' item.pk %}" class="link-no-decor"><button class="btn btn-outline-danger mb-4">Cancel</button></a>
+                        {% endif %}
+                    </div>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+        </div>
+{% else %}
+    You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
+{% endif %}
+    </div>
+
+{% endblock %}

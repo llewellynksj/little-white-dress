@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+        <div class="container-fluid body-content">
+            <h1>Cancel</h1>
+            {% if user.id == appointment.user.id %}
+                <h3>WARNING: You are cancelling your appointment for <em>{{ appointment.date }}</em> at <em>{{ appointment.time }}</em></h3>
+                <div class="form-group">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <h3>Are you sure you want to cancel this appointment?</h3>
+                        <button class="btn btn-danger">CONFIRM</button>
+                    </form>
+                </div>
+            {% else %}
+                <p class="lead">You are not able to cancel this appointment as you are not the owner</p>
+        </div>
+            {% endif %}
+{% else %}
+    You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
+{% endif %}
+
+{% endblock %}

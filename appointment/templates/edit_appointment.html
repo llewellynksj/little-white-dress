@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if user.is_authenticated %}
+        <div class="container-fluid body-content">
+            <h1>Reschedule Appointment</h1>
+            {% if user.id == appointment.user.id %}
+                <div class="form-group">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        
+                        <button class="btn btn-secondary">Reschedule</button>
+                    </form>
+                </div>
+            {% else %}
+            <p class="lead">You are not able to reschedule this appointment as you are not the owner</p>
+        </div>
+            {% endif %}
+{% else %}
+    You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
+{% endif %}
+
+{% endblock %}
