@@ -66,12 +66,11 @@ A visitor to the LWD website can easily browse the products on sale, make a book
 ## User Experience (UX)
 ### **Purpose**
 
-As the Little White Dress website has been created for a business *idea*, the UX and UI have been developed closely with the prospective business owner's input throughout. A strong brand identity has been central to decisions around typography, imagery and colours, to create a feeling of sophisticated luxury but with a welcoming warmth.
+As the Little White Dress website has been created for a business *idea*, the UX and UI have been developed closely with the prospective business owner's input throughout. A strong brand identity has been central to decisions around typography, imagery, and colours to create a feeling of sophisticated luxury but with a welcoming warmth.
 
 The main purposes of the webpage is to provide visitors with the ability to view products for sale, book appointments, and join a community of other brides.
 
 The site has been built with a mobile-first responsive design. The needs of the user and the brand identity have been kept at the forefront of the design process.
-
 
 <br>
 
@@ -129,7 +128,7 @@ The colour palette was created using the [Coolors](https://coolors.co/) website.
 ### **Typography**
 All fonts were sourced from [Google Fonts](https://fonts.google.com/)
 #### Logo
-The font used for the logo is 'Julius Sans One' and was 
+The font used for the logo is 'Julius Sans One'
 
 ![Image of the Little White Dress logo](readme_assets/lwd_logo.webp)
 
