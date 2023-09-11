@@ -8,4 +8,5 @@ urlpatterns = [
     path('customers/', include('customer.urls')),
     path('community/', include('recommendations.urls')),
     path('contact/', include('contact.urls')),
+    path('appointment/', include('appointment.urls')),
 ]
