@@ -21,14 +21,15 @@ class Appointment(models.Model):
     )
     time = models.CharField(
         max_length=20,
-        choices=TIME_SLOTS
+        choices=TIME_SLOTS,
+        help_text='All appointments are allocated 2 hours'
     )
     date_of_wedding = models.DateField(
         default=datetime.date.today
     )
     no_in_party = models.PositiveSmallIntegerField(
-        help_text='Please note max number of guests is 5 (not including yourself)'
+        help_text='Please note max number of additional guests is 5'
     )
 
     def __str__(self):
-        return f"Appointment: {self.date} {self.time} - {self.user.first_name} {self.user.last_name}"
+        return f'{self.date} {self.time} - {self.user.username}'

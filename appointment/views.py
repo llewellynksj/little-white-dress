@@ -11,7 +11,7 @@ class DeleteAppointment(generic.DeleteView):
     """
     model = Appointment
     template_name = 'cancel.html'
-    
+
     def get_success_url(self) -> str:
         return reverse_lazy(
             'my_appointments', kwargs={'pk': self.object.pk}
