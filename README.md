@@ -31,7 +31,15 @@ A visitor to the LWD website can easily browse the products on sale, make a book
 - [Epics](#epics)
 - [Kanban Board](#kanban-board)
 - [Database](#database)
-- [Project and App Structure](#project-and-app-structure)
+
+### [Project Structure](#project-structure-1)
+- [Apps](#apps)
+  - [Product](#products)
+  - [Customer](#customer)
+  - [Contact](#contact)
+  - [Recommendations](#recommendations)
+  - [Appointment](#appointment)
+
 
 ### [Features](#features-1)
 - [Existing Features](#existing-features)
@@ -217,8 +225,77 @@ For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_a
 ### **Database**
 ![Image of entity relationship diagram](readme_assets/lwd_erd.webp)
 
-### **Project and App Structure**
+----
 
+## Project Structure
+### **Apps**
+
+#### Product
+What is the app for? 
+
+  * Holds the database for any products displayed on the website
+  * Displays the homepage and various product views
+  * Adds liked products to customer record
+
+Models:
+
+PRODUCT Model
+
+CATEGORY Model
+
+<br>
+
+#### Customer
+What is the app for? 
+
+  * Holds the database for any products displayed on the website
+  * Displays the homepage and various product views
+  * Adds liked products to customer record
+
+Models:
+
+CUSTOMER Model
+
+<br>
+
+#### Contact
+What is the app for? 
+
+  * Holds the database for any products displayed on the website
+  * Displays the homepage and various product views
+  * Adds liked products to customer record
+
+Models:
+
+CONTACTDETAIL Model
+
+ENQUIRY Model
+
+<br>
+
+#### Recommendations
+What is the app for? 
+
+  * Holds the database for any products displayed on the website
+  * Displays the homepage and various product views
+  * Adds liked products to customer record
+
+Models:
+
+RECOMMENDATION Model
+
+<br>
+
+#### Appointment
+What is the app for? 
+
+  * Holds the database for any products displayed on the website
+  * Displays the homepage and various product views
+  * Adds liked products to customer record
+
+Models:
+
+APPOINTMENT Model
 
 ----
 
