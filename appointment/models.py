@@ -1,6 +1,9 @@
 from django.db import models
+from django.core.exceptions import ValidationError
+from django.core.validators import MaxValueValidator
 from django.contrib.auth.models import User
 import datetime
+from datetime import datetime
 
 
 class Appointment(models.Model):
@@ -17,18 +20,29 @@ class Appointment(models.Model):
         on_delete=models.CASCADE
     )
     date = models.DateField(
-        default=datetime.date.today
+        default=datetime.today
     )
+
+    def validate_date(date):
+        if date < datetime.today():
+            raise ValidationError(
+                'Date cannot be in the past. Please try again.')
+    date = models.DateField(
+        default=datetime.today,
+        validators=[validate_date],
+    )
+
     time = models.CharField(
         max_length=20,
         choices=TIME_SLOTS,
         help_text='All appointments are allocated 2 hours'
     )
     date_of_wedding = models.DateField(
-        default=datetime.date.today
+        default=datetime.today
     )
     no_in_party = models.PositiveSmallIntegerField(
-        help_text='Please note max number of additional guests is 5'
+        help_text='Please note max number of additional guests is 5',
+        validators=[MaxValueValidator(5)]
     )
 
     def __str__(self):
