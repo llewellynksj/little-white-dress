@@ -230,8 +230,7 @@ For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_a
 ## Project Structure
 ### **Apps**
 
-#### Product
-What is the app for? 
+#### PRODUCT
 
   * Holds the database for any products displayed on the website
   * Displays the homepage and various product views
@@ -245,12 +244,11 @@ CATEGORY Model
 
 <br>
 
-#### Customer
-What is the app for? 
+#### CUSTOMER
 
-  * Holds the database for any products displayed on the website
-  * Displays the homepage and various product views
-  * Adds liked products to customer record
+  * Holds the database for all customer profiles
+  * Displays the customer profile pages and all update pages related to the user
+  * Holds the templates for all customer and user related pages including registration
 
 Models:
 
@@ -258,12 +256,10 @@ CUSTOMER Model
 
 <br>
 
-#### Contact
-What is the app for? 
+#### CONTACT
 
-  * Holds the database for any products displayed on the website
-  * Displays the homepage and various product views
-  * Adds liked products to customer record
+  * Holds the database for the store's contact details and for any enquiries made via the contact form
+  * Displays the contact page
 
 Models:
 
@@ -273,12 +269,15 @@ ENQUIRY Model
 
 <br>
 
-#### Recommendations
-What is the app for? 
+#### RECOMMENDATIONS
 
-  * Holds the database for any products displayed on the website
-  * Displays the homepage and various product views
-  * Adds liked products to customer record
+  * Holds the database for all recommendations made in the brides community section of the website
+  * Displays all recommendations including specific recommendations to logged in users
+  * Enables CRUD functionality:
+    - Create a Recommendation
+    - Read all community Recommendations
+    - Update and amend own Recommendations
+    - Delete own Recommendations
 
 Models:
 
@@ -286,12 +285,15 @@ RECOMMENDATION Model
 
 <br>
 
-#### Appointment
-What is the app for? 
+#### APPOINTMENT
 
-  * Holds the database for any products displayed on the website
-  * Displays the homepage and various product views
-  * Adds liked products to customer record
+  * Holds the database for all appointments that are made
+  * Displays the appointment booking and confirmation pages
+  * Enables CRUD functionality:
+    - Create an Appointment
+    - Read/view all booked Appointments
+    - Update and reschedule Appointments
+    - Delete/cancel Appointments
 
 Models:
 
