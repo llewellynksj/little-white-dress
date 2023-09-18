@@ -5,7 +5,7 @@
         <div class="container-fluid body-content">
             <h1>Cancel</h1>
             {% if user.id == appointment.user.id %}
-                <h3>WARNING: You are cancelling your appointment for <em>{{ appointment.date }}</em> at <em>{{ appointment.time }}</em></h3>
+                <h3>WARNING: You are cancelling your appointment for <em>{{ appointment.booking_date }}</em> at <em>{{ appointment.time }}</em></h3>
                 <div class="form-group">
                     <form method="POST">
                         {% csrf_token %}

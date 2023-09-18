@@ -1,4 +1,7 @@
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
+import datetime
+from datetime import datetime
 from django import forms
 from .models import Appointment
 
@@ -7,13 +10,13 @@ class MakeBookingForm(forms.ModelForm):
     class Meta:
         model = Appointment
         fields = (
-            'date',
+            'booking_date',
             'time',
             'date_of_wedding',
             'no_in_party',
         )
         widgets = {
-            'date': forms.DateInput(
+            'booking_date': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}),
             'time': forms.Select(
                 attrs={'class': 'form-control', 'type': 'select'}),

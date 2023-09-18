@@ -2,6 +2,7 @@ from django.db import models
 from django.core.exceptions import ValidationError
 from django.core.validators import MaxValueValidator
 from django.contrib.auth.models import User
+from django.utils import timezone
 import datetime
 from datetime import datetime
 
@@ -14,24 +15,20 @@ class Appointment(models.Model):
         ('16:30', '16:30'),
     ]
 
+    def validate_weekday(booking_date):
+        if not booking_date == datetime.weekday:
+            raise ValidationError(
+                "LWD is not open at the weekend. Please choose another day")
+
     user = models.ForeignKey(
         User,
         null=True,
         on_delete=models.CASCADE
     )
-    date = models.DateField(
-        default=datetime.today
-    )
-
-    def validate_date(date):
-        if date < datetime.today():
-            raise ValidationError(
-                'Date cannot be in the past. Please try again.')
-    date = models.DateField(
+    booking_date = models.DateField(
         default=datetime.today,
-        validators=[validate_date],
+        validators=[validate_weekday]
     )
-
     time = models.CharField(
         max_length=20,
         choices=TIME_SLOTS,
