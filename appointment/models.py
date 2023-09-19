@@ -18,15 +18,19 @@ class Appointment(models.Model):
         ('16:30', '16:30'),
     ]
 
-    # Raises validation error if user has selected a day the store is closed
     def validate_weekday(booking_date):
+        """
+        Raises a validation error if user has selected a day the store is closed
+        """
         date = booking_date.weekday()
         if date == 5 or date == 6:
             raise ValidationError(
                 "LWD is not open at the weekend. Please choose another day")
 
-    # Rasies validation error if the user has selected a date in the past
     def validate_future_date(booking_date):
+        """
+        Rasies a validation error if the user has selected a date in the past
+        """
         if booking_date < datetime.today().date():
             raise ValidationError('Date cannot be in the past')
 
@@ -60,4 +64,7 @@ class Appointment(models.Model):
         ordering = ["booking_date"]
 
     def __str__(self):
+        """
+        Function that returns main booking objects as a string
+        """
         return f'{self.date} {self.time} - {self.user.username}'
