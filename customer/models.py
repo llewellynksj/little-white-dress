@@ -4,6 +4,9 @@ from cloudinary.models import CloudinaryField
 
 
 class Customer(models.Model):
+    """
+    Custom model to provide additional profile details for customer
+    """
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     profile_pic = CloudinaryField('image', default='placeholder')
     date_of_wedding = models.DateField(default='2024-12-31')
