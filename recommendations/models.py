@@ -3,6 +3,10 @@ from django.contrib.auth.models import User
 
 
 class Recommendation(models.Model):
+    """
+    Recommendation model holds all details entered bu user
+    in the AddRecommendation form
+    """
     TYPES = [
         ('Music', 'Music'),
         ('Vehicles', 'Vehicles'),

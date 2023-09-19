@@ -4,6 +4,10 @@ from .models import Recommendation
 
 
 class AddNewRecommendationForm(forms.ModelForm):
+    """
+    Links to Recommendation model
+    Gets recommendation details from user
+    """
     class Meta:
         model = Recommendation
         fields = (
