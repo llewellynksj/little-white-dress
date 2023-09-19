@@ -40,6 +40,11 @@ class MakeAppointment(generic.CreateView):
     form_class = MakeBookingForm
     template_name = 'book.html'
 
+    def check_availability(self):
+        queryset = Appointment.objects.filter(
+            booking_date=self.booking_date).value_list('time')
+        print(queryset)
+
     # Make the user id available to be able to be saved to the form
     # Code from Codemy 'Profile Account Creation - Django Blog #32' video:
     # https://bit.ly/44Ymcjg

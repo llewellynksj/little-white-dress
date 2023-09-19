@@ -7,6 +7,10 @@ from datetime import datetime
 
 
 class Appointment(models.Model):
+    """
+    Appointment Model reflects database of booked appointments
+    Links to MakeBookingForm
+    """
     TIME_SLOTS = [
         ('09:00', '09:00'),
         ('11:30', '11:30'),
@@ -26,16 +30,13 @@ class Appointment(models.Model):
         if booking_date < datetime.today().date():
             raise ValidationError('Date cannot be in the past')
 
-    # Raises a validation error if all time slots on that
-    # date are already booked
-
     user = models.ForeignKey(
         User,
         null=True,
         on_delete=models.CASCADE
     )
     booking_date = models.DateField(
-        validators=[validate_weekday, validate_future_date]
+        validators=[validate_weekday, validate_future_date],
     )
     time = models.CharField(
         max_length=20,
@@ -49,6 +50,14 @@ class Appointment(models.Model):
         help_text='Please note max number of additional guests is 5',
         validators=[MaxValueValidator(5)]
     )
+
+    class Meta:
+        """
+        Metadata Class Container
+        Checks the booking date and time are not already booked
+        """
+        unique_together = ('booking_date', 'time')
+        ordering = ["booking_date"]
 
     def __str__(self):
         return f'{self.date} {self.time} - {self.user.username}'
