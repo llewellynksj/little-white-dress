@@ -7,6 +7,10 @@ from .models import Appointment
 
 
 class MakeBookingForm(forms.ModelForm):
+    """
+    Booking Form to get booking information
+    for appointment model from user
+    """
     class Meta:
         model = Appointment
         fields = (
