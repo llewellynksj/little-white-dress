@@ -20,10 +20,11 @@ class Appointment(models.Model):
 
     def validate_weekday(booking_date):
         """
-        Raises a validation error if user has selected a day the store is closed
+        Raises a validation error if user has
+        selected a day the store is closed (Sun, Mon, Tues)
         """
         date = booking_date.weekday()
-        if date == 5 or date == 6:
+        if date == 6 or date == 0 or date == 1:
             raise ValidationError(
                 "LWD is not open at the weekend. Please choose another day")
 
