@@ -68,4 +68,5 @@ class Appointment(models.Model):
         """
         Function that returns main booking objects as a string
         """
-        return f'{self.date} {self.time} - {self.user.username}'
+        return f'{self.booking_date} {self.time}\
+             - {self.user.first_name} {self.user.last_name}'
