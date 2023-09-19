@@ -6,6 +6,9 @@ from .models import Customer
 
 
 class UpdateProfileForm(forms.ModelForm):
+    """
+    Update custom profile details linked to Customer model
+    """
     class Meta:
         model = Customer
         fields = ('profile_pic', 'date_of_wedding', 'website_url')
@@ -20,6 +23,9 @@ class UpdateProfileForm(forms.ModelForm):
 
 
 class CreateNewProfileForm(forms.ModelForm):
+    """
+    Create custom profile linked to Customer model
+    """
     class Meta:
         model = Customer
         fields = ('profile_pic', 'date_of_wedding', 'website_url')
@@ -34,6 +40,9 @@ class CreateNewProfileForm(forms.ModelForm):
 
 
 class EditAccountSettingsForm(UserChangeForm):
+    """
+    Form to edit account details on User model
+    """
     email = forms.EmailField(widget=forms.EmailInput(
         attrs={'class': 'form-control'}))
     first_name = forms.CharField(max_length=100, widget=forms.TextInput(
@@ -49,6 +58,9 @@ class EditAccountSettingsForm(UserChangeForm):
 
 
 class UpdatePasswordForm(PasswordChangeForm):
+    """
+    Update password form
+    """
     old_password = forms.CharField(widget=forms.PasswordInput(
         attrs={'class': 'form-control', 'type': 'password'}))
     new_password1 = forms.CharField(max_length=100, widget=forms.PasswordInput(
@@ -62,6 +74,9 @@ class UpdatePasswordForm(PasswordChangeForm):
 
 
 class RegistrationForm(UserCreationForm):
+    """
+    Custom registration form
+    """
     email = forms.EmailField(
         widget=forms.EmailInput(
             attrs={'class': 'form-control'}))

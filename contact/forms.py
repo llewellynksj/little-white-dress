@@ -4,6 +4,9 @@ from .models import Enquiry
 
 
 class EnquiryForm(ModelForm):
+    """
+    Contact Form links with Enquiry model
+    """
     class Meta:
         model = Enquiry
         fields = ('full_name', 'email', 'message')

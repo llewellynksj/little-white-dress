@@ -6,6 +6,13 @@ from .forms import EnquiryForm
 
 
 def DisplayContact(request):
+    """
+    Displays the Contact page
+    Pulls contact details from the ContactDetails model and
+    displays on page
+    Validates contact form and saves
+    Sends email of contact form
+    """
     details_list = ContactDetail.objects.all()
 
     if request.method == "POST":

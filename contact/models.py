@@ -3,6 +3,10 @@ from django.core.validators import EmailValidator
 
 
 class ContactDetail(models.Model):
+    """
+    ContactDetail model allows admin to add and
+    update store address, phone number and email address
+    """
     first_line_of_address = models.CharField(max_length=200)
     second_line_address = models.CharField(
         max_length=200, default='Enter second line of address')
@@ -17,6 +21,9 @@ class ContactDetail(models.Model):
 
 
 class Enquiry(models.Model):
+    """
+    Enquiry model saves contact form submissions
+    """
     full_name = models.CharField(max_length=100)
     email = models.EmailField(validators=[EmailValidator])
     message = models.TextField(max_length=800)
