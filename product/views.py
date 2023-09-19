@@ -64,7 +64,7 @@ def DisplayHomepage(request):
     """
     Displays Homepage
     Passes in all objects from Category model
-    Passes in first
+    Passes Recommendation model objects to be displayed
     """
     category_list = Category.objects.all()
     recommendation_list = Recommendation.objects.all()

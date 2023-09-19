@@ -4,6 +4,10 @@ from django.contrib.auth.models import User
 
 
 class Category(models.Model):
+    """
+    Category model links to the Product Model
+    Each Product belongs to a Category
+    """
     category_image = CloudinaryField('image', default='placeholderCategory')
     category_name = models.CharField(max_length=50, unique=True)
 
@@ -12,6 +16,9 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    """
+    Product models holds all information relating to products
+    """
     main_image = CloudinaryField('image', default='placeholderProduct')
     item_name = models.CharField(max_length=50, unique=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
