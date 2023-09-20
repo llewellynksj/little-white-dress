@@ -213,6 +213,22 @@ img {
 }
 
 /* Login page styles */
+.account-container {
+    max-width: 400px;
+}
+
+.account-card {
+    border-radius: 30px;
+    background: #fdf8f7;
+    box-shadow:  5px 5px 7px #b4b0af,
+                -5px -5px 7px #ffffff;
+    padding: 15px 0 20px 0;
+}
+
+.account-title {
+    padding: 10px 0;
+}
+
 .hover-link:hover {
     text-decoration: underline;
     color: blue;
@@ -392,6 +408,13 @@ footer {
 
     iframe {
         height: 460px;
+    }
+
+    .account-container {
+        max-width: 650px;
+    }
+    .account-card {
+        padding: 30px 0 60px 0;
     }
 }
 
