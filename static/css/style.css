@@ -39,10 +39,33 @@ button {
     padding: 30px 10px;
 }
 
+.hover-link:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+/* Form Styles */
 .form-control {
     width: 75%;
     margin: auto;
 }
+
+.account-container {
+    max-width: 400px;
+}
+
+.account-card {
+    border-radius: 30px;
+    background: #fdf8f7;
+    box-shadow:  5px 5px 7px #b4b0af,
+                -5px -5px 7px #ffffff;
+    padding: 15px 5px 20px 5px;
+}
+
+.account-title {
+    padding: 10px 0;
+}
+
 
 /* Navbar styles */
 .brand {
@@ -211,28 +234,6 @@ img {
     border: 3px #F4E9E5 double;
     max-width: 500px;
     border-radius: 18px;
-}
-
-/* Login page styles */
-.account-container {
-    max-width: 400px;
-}
-
-.account-card {
-    border-radius: 30px;
-    background: #fdf8f7;
-    box-shadow:  5px 5px 7px #b4b0af,
-                -5px -5px 7px #ffffff;
-    padding: 15px 0 20px 0;
-}
-
-.account-title {
-    padding: 10px 0;
-}
-
-.hover-link:hover {
-    text-decoration: underline;
-    color: blue;
 }
 
 /* Profile page styles */
@@ -415,7 +416,7 @@ footer {
         max-width: 650px;
     }
     .account-card {
-        padding: 15px 0 60px 0;
+        padding: 15px 5px 60px 5px;
     }
 }
 

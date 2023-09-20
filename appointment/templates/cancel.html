@@ -2,16 +2,19 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-        <div class="container-fluid body-content">
-            <h1>Cancel</h1>
-            {% if user.id == appointment.user.id %}
-                <h3>WARNING: You are cancelling your appointment for <em>{{ appointment.booking_date }}</em> at <em>{{ appointment.time }}</em></h3>
-                <div class="form-group">
-                    <form method="POST">
-                        {% csrf_token %}
-                        <h3>Are you sure you want to cancel this appointment?</h3>
-                        <button class="btn btn-danger">CONFIRM</button>
-                    </form>
+        <div class="container-fluid body-content account-container">
+            <div class="text-center account-card m-4">
+                <h1 class="account-title">Cancel</h1>
+                {% if user.id == appointment.user.id %}
+                    <h3>WARNING: You are cancelling your appointment for <em>{{ appointment.booking_date }}</em> at <em>{{ appointment.time }}</em></h3>
+                    <div class="form-group">
+                        <form method="POST">
+                            {% csrf_token %}
+                            <h3 class="py-2">Are you sure you want to cancel this appointment?</h3>
+                            <button class="btn btn-danger my-3 py-2 px-3">CONFIRM</button>
+                        </form>
+                        <a href="{% url 'my_appointments' user.customer.id %}"><button class="btn btn-secondary">Back</button></a>
+                    </div>
                 </div>
             {% else %}
                 <p class="lead">You are not able to cancel this appointment as you are not the owner</p>
