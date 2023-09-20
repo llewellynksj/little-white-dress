@@ -3,15 +3,17 @@
 {% block content %}
 
 {% if user.is_authenticated %}
-    <div class="container-fluid body-content">
+    <div class="container-fluid body-content account-container">
         {% if user.id == customer.user.id %}
-            <h1>Update Your Profile</h1>
-            <div class="form-group">
-                <form method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button class="btn btn-secondary">Update</button>
-                </form>
+            <div class="text-center account-card m-4">
+                <h1 class="account-title">Update Your Profile</h1>
+                <div class="form-group">
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button class="btn btn-secondary">Update</button>
+                    </form>
+                </div>
             </div>
         {% else %}
             <br>
