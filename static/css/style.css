@@ -355,8 +355,8 @@ https://codepen.io/isabelc/pen/MmrJgx */
 }
 
 .form-box {
-    margin: 8px;
-    max-width: 600px;
+    /* margin: 8px; */
+    /* max-width: 600px; */
 }
 
 .form-text {
@@ -432,7 +432,11 @@ footer {
 
 @media (min-width: 768px) {
     .contact-information {
-        padding-top: 20px;
+        padding-top: 30px;
+    }
+
+    #form-divider {
+        display: none;
     }
 }
 

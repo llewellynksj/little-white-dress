@@ -9,7 +9,7 @@
 
             <!-- Address -->
             <div class="col-12 col-md-3">
-                <div class="contact-information form-box">
+                <div class="contact-information form-box text-center">
                     {% for item in details_list %}
                         <h3>Address</h3>
                         <p>
@@ -27,28 +27,24 @@
                 </div>
             </div>
 
+            <!-- Page Divider -->
+            <div class="divider" id="form-divider"><div class="divider-inner"></div><span><i class="fa-thin fa-circle-heart"></i></span></div>
+
             <!-- Form -->
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-md-9 text-center">
                 <h3 class="form-box">Get in Touch</h3>
                 <form action="{% url 'contact_details' %}" method="POST">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <!-- <div class="form-group">
-                        <input type="text" class="form-control form-box" name="fullName" placeholder="Enter your full name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control form-box" name="emailAddress" aria-describedby="emailHelp" placeholder="Enter email">
-                        <small id="emailHelp" class="form-text text-muted form-text"><em>We'll never share your email with anyone else.</em></small>
-                    </div>
-                    <div class="form-group form-box">
-                        <textarea name="message" name="message" cols="80" rows="10" placeholder="Enter your message"></textarea>
-                    </div> -->
                     <input type="submit" class="btn btn-secondary form-box" value="Send">
                 </form>
             </div>
         </div>
-        
     </div>  
+    <br>
+
+    <!-- Page Divider -->
+    <div class="divider"><div class="divider-inner"></div><span><i class="fa-thin fa-circle-heart"></i></span></div>
 
     <!-- Find us section -->
     <div class="row location-section">
