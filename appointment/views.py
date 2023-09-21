@@ -3,6 +3,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 from .models import Appointment
 from .forms import MakeBookingForm
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class DeleteAppointment(generic.DeleteView):
@@ -18,13 +19,14 @@ class DeleteAppointment(generic.DeleteView):
         )
 
 
-class EditAppointment(generic.UpdateView):
+class EditAppointment(SuccessMessageMixin, generic.UpdateView):
     """
     Displays form for user to update thier current booking
     """
     model = Appointment
     form_class = MakeBookingForm
     template_name = 'edit_appointment.html'
+    success_message = 'Your Appointment has been successfully updated'
 
     def get_success_url(self) -> str:
         return reverse_lazy(
@@ -32,13 +34,14 @@ class EditAppointment(generic.UpdateView):
         )
 
 
-class MakeAppointment(generic.CreateView):
+class MakeAppointment(SuccessMessageMixin, generic.CreateView):
     """
     Links to custom booking form
     """
     model = Appointment
     form_class = MakeBookingForm
     template_name = 'book.html'
+    success_message = 'You have successfully booked your appointment'
 
     # Make the user id available to be able to be saved to the form
     # Code from Codemy 'Profile Account Creation - Django Blog #32' video:
