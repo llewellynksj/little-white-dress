@@ -3,6 +3,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 from .models import Recommendation
 from .forms import AddNewRecommendationForm
+from django.contrib.messages.views import SuccessMessageMixin
 
 
 class DeleteRecommendation(generic.DeleteView):
@@ -14,13 +15,14 @@ class DeleteRecommendation(generic.DeleteView):
     success_url = reverse_lazy('community')
 
 
-class EditRecommendation(generic.UpdateView):
+class EditRecommendation(SuccessMessageMixin, generic.UpdateView):
     """
     Displays form for user to update thier recommendation
     """
     model = Recommendation
     form_class = AddNewRecommendationForm
     template_name = 'edit_recommendation.html'
+    success_message = 'You have successfully updated your Recommendation'
 
     def get_success_url(self) -> str:
         return reverse_lazy(
@@ -28,13 +30,14 @@ class EditRecommendation(generic.UpdateView):
         )
 
 
-class AddRecommendations(generic.CreateView):
+class AddRecommendations(SuccessMessageMixin, generic.CreateView):
     """
     Links to custom add recommendations form
     """
     model = Recommendation
     form_class = AddNewRecommendationForm
     template_name = 'add_recommendation.html'
+    success_message = 'You have successfully added your Recommendation'
 
     # Make the user id available to be able to be saved to the form
     # Code from Codemy 'Profile Account Creation - Django Blog #32' video:
