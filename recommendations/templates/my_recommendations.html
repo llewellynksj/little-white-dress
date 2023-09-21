@@ -5,6 +5,7 @@
 {% if user.is_authenticated %}
     <div class="container-fluid">
         <h1 class="section-title">My Recommendations</h1>
+        <!-- Community Buttons -->
         <div class="d-flex my-3 py-3 justify-content-center">
             <div class="flex-column">
                 <a class="link-no-decor" href="{% url 'community' %}">
@@ -18,6 +19,8 @@
                 </a>
             </div>
         </div>
+        
+        <!-- Display user Recommendations -->
         <div class="col-12 community-section">
             {% if not user_recommendations %}
                 <p class="lead text-center">You have not yet added any recommendations</p>

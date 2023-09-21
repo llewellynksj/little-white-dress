@@ -31,7 +31,7 @@ button {
 }
 
 .page-button {
-    min-width: 275px;
+    min-width: 180px;
 }
 
 .section-title {
@@ -242,13 +242,13 @@ img {
     width: auto;
 }
 
-.favs-title, .profile-section {
-    margin-left: 20px;
-}
-
 .img-thumbnail {
     width: 200px;
     height: auto;
+}
+
+.favs-container {
+    max-width: 995px;
 }
 
 /* About us styles */
