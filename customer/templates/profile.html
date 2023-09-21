@@ -7,64 +7,62 @@
         <h1 class="section-title">My Account</h1>
         <h3 class="text-center">Welcome to your profile page, {{ user.first_name }}!</h3>
 
-        <div class="flex justify-content-center">
-
-            <!-- Profile Buttons -->
-            <div class="d-flex my-3 py-3 justify-content-center align-items-center text-center">
-                <div class="flex-column">
-                    <a class="link-no-decor" href="{% url 'my_appointments' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">My Appointments</button></a>
-                    <a class="link-no-decor" href="{% url 'book' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Book a New Appointment</button></a>
-                    <a class="link-no-decor" href="{% url 'community' %}"><button class="btn btn-outline-secondary mx-2 page-button">Community Recommendations</button></a>
-                </div>
+        <!-- Profile Buttons -->
+        <div class="d-flex my-3 py-3 justify-content-center align-items-center text-center">
+            <div class="flex-column">
+                <a class="link-no-decor" href="{% url 'my_appointments' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">My Appointments</button></a>
+                <a class="link-no-decor" href="{% url 'book' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Book a New Appointment</button></a>
+                <a class="link-no-decor" href="{% url 'community' %}"><button class="btn btn-outline-secondary mx-2 page-button">Community Recommendations</button></a>
             </div>
+        </div>
 
-            <!-- Profile Information -->
-            <div class="d-flex flex-column flex-sm-row my-3 py-3 justify-content-center">
-                <div class="flex-column p-3 text-center">
-                    <img src="{{ user.customer.profile_pic.url }}" alt="" class="rounded-circle profile-pic">
-                </div>
-                <div class="d-flex flex-column p-3 text-center">
-                    <h3>My Details</h3>
-                    <p>Name: {{ user.first_name }} {{ user.last_name }}</p>
-                    <p>Email Address: {{ user.email }}</p>
-                    <p>Date of Wedding: {{ user.customer.date_of_wedding }}</p>
-                    {% if user.customer.website_url %}
-                        <p><a href="{{ user.customer.website_url }}">Visit my Wedding Website</a></p>
-                    {% endif %}
-                </div>
+        <!-- Profile Information -->
+        <div class="d-flex flex-column flex-sm-row my-3 py-3 justify-content-center">
+            <div class="flex-column p-3 text-center">
+                <img src="{{ user.customer.profile_pic.url }}" alt="" class="rounded-circle profile-pic">
             </div>
-
-            <!-- Account & Profile Settings Buttons -->
-            <div class="d-flex my-3 py-3 justify-content-center text-center">
-                <div class="flex-column">
-                    <a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Update Your Profile</button></a>
-                    <a class="link-no-decor" href="{% url 'settings' %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
-                </div>
+            <div class="d-flex flex-column p-3 text-center">
+                <h3>My Details</h3>
+                <p>Name: {{ user.first_name }} {{ user.last_name }}</p>
+                <p>Email Address: {{ user.email }}</p>
+                <p>Date of Wedding: {{ user.customer.date_of_wedding }}</p>
+                {% if user.customer.website_url %}
+                    <p><a href="{{ user.customer.website_url }}">Visit my Wedding Website</a></p>
+                {% endif %}
             </div>
+        </div>
 
+        <!-- Account & Profile Settings Buttons -->
+        <div class="d-flex my-3 py-3 justify-content-center text-center">
+            <div class="flex-column">
+                <a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Update Your Profile</button></a>
+                <a class="link-no-decor" href="{% url 'settings' %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
+            </div>
         </div>
 
         <!-- Favourites -->
         <h3 class="mt-2 pt-4 section-title">My Favourites</h3>
-            {% if not user.fav_products.all %}
-                <p class="lead text-center">You have not yet selected any favourites</p>
-            {% else %}
-                <div class="container-fluid favs-container">
-                    <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 text-center">
-                        {% for product in user.fav_products.all %}
-                            <div class="col">
-                                <a href="{% url 'product_details' product.pk %}" class="product-link">
-                                    <img src=" {{ product.main_image.url }}" alt="category image" class="img-thumbnail">
-                                    <h3 class="">{{ product.item_name }}</h3>
-                                    <p>{{ product.category }}</p>
-                                    <p>£{{ product.price }}</p>
-                                </a>
-                            </div>
-                        {% endfor %}
-                    </div>
+        {% if not user.fav_products.all %}
+            <p class="lead text-center">You have not yet selected any favourites</p>
+        {% else %}
+            <div class="container-fluid favs-container">
+                <div class="row row-cols-1 row-cols-sm-3 row-cols-md-4 text-center">
+                    {% for product in user.fav_products.all %}
+                        <div class="col">
+                            <a href="{% url 'product_details' product.pk %}" class="product-link">
+                                <img src=" {{ product.main_image.url }}" alt="category image" class="img-thumbnail">
+                                <h3 class="">{{ product.item_name }}</h3>
+                                <p>{{ product.category }}</p>
+                                <p>£{{ product.price }}</p>
+                            </a>
+                        </div>
+                    {% endfor %}
                 </div>
-            {% endif %}
+            </div>
+        {% endif %}
     </div>
+{% else %}
+    You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
 {% endif %}
 
 {% endblock %}

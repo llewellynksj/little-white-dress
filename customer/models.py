@@ -9,7 +9,7 @@ class Customer(models.Model):
     """
     user = models.OneToOneField(User, null=True, on_delete=models.CASCADE)
     profile_pic = CloudinaryField('image', default='placeholder')
-    date_of_wedding = models.DateField(default='2024-12-31')
+    date_of_wedding = models.DateField(blank=True, null=True)
     website_url = models.CharField(max_length=500, null=True, blank=True)
 
     def __str__(self):
