@@ -9,7 +9,7 @@
 
             <!-- Address -->
             <div class="col-12 col-md-3">
-                <div class="contact-information form-box text-center">
+                <div class="contact-information text-center">
                     {% for item in details_list %}
                         <h3>Address</h3>
                         <p>
@@ -23,6 +23,14 @@
                         <p>0{{ item.telephone }}</p>
                         <h4>Email</h4>
                         <p>{{ item.email }}</p>
+                        <h4>Opening Times</h4>
+                        <p class="m-0">Monday: {{ item.monday_opening_hrs }}</p>
+                        <p class="m-0">Tuesday: {{ item.tuesday_opening_hrs }}</p>
+                        <p class="m-0">Wednesday: {{ item.wednesday_opening_hrs }}</p>
+                        <p class="m-0">Thursday: {{ item.thursday_opening_hrs }}</p>
+                        <p class="m-0">Friday: {{ item.friday_opening_hrs }}</p>
+                        <p class="m-0">Saturday: {{ item.saturday_opening_hrs }}</p>
+                        <p class="m-0">Sunday: {{ item.sunday_opening_hrs }}</p>
                     {% endfor %}
                 </div>
             </div>
@@ -32,11 +40,11 @@
 
             <!-- Form -->
             <div class="col-12 col-md-9 text-center">
-                <h3 class="form-box">Get in Touch</h3>
+                <h3>Get in Touch</h3>
                 <form action="{% url 'contact_details' %}" method="POST">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <input type="submit" class="btn btn-secondary form-box" value="Send">
+                    <input type="submit" class="btn btn-secondary" value="Send">
                 </form>
             </div>
         </div>
