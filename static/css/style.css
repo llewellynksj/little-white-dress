@@ -88,7 +88,6 @@ img {
 }
 
 #navbarText {
-    background-color: #FAF6F4;
     border-radius: 18px;
     padding: 5px 8px 2px 8px;
 }
@@ -448,5 +447,9 @@ footer {
     
     .body-content {
         padding-left: 40px;
+    }
+
+    .logged-in {
+        text-align: right;
     }
 }

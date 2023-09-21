@@ -92,21 +92,23 @@
                                 {% endif %}
                             </ul>
                         </li>
-                        <!-- Shows logged in user -->
-                        {% if user.customer.id %}
-                            <p class="pt-3 mb-1 logged-in"><em>You are currently logged in as <a href="{% url 'profile' user.customer.id %}" class="link-no-decor link-hover text-uppercase">{{ user.username }}</a></em></p>
-                        {% else %}
-                            <p class="pt-3 mb-1 logged-in"><em>You are currently logged in as <a href="{% url 'create_profile' %}" class="link-no-decor link-hover text-uppercase">{{ user.username }}</a></em></p>
-                        {% endif %}
+                    </ul>
+                    <!-- Shows logged in user -->
+                    {% if user.customer.id %}
+                        <p class="pt-3 mb-1 logged-in"><em>You are currently logged in as <a href="{% url 'profile' user.customer.id %}" class="link-no-decor link-hover text-uppercase">{{ user.username }}</a></em></p>
                     {% else %}
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'register' %}">Register</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'login' %}">Login</a>
-                    </li>
+                        <p class="pt-3 mb-1 logged-in"><em>You are currently logged in as <a href="{% url 'create_profile' %}" class="link-no-decor link-hover text-uppercase">{{ user.username }}</a></em></p>
                     {% endif %}
-                </ul>
+
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'register' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'login' %}">Login</a>
+                        </li>
+                    </ul>
+                    {% endif %}
             </div>
         </div>
     </nav>
