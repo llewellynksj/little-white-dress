@@ -24,15 +24,16 @@
 
 <body>
     <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
         <div class="container-fluid">
             <!-- Logo -->
             <a class="navbar-brand" href="{% url 'index' %}"><span class="brand">Little White Dress</span></a>
-            <!-- Nav Menu -->
+           <!-- Nav Hamburger Toggle -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+             <!-- Nav Menu -->
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -91,6 +92,12 @@
                                 {% endif %}
                             </ul>
                         </li>
+                        <!-- Shows logged in user -->
+                        {% if user.customer.id %}
+                            <p class="pt-3 mb-1 logged-in"><em>You are currently logged in as <a href="{% url 'profile' user.customer.id %}" class="link-no-decor link-hover text-uppercase">{{ user.username }}</a></em></p>
+                        {% else %}
+                            <p class="pt-3 mb-1 logged-in"><em>You are currently logged in as <a href="{% url 'create_profile' %}" class="link-no-decor link-hover text-uppercase">{{ user.username }}</a></em></p>
+                        {% endif %}
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'register' %}">Register</a>
