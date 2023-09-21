@@ -5,6 +5,8 @@
 {% if user.is_authenticated %}
     <div class="container-fluid">
         <h1 class="section-title">My Appointments</h1>
+
+        <!-- Page Buttons -->
         <div class="d-flex my-3 py-3 justify-content-center">
             <div class="flex-column">
                 <a class="link-no-decor" href="{% url 'book' user.customer.id %}">
@@ -15,13 +17,15 @@
                 </a>
             </div>
         </div>
+
+        <!-- Appointment Cards -->
         <div class="col-12 community-section">
             {% if not user_appointments %}
                 <p class="lead text-center">You do not currently have any appointments booked</p>
             {% else %}
                 <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
                     {% for item in user_appointments %}
-                    <div class="card-body m-4">
+                    <div class="card-body m-4 appointment-cards">
                         <div class="p-4">
                             <h3 class="link-no-decor text-uppercase">{{ item.booking_date }}, {{ item.time }}</h3>
                             <h3 class="link-no-decor">Date of Wedding: {{ item.date_of_wedding}}</h3>

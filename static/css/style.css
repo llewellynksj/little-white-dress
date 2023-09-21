@@ -242,13 +242,13 @@ img {
     width: auto;
 }
 
+.favs-container {
+    max-width: 995px;
+}
+
 .img-thumbnail {
     width: 200px;
     height: auto;
-}
-
-.favs-container {
-    max-width: 995px;
 }
 
 /* About us styles */
@@ -271,7 +271,7 @@ img {
 }
 
 /* Recommendations Community Page */
-.recommendation-cards {
+.recommendation-cards, .appointment-cards {
     border: 1px solid #252525;
     border-radius: 15px;
     max-width: 415px;
