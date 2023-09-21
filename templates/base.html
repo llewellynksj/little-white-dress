@@ -49,9 +49,6 @@
                         </ul>
                     </li>
                     {% if user.is_authenticated %}
-                        <li class="nav-item">
-                            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             My Account
@@ -91,6 +88,9 @@
                                     <li><a class="dropdown-item" href="{% url 'create_profile' %}">Create Profile</a></li>
                                 {% endif %}
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
                         </li>
                     </ul>
                     <!-- Shows logged in user -->

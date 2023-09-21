@@ -10,6 +10,18 @@ from .forms import UpdateProfileForm
 from django.contrib.auth.models import User
 from .models import Customer
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.signals import user_logged_out
+from django.dispatch import receiver
+from django.contrib import messages
+
+
+@receiver(user_logged_out)
+def on_user_logged_out(sender, request, **kwargs):
+    """
+    Displays successfully logged out message when user logs out
+    """
+    messages.add_message(
+        request, messages.INFO, 'You have successfully logged out')
 
 
 class UpdateCustomerProfile(SuccessMessageMixin, generic.UpdateView):
