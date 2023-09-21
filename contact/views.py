@@ -5,7 +5,7 @@ from django.contrib import messages
 from .forms import EnquiryForm
 
 
-def DisplayContact(request):
+def display_contact(request):
     """
     Displays the Contact page
     Pulls contact details from the ContactDetails model and
@@ -27,7 +27,7 @@ def DisplayContact(request):
             'details_list': details_list, 'form': form})
 
 
-def DisplayAbout(request):
+def display_about(request):
     """
     Displays the About Us page
     """

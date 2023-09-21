@@ -26,7 +26,7 @@ class Appointment(models.Model):
         date = booking_date.weekday()
         if date == 6 or date == 0 or date == 1:
             raise ValidationError(
-                "LWD is not open at the weekend. Please choose another day")
+                "LWD is open Weds - Sat only. Please choose another day")
 
     def validate_future_date(booking_date):
         """

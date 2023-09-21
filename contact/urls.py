@@ -4,10 +4,10 @@ from . import views
 urlpatterns = [
     path(
         'about/',
-        views.DisplayAbout,
+        views.display_about,
         name='about'),
     path(
         'contact_details/',
-        views.DisplayContact,
+        views.display_contact,
         name='contact_details'),
 ]

@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 
 
-def CustomerFavourites(request, pk):
+def customer_favourites(request, pk):
     """
     Adds liked products to customer record
     """
@@ -40,7 +40,7 @@ class ProductDetails(generic.DetailView):
         return context
 
 
-def CategoryProducts(request, selected_cat):
+def category_products(request, selected_cat):
     """
     Displays all products within the selected category
     """
@@ -60,7 +60,7 @@ class ProductList(generic.ListView):
     template_name = 'all_products.html'
 
 
-def DisplayHomepage(request):
+def display_homepage(request):
     """
     Displays Homepage
     Passes in all objects from Category model

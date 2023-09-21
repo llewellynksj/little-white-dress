@@ -41,7 +41,7 @@ class MakeAppointment(SuccessMessageMixin, generic.CreateView):
     model = Appointment
     form_class = MakeBookingForm
     template_name = 'book.html'
-    success_message = 'You have successfully booked your appointment'
+    success_message = 'Your appointment has been successfully booked'
 
     # Make the user id available to be able to be saved to the form
     # Code from Codemy 'Profile Account Creation - Django Blog #32' video:
