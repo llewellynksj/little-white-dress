@@ -418,12 +418,63 @@ For Mobile Devices
 ![Screenshot of Lighthouse testing for homepage on mobile devices]()
 </details>
 <details>
-<summary>Dates Page</summary>
+<summary>All Products</summary>
 
-![Screenshot of Lighthouse testing for next page on mobile devices]()
+![Screenshot of Lighthouse testing for All Products on mobile devices]()
 </details>
 <details>
+<summary>Category Products</summary>
 
+![Screenshot of Lighthouse testing for Category Products on mobile devices]()
+</details>
+<details>
+<summary>Product Detail</summary>
+
+![Screenshot of Lighthouse testing for Product Detail on mobile devices]()
+</details>
+<details>
+<summary>About</summary>
+
+![Screenshot of Lighthouse testing for About Us on mobile devices]()
+</details>
+<details>
+<summary>Contact</summary>
+
+![Screenshot of Lighthouse testing for Contact Us on mobile devices]()
+</details>
+<details>
+<summary>Register</summary>
+
+![Screenshot of Lighthouse testing for Registration on mobile devices]()
+</details>
+<details>
+<summary>Login</summary>
+
+![Screenshot of Lighthouse testing for Login on mobile devices]()
+</details>
+<details>
+<summary>Profile</summary>
+
+![Screenshot of Lighthouse testing for Profile on mobile devices]()
+</details>
+<details>
+<summary>Settings</summary>
+
+![Screenshot of Lighthouse testing for Settings on mobile devices]()
+</details>
+<details>
+<summary>Recommendations</summary>
+
+![Screenshot of Lighthouse testing for Community Recommendations on mobile devices]()
+![Screenshot of Lighthouse testing for My Recommendations on mobile devices]()
+![Screenshot of Lighthouse testing for Add Recommendation on mobile devices]()
+</details>
+<details>
+<summary>Appointments</summary>
+
+![Screenshot of Lighthouse testing for My Appointments on mobile devices]()
+![Screenshot of Lighthouse testing for Book Appointment on mobile devices]()
+</details>
 <br>
 
 For Desktop
@@ -433,9 +484,62 @@ For Desktop
 ![Screenshot of Lighthouse testing for homepage on desktop]()
 </details>
 <details>
-<summary>Dates Page</summary>
+<summary>All Products</summary>
 
-![Screenshot of Lighthouse testing for next page on desktop]()
+![Screenshot of Lighthouse testing for All Products on desktop]()
+</details>
+<details>
+<summary>Category Products</summary>
+
+![Screenshot of Lighthouse testing for Category Products on desktop]()
+</details>
+<details>
+<summary>Product Detail</summary>
+
+![Screenshot of Lighthouse testing for Product Detail on desktop]()
+</details>
+<details>
+<summary>About</summary>
+
+![Screenshot of Lighthouse testing for About Us on desktop]()
+</details>
+<details>
+<summary>Contact</summary>
+
+![Screenshot of Lighthouse testing for Contact Us on desktop]()
+</details>
+<details>
+<summary>Register</summary>
+
+![Screenshot of Lighthouse testing for Registeration on desktop]()
+</details>
+<details>
+<summary>Login</summary>
+
+![Screenshot of Lighthouse testing for Login on desktop]()
+</details>
+<details>
+<summary>Profile</summary>
+
+![Screenshot of Lighthouse testing for Profile on desktop]()
+</details>
+<details>
+<summary>Settings</summary>
+
+![Screenshot of Lighthouse testing for Settings on desktop]()
+</details>
+<details>
+<summary>Recommendations</summary>
+
+![Screenshot of Lighthouse testing for Community Recommendations on desktop]()
+![Screenshot of Lighthouse testing for My Recommendations on desktop]()
+![Screenshot of Lighthouse testing for Add Recommendation on desktop]()
+</details>
+<details>
+<summary>Appointments</summary>
+
+![Screenshot of Lighthouse testing for My Appointments on desktop]()
+![Screenshot of Lighthouse testing for Book Appointment on desktop]()
 </details>
 
 <br>
