@@ -25,7 +25,7 @@ def display_contact(request):
         if form.is_valid():
             print('form was valid')
             form.save()
-            messages.success(request, ('Your message has been sent!'))
+
             # Send enquiry form as email
             send_mail(
                 'LWD Website Enquiry from ' + form.cleaned_data['full_name'],
@@ -33,6 +33,8 @@ def display_contact(request):
                 form.cleaned_data['email'],
                 [SEND_MAIL_EMAIL]
             )
+
+            messages.success(request, ('Your message has been sent!'))
 
     form = EnquiryForm()
     return render(
