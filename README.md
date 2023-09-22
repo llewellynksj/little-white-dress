@@ -415,65 +415,65 @@ For Mobile Devices
 <details>
 <summary>Homepage</summary>
 
-![Screenshot of Lighthouse testing for homepage on mobile devices]()
+![Screenshot of Lighthouse testing for homepage on mobile devices](readme_assets/lighthouse/homepage_mobile.webp)
 </details>
 <details>
 <summary>All Products</summary>
 
-![Screenshot of Lighthouse testing for All Products on mobile devices]()
+![Screenshot of Lighthouse testing for All Products on mobile devices](readme_assets/lighthouse/all_styles_mobile.webp)
 </details>
 <details>
 <summary>Category Products</summary>
 
-![Screenshot of Lighthouse testing for Category Products on mobile devices]()
+![Screenshot of Lighthouse testing for Category Products on mobile devices](readme_assets/lighthouse/category_mobile.webp)
 </details>
 <details>
 <summary>Product Detail</summary>
 
-![Screenshot of Lighthouse testing for Product Detail on mobile devices]()
+![Screenshot of Lighthouse testing for Product Detail on mobile devices](readme_assets/lighthouse/product_detail_mobile.webp)
 </details>
 <details>
 <summary>About</summary>
 
-![Screenshot of Lighthouse testing for About Us on mobile devices]()
+![Screenshot of Lighthouse testing for About Us on mobile devices](readme_assets/lighthouse/about_mobile.webp)
 </details>
 <details>
 <summary>Contact</summary>
 
-![Screenshot of Lighthouse testing for Contact Us on mobile devices]()
+![Screenshot of Lighthouse testing for Contact Us on mobile devices](readme_assets/lighthouse/contact_mobile.webp)
 </details>
 <details>
 <summary>Register</summary>
 
-![Screenshot of Lighthouse testing for Registration on mobile devices]()
+![Screenshot of Lighthouse testing for Registration on mobile devices](readme_assets/lighthouse/register_mobile.webp)
 </details>
 <details>
 <summary>Login</summary>
 
-![Screenshot of Lighthouse testing for Login on mobile devices]()
+![Screenshot of Lighthouse testing for Login on mobile devices](readme_assets/lighthouse/login_mobile.webp)
 </details>
 <details>
 <summary>Profile</summary>
 
-![Screenshot of Lighthouse testing for Profile on mobile devices]()
+![Screenshot of Lighthouse testing for Profile on mobile devices](readme_assets/lighthouse/profile_mobile.webp)
 </details>
 <details>
 <summary>Settings</summary>
 
-![Screenshot of Lighthouse testing for Settings on mobile devices]()
+![Screenshot of Lighthouse testing for Settings on mobile devices](readme_assets/lighthouse/settings_mobile.webp)
 </details>
 <details>
 <summary>Recommendations</summary>
 
-![Screenshot of Lighthouse testing for Community Recommendations on mobile devices]()
-![Screenshot of Lighthouse testing for My Recommendations on mobile devices]()
-![Screenshot of Lighthouse testing for Add Recommendation on mobile devices]()
+![Screenshot of Lighthouse testing for Community Recommendations on mobile devices](readme_assets/lighthouse/community_mobile.webp)
+![Screenshot of Lighthouse testing for My Recommendations on mobile devices](readme_assets/lighthouse/my_recs_mobile.webp)
+![Screenshot of Lighthouse testing for Add Recommendation on mobile devices](readme_assets/lighthouse/add_rec_mobile.webp)
 </details>
 <details>
 <summary>Appointments</summary>
 
-![Screenshot of Lighthouse testing for My Appointments on mobile devices]()
-![Screenshot of Lighthouse testing for Book Appointment on mobile devices]()
+![Screenshot of Lighthouse testing for My Appointments on mobile devices](readme_assets/lighthouse/my_appointments_mobile.webp)
+![Screenshot of Lighthouse testing for Book Appointment on mobile devices](readme_assets/lighthouse/book_appt_mobile.webp)
 </details>
 <br>
 
@@ -481,65 +481,65 @@ For Desktop
 <details>
 <summary>Homepage</summary>
 
-![Screenshot of Lighthouse testing for homepage on desktop]()
+![Screenshot of Lighthouse testing for homepage on desktop](readme_assets/lighthouse/homepage_desktop.webp)
 </details>
 <details>
 <summary>All Products</summary>
 
-![Screenshot of Lighthouse testing for All Products on desktop]()
+![Screenshot of Lighthouse testing for All Products on desktop](readme_assets/lighthouse/all_styles_desktop.webp)
 </details>
 <details>
 <summary>Category Products</summary>
 
-![Screenshot of Lighthouse testing for Category Products on desktop]()
+![Screenshot of Lighthouse testing for Category Products on desktop](readme_assets/lighthouse/category_desktop.webp)
 </details>
 <details>
 <summary>Product Detail</summary>
 
-![Screenshot of Lighthouse testing for Product Detail on desktop]()
+![Screenshot of Lighthouse testing for Product Detail on desktop](readme_assets/lighthouse/product_detail_desktop.webp)
 </details>
 <details>
 <summary>About</summary>
 
-![Screenshot of Lighthouse testing for About Us on desktop]()
+![Screenshot of Lighthouse testing for About Us on desktop](readme_assets/lighthouse/about_desktop.webp)
 </details>
 <details>
 <summary>Contact</summary>
 
-![Screenshot of Lighthouse testing for Contact Us on desktop]()
+![Screenshot of Lighthouse testing for Contact Us on desktop](readme_assets/lighthouse/contact_desktop.webp)
 </details>
 <details>
 <summary>Register</summary>
 
-![Screenshot of Lighthouse testing for Registeration on desktop]()
+![Screenshot of Lighthouse testing for Registeration on desktop](readme_assets/lighthouse/register_desktop.webp)
 </details>
 <details>
 <summary>Login</summary>
 
-![Screenshot of Lighthouse testing for Login on desktop]()
+![Screenshot of Lighthouse testing for Login on desktop](readme_assets/lighthouse/login_desktop.webp)
 </details>
 <details>
 <summary>Profile</summary>
 
-![Screenshot of Lighthouse testing for Profile on desktop]()
+![Screenshot of Lighthouse testing for Profile on desktop](readme_assets/lighthouse/profile_desktop.webp)
 </details>
 <details>
 <summary>Settings</summary>
 
-![Screenshot of Lighthouse testing for Settings on desktop]()
+![Screenshot of Lighthouse testing for Settings on desktop](readme_assets/lighthouse/settings_desktop.webp)
 </details>
 <details>
 <summary>Recommendations</summary>
 
-![Screenshot of Lighthouse testing for Community Recommendations on desktop]()
-![Screenshot of Lighthouse testing for My Recommendations on desktop]()
-![Screenshot of Lighthouse testing for Add Recommendation on desktop]()
+![Screenshot of Lighthouse testing for Community Recommendations on desktop](readme_assets/lighthouse/community_desktop.webp)
+![Screenshot of Lighthouse testing for My Recommendations on desktop](readme_assets/lighthouse/my_recs_desktop.webp)
+![Screenshot of Lighthouse testing for Add Recommendation on desktop](readme_assets/lighthouse/add_rec_desktop.webp)
 </details>
 <details>
 <summary>Appointments</summary>
 
-![Screenshot of Lighthouse testing for My Appointments on desktop]()
-![Screenshot of Lighthouse testing for Book Appointment on desktop]()
+![Screenshot of Lighthouse testing for My Appointments on desktop](readme_assets/lighthouse/my_appointments_desktop.webp)
+![Screenshot of Lighthouse testing for Book Appointment on desktop](readme_assets/lighthouse/book_appt_desktop.webp)
 </details>
 
 <br>
