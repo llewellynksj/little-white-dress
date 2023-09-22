@@ -32,7 +32,7 @@ def display_contact(request):
                 'LWD Website Enquiry from ' + form.cleaned_data['full_name'],
                 form.cleaned_data['message'],
                 form.cleaned_data['email'],
-                [SEND_MAIL_EMAIL]
+                [SEND_MAIL_EMAIL],
             )
 
     form = EnquiryForm()
