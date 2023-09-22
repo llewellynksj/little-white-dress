@@ -125,11 +125,10 @@ The colour scheme for this site has been kept fairly simple with just a couple o
 
 The main colour (F4E9E5) was selected as it reflects the soft feminine feel that relates to being 'bridal'.
 
-The darker colour (4A4A4F) was used as the font colour for the logo.
 
 The colour palette was created using the [Coolors](https://coolors.co/) website.
 
-![Image of colour palette](readme_assets/lwd_palette.webp)
+![Image of colour palette](readme_assets/coolor_palette.webp)
 
 <br>
 
@@ -150,6 +149,10 @@ The font used for the body content throughout the site is called 'Crimson Text'
 All images were sourced from [Adobe Stock](https://stock.adobe.com/uk/) and [iStock Photo](https://www.istockphoto.com/), with the exception of the owner image on the contact page. This image is a personal image belonging to Samantha Landy, who gave permission for it's use on this site.
 
 Images have been specifically chosen to be in keeping with the brand identity. They are light, clean and professional.
+
+The Favicon was also deisnged in this way and has been generated using the website colour #F4E9E5 and the logo font 'Julius Sans One'. It was created on [Favicon.io](https://favicon.io/).
+
+![Image of Favicon](readme_assets/favicon.webp)
 
 <br>
 
@@ -209,6 +212,9 @@ For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_a
 ----
 
 ## Database and Logic
+
+Careful consideration was taken in the planning stages of this project. Initial user journeys were mapped out for both the admin and general user. From these an ER Diagram was created.
+
 ### **User Journey**
 ![Image of user journey map](readme_assets/lwd_user_journey.webp)
 
@@ -216,19 +222,29 @@ For a full PDF of all wireframes (mobile, tablet, desktop) click [here](readme_a
 
 ![Image of admin journey map](readme_assets/lwd_admin_journey.webp)
 
-### **Epics**
-![Image of epics chart](readme_assets/lwd_epics.webp)
-
-### **Kanban Board**
-![Image of kanban project hub from Github](readme_assets/kanban.webp)
+<br> 
 
 ### **Database**
 ![Image of entity relationship diagram](readme_assets/lwd_erd.webp)
 
+<br>
+
+### **Epics**
+![Image of epics chart](readme_assets/lwd_epics.webp)
+
+### **Kanban Board**
+A Kanban approach was used to keep track of the flow of the project. Once User Stories were set up in the Project they were assigned to EPICs and began the project journey in the 'ToDo' column. As development progressed these moved through 'In Progress' to finally 'Done'. An additional column was added 'Unable to implement' for any features that were not successfully completed.
+
+[You can visit the project board here](https://github.com/users/llewellynksj/projects/5/views/1)
+
+Below is an example part way through the site build:
+
+![Image of kanban project hub from Github](readme_assets/kanban.webp)
+
 ----
 
 ## Project Structure
-### **Apps**
+### **Apps:**
 
 #### PRODUCT
 
