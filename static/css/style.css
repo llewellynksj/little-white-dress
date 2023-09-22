@@ -240,7 +240,7 @@ img {
     max-width: 500px;
 }
 
-.product-info {
+.info-border {
     border: 3px #F4E9E5 double;
     max-width: 500px;
     border-radius: 18px;
@@ -262,7 +262,7 @@ img {
 }
 
 /* About us styles */
-.about-section, .map-section, .location-section, .community-section {
+.about-section, .map-section, .location-section, .community-section, .appointment-section {
     max-width: 1000px;
     margin: auto;
     margin-bottom: 80px;
@@ -341,6 +341,15 @@ https://codepen.io/isabelc/pen/MmrJgx */
     color: #F0C6AD;
     font-size: 30px;
   }
+
+/* Appointments Page styles */
+.booking-title {
+    text-decoration: underline;
+}
+
+.appt-button {
+    min-width: 100px;
+}
 
 /* Contact Page styles */
 .contact-section {

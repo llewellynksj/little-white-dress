@@ -19,7 +19,7 @@
         </div>
 
         <!-- Appointment Cards -->
-        <div class="col-12 community-section">
+        <div class="col-12 appointment-section">
             {% if not user_appointments %}
                 <p class="lead text-center">You do not currently have any appointments booked</p>
             {% else %}
@@ -27,13 +27,17 @@
                     {% for item in user_appointments %}
                     <div class="card-body m-4 appointment-cards">
                         <div class="p-4">
-                            <h3 class="link-no-decor text-uppercase">{{ item.booking_date }}, {{ item.time }}</h3>
-                            <h3 class="link-no-decor">Date of Wedding: {{ item.date_of_wedding}}</h3>
-                            <h3 class="link-no-decor">Number attending appointment: {{ item.no_in_party }}</h3>
+                            <h3 class="booking-title text-center pb-3">Booking Confirmed</h3>
+                            <h3>Date: {{ item.booking_date }}</h3>
+                            <h3>Time: {{ item.time }}</h3>
+                            <h4>Date of Wedding: {{ item.date_of_wedding}}</h3>
+                            <h4>Number attending appointment: {{ item.no_in_party }}</h3>
                         </div>
                         {% if user.id == item.user.id %}
-                        <a class="link-no-decor" href="{% url 'edit_appointment' item.pk %}"><button class="btn btn-outline-secondary mb-4 mx-4">Reschedule</button></a>
-                        <a href="{% url 'cancel' item.pk %}" class="link-no-decor"><button class="btn btn-outline-danger mb-4">Cancel</button></a>
+                        <div class="d-flex justify-content-center">
+                            <a class="link-no-decor" href="{% url 'edit_appointment' item.pk %}"><button class="btn btn-outline-secondary mb-4 mx-4 appt-button">Reschedule</button></a>
+                            <a href="{% url 'cancel' item.pk %}" class="link-no-decor"><button class="btn btn-outline-danger mb-4 mx-4 appt-button">Cancel</button></a>
+                        </div>
                         {% endif %}
                     </div>
                     {% endfor %}
