@@ -245,6 +245,7 @@ Below is an example part way through the site build:
 
 ## Project Structure
 ### **Apps:**
+Little White Dress has a total of 5 Apps. These are Product, Customer, Contact, Recommendations, Appointment. These are outlined with their corresponding models below:
 
 #### PRODUCT
 
