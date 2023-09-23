@@ -275,6 +275,8 @@ Models:
 
 Models:
 
+_Additional fields were added to the Customer model in the later stages of development to give a fuller sense of a profile. These included 'partners_name', 'wedding_location', and 'wedding_theme'._
+
 ![Customer Model](readme_assets/customer.webp)
 
 <br>
@@ -327,6 +329,59 @@ Models:
 ## Features
 ### **Existing Features**
 
+Sticky Nav Bar:
+A 'sticky-top' bootstrap class has been used to ensure the user has access to the navigation bar at all times.
+
+[![Image from Gyazo](https://i.gyazo.com/48c3dd04f33807ddf921fcefc20e031b.gif)](https://gyazo.com/48c3dd04f33807ddf921fcefc20e031b)
+
+Hamburger Menu: A bootstrap collapsible menu has been used to keep the navigation bar clean for smaller devices.
+
+[![Image from Gyazo](https://i.gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77.gif)](https://gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77)
+
+<details>
+<summary>Homepage</summary>
+The first view of the site that a user will have will be the hero image on the landing page. Initially the plan was to include a carousel of images, but as development progressed the single hero image that is there felt so impactful that it remains the only one. It's striking, clean, and sophiticated; everything the brand identity wants.
+
+![Homepage Hero image](readme_assets/hero.webp)
+
+As the user scrolls down the homepage the next thing the hit are the categories. In conversation with users it became clear that brides looking for dresses sometimes felt overwhelmed by choice when landing on a page full of hundreds of white dresses. Enabling the user to browse by category was an important consideration.
+
+![Homepage Categories image](readme_assets/categories.webp)
+
+A 'Book an Appointment' call to action appears both as an overlay on the hero image, and on a banner after the categories. The banner has been designed specifically to stand out while still fitting in with the feel of the site. A drop-shadow has been used to create an almost 'ribbon round a dress' effect.
+
+![Homepage 'Book an Appointment' hero button](readme_assets/appt-button.webp)
+
+![Homepage 'Book an Appointment' banner](readme_assets/appt-banner.webp)
+
+The end of the homepage includes testimonial snapshots from past customers. These have been populated with stock images from [Pexels](https://www.pexels.com/) or personal images.
+
+</details>
+<details>
+<summary>About</summary>
+
+
+</details>
+<details>
+<summary>Register/Login</summary>
+
+
+</details>
+<details>
+<summary>My Account</summary>
+
+
+</details>
+<details>
+<summary>Appointments</summary>
+
+
+</details>
+<details>
+<summary>Community</summary>
+
+
+</details>
 
 <br>
 
