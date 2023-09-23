@@ -40,11 +40,8 @@ A visitor to the LWD website can easily browse the products on sale, make a book
   - [Recommendations](#recommendations)
   - [Appointment](#appointment)
 
-
 ### [Features](#features-1)
 - [Existing Features](#existing-features)
-  - [Homepage](#homepage)
-  - [Next page](#next_page)
 - [Accessibility](#accessibility)
 - [Future Features](#future-features)
 
@@ -323,6 +320,10 @@ Models:
 
 ## Features
 ### **Existing Features**
+Admin Portal:
+A link to the admin portal can be found at the bottom of each page in the footer:
+
+![Link to admin portal](readme_assets/admin-link.webp)
 
 Sticky Nav Bar:
 A 'sticky-top' bootstrap class has been used to ensure the user has access to the navigation bar at all times.
