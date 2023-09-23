@@ -359,7 +359,18 @@ The end of the homepage includes testimonial snapshots from past customers. Thes
 </details>
 <details>
 <summary>About</summary>
+About LWD: 
 
+The About page is very simple and uncluttered. A short introduction of the business owner and a quick summary of the location of the store. At the bottom of the page a 'Find Us' link highlights when hovered over and takes the user to the Contact page where a map and full address can be found.
+
+[![Image from Gyazo](https://i.gyazo.com/b85f171bd1ce412c928fa6f46018c85e.gif)](https://gyazo.com/b85f171bd1ce412c928fa6f46018c85e)
+
+Contact Us:
+
+The contact us page is split into two sections. The top of the pages houses the contact details, opening hours of the store and, centrally, a contact form. The form is linked up to send an email to the store's email address when submitted.
+The bottom section has an embedded google maps. As this is a fictional site, with a fictional address, this is just for the general area of Exeter currently.
+
+[![Image from Gyazo](https://i.gyazo.com/b39440abc4af032e66aefc67b5f03280.gif)](https://gyazo.com/b39440abc4af032e66aefc67b5f03280)
 
 </details>
 <details>
