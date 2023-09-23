@@ -242,7 +242,7 @@ HTML
 <details>
 <summary>Dates Page</summary>
 
-![Screenshot of WC3 testing for next page]()
+![Screenshot of WC3 testing for ]()
 </details>
 <details>
 
