@@ -375,12 +375,27 @@ The bottom section has an embedded google maps. As this is a fictional site, wit
 </details>
 <details>
 <summary>Register/Login</summary>
+The Register and Login forms have been kept very simple. They have been built using Django's built-in User Authentication. The Registration form has been customised to include the additional fields first_name, last_name, and email.
+
+![Registration Form](readme_assets/registration_form.webp)
+![Login Form](readme_assets/login_form.webp)
 
 
 </details>
 <details>
 <summary>My Account</summary>
+When a newly registered user logs in they will be able to see menus in the navigation bar that weren't previously there (community, appointments). However before they can access the full functions of these they will need to create a Profile. Until the user has created a new Profile the different options within the dropdown menus will remain hidden.
 
+![Create Profile Form](readme_assets/create_profile_form.webp)
+
+Once the Profile is created the user will be automatically redirected to their Profile page. Here they have links to all the different sections of the website they might want as a registered user.
+Also included on the profile page is the list of any products the user has selected as one of their favourites.
+
+[![Image from Gyazo](https://i.gyazo.com/dd5588f101f4d77d09ebf8b196a7ea64.gif)](https://gyazo.com/dd5588f101f4d77d09ebf8b196a7ea64)
+
+The account settings page draws from Django's built in User Authentication and allows the user to update details they completed at the point of Registration.
+
+![Account Settings Form](readme_assets/settings_form.webp)
 
 </details>
 <details>
