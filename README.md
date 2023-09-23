@@ -245,7 +245,14 @@ Below is an example part way through the site build:
 
 ## Project Structure
 ### **Apps:**
-Little White Dress has a total of 5 Apps. These are Product, Customer, Contact, Recommendations, Appointment. These are outlined with their corresponding models below:
+Little White Dress has a total of 5 Apps. These are:
+* Product
+* Customer
+* Contact
+* Recommendations
+* Appointment
+
+These are outlined with their corresponding models below.
 
 #### PRODUCT
 
@@ -255,10 +262,9 @@ Little White Dress has a total of 5 Apps. These are Product, Customer, Contact, 
 
 Models:
 
-PRODUCT Model
+![Product Model](readme_assets/product.webp)
 
-CATEGORY Model
-
+![Category Model](readme_assets/category.webp)
 <br>
 
 #### CUSTOMER
@@ -269,7 +275,7 @@ CATEGORY Model
 
 Models:
 
-CUSTOMER Model
+![Customer Model](readme_assets/customer.webp)
 
 <br>
 
@@ -280,9 +286,9 @@ CUSTOMER Model
 
 Models:
 
-CONTACTDETAIL Model
+![Contact Detail Model](readme_assets/contact_detail.webp)
 
-ENQUIRY Model
+![Enquiry Model](readme_assets/enquiry.webp)
 
 <br>
 
@@ -298,7 +304,7 @@ ENQUIRY Model
 
 Models:
 
-RECOMMENDATION Model
+![Recommendation Model](readme_assets/recommendation.webp)
 
 <br>
 
@@ -314,7 +320,7 @@ RECOMMENDATION Model
 
 Models:
 
-APPOINTMENT Model
+![Appointment Model](readme_assets/appointment.webp)
 
 ----
 
