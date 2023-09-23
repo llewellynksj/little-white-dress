@@ -501,7 +501,7 @@ This website has been written in HTML, CSS, JavaScript & Python.
 ## Version Control
 Version control has been maintained using Git. The code written for this website has been updated via regular commits to Github. These serve as a record of development and changes made.
 
-The commit history can be viewed [here]()
+The commit history can be viewed [here](https://github.com/llewellynksj/little-white-dress/commits/main)
 
 <br>
 
@@ -746,7 +746,17 @@ CSS
 
 ## Credits
 ### **Resources**
-- 
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
 
 <br>
 
