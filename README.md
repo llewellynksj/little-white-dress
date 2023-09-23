@@ -338,6 +338,10 @@ Hamburger Menu: A bootstrap collapsible menu has been used to keep the navigatio
 
 [![Image from Gyazo](https://i.gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77.gif)](https://gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77)
 
+Messages: Messages appear when the User logsout, books an appointment, edits an appointment etc.
+
+![Example of a Message](readme_assets/messages.webp)
+
 <details>
 <summary>Homepage</summary>
 The first view of the site that a user will have will be the hero image on the landing page. Initially the plan was to include a carousel of images, but as development progressed the single hero image that is there felt so impactful that it remains the only one. It's striking, clean, and sophiticated; everything the brand identity wants.
@@ -469,12 +473,26 @@ In the future there are features and developments that it would be useful to con
 
 ## Technologies
 ### **Languages Used**
-This website has been written in .
+This website has been written in HTML, CSS, JavaScript & Python.
 
 <br>
 
 **Frameworks, Libraries and Programs Used**
-- 
+- [Django](https://www.djangoproject.com/): Main framework used to create website
+- [ElephantSQL](https://customer.elephantsql.com/login): To hold databases
+- [Heroku](https://dashboard.heroku.com/apps): To Deploy
+- [Bootstrap v5.3](https://getbootstrap.com/): Framework for styling
+- [Github](https://github.com/): To host repositories
+- [Gitpod](https://www.gitpod.io/): To code
+- [Miro](https://miro.com/app/dashboard/): To create ER diagrams and mapping user journey
+- [FontAwesome](https://fontawesome.com/): For icons used throughout
+- [GoogleFonts](https://fonts.google.com/): For fonts used in the body and logo for the site
+- [Coolors](https://coolors.co/): To create a colour palette
+- [Balsamiq](https://balsamiq.com/): To wireframe the site
+- [Favicon.io](https://favicon.io/): To create a Favicon
+- [Am I Responsive](https://ui.dev/amiresponsive): To test site responsiveness and capture image across different devices
+- [Birme](https://www.birme.net/): To resize images and convert to webp
+- [Gyazo](https://gyazo.com/): To create GIFs for the README
 
 <br>
 
