@@ -55,6 +55,15 @@ img {
     margin: auto;
 }
 
+.form-check {
+   margin: auto;
+}
+
+.form-list {
+    list-style: none;
+    padding: 2px;
+}
+
 .account-container {
     max-width: 400px;
 }

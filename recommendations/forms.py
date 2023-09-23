@@ -33,5 +33,5 @@ class AddNewRecommendationForm(forms.ModelForm):
             'posted_by': forms.TextInput(
                 attrs={'class': 'form-control'}),
             'decleration_of_consent': forms.CheckboxInput(
-                attrs={'class': 'form-check', 'required': 'True'}),
+                attrs={'class': 'form-check text-center', 'required': 'True'}),
         }
