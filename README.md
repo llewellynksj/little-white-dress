@@ -400,11 +400,45 @@ The account settings page draws from Django's built in User Authentication and a
 </details>
 <details>
 <summary>Appointments</summary>
+My Appointments:
+
+The My Appointments page shows any current appointments booked by the User. From here the User can also Cancel or Reschedule any booked appointments. If no appointments are currently booked a message will show informing the User of this.
+
+![My Appointments Page](readme_assets/my_appts.webp)
+![My Appointments Page with no booked appointments](readme_assets/no_appts.webp)
+
+Example of an appointment being cancelled:
+
+[![Image from Gyazo](https://i.gyazo.com/4903cfba3cdef1c9635aadd508a10060.gif)](https://gyazo.com/4903cfba3cdef1c9635aadd508a10060)
+
+Book an Appointment:
+
+Validation has used in this form to ensure that only days when the store is open can be booked. Also dates selected in the past cannot be booked.
+If a user selects a date and time that already exist in the database they will not be able to book this slot. This ensures no double bookings are made.
+
+![Booking Form](readme_assets/booking_form.webp)
 
 
 </details>
 <details>
 <summary>Community</summary>
+Community Recommendations:
+
+This page displays all Recommendations submitted by all Users. This page is only accessed by registered Users.
+
+[![Image from Gyazo](https://i.gyazo.com/6af1bb57697f29fde35b3900f0d19fe8.gif)](https://gyazo.com/6af1bb57697f29fde35b3900f0d19fe8)
+
+Add a Recommendation:
+
+[![Image from Gyazo](https://i.gyazo.com/8b8c2a23c00b034775944539f9e678f7.gif)](https://gyazo.com/8b8c2a23c00b034775944539f9e678f7)
+
+View my Recommendations:
+
+From here a logged in User can view their own Recommendations and make changes/delete these.
+
+![My Recommendations Page](readme_assets/my_recs.webp)
+
+[![Image from Gyazo](https://i.gyazo.com/39deb499127dba6cb2108f13bf4869c9.gif)](https://gyazo.com/39deb499127dba6cb2108f13bf4869c9)
 
 
 </details>
