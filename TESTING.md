@@ -64,38 +64,38 @@ Testing was performed across a range of devices, including:
 
 | Client Goal | Solution | Tested & Successfully Completed |
 | :----| :---| :----------------------:|
-|   |  |  |
-|   |  |  |
-|   |  |  |
-|   |  |  |
-|   |  |  |
+| As site admin I want to be able to upload and remove any dress products from the site |  |  |
+| As a site admin I want to be able to view any enquiries sent via the website contact form |  |  |
+| As site admin I want to be able to view any bookings by customers to come and try on dresses |  |  |
+| As site admin I want to be able to amend any bookings by customers to come and try on dresses |  |  |
+| As site admin I want to be able to cancel any bookings by customers to come and try on dresses |  |  |
+| The website should create a strong brand identity |  |  |
+| The website should be responsive across different devices |  |  |
 
 <br>
 
 | First Time Visitor Goal | Solution | Tested & Successfully Completed |
 | :----| :---| :----------------------:|
-|   |  |  |
-|   |  |  |
-|   |  |  |
-|   |  |  |
+| As a first time user I want to browse available wedding dresses |  |  |
+| As a first time user I want to book an appointment to try on dresses |  |  |
+| As a first time user I want to save my favourite dresses so I can refer back to them later |  |  |
+| As a first time user I want to be able to contact the store |  |  |
+| As a first time user I want to be able to filter my search by dress style and price |  |  |
+| As a first time user I want to view details about the dress such as price and available sizes |  |  |
+| As a first time user I want to be able to find recommendations for other wedding services in the bridal community |  |  |
 
 <br>
 
 | Returning Visitor Goal | Solution | Tested & Successfully Completed |
 | :----| :---| :----------------------:|
-|  |  |  |
-|  |  |  |
-|  |  |  |
+| As a returning user I want to see my favourite dresses |  |  |
+| As a returning user I want to view any current bookings I have to try on dresses |  |  |
+| As a returning user I want to amend any current bookings I have to try on dresses |  |  |
+| As a returning user I want to cancel any current bookings I have to try on dresses |  |  |
+| As a returning user I want to be able to post recommendations for other wedding services to the bridal community |  |  |
 
 <br>
 
-| Frequent Visitor Goal | Solution | Tested & Successfully Completed |
-| :----| :---| :----------------------:|
-|  |  |  |
-|  |  |  |
-|  |  |  |
-
-<br>
 
 ### **Lighthouse**
 
