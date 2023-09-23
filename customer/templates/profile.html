@@ -19,7 +19,7 @@
         <!-- Profile Information -->
         <div class="d-flex flex-column flex-sm-row my-3 py-3 justify-content-center">
             <div class="flex-column p-3 text-center">
-                <img src="{{ user.customer.profile_pic.url }}" alt="" class="rounded-circle profile-pic">
+                <img src="{{ user.customer.profile_pic.url }}" alt="user profile image" class="rounded-circle profile-pic">
             </div>
             <div class="d-flex flex-column p-3 text-center">
                 <h3>My Details</h3>
@@ -50,7 +50,7 @@
                     {% for product in user.fav_products.all %}
                         <div class="col">
                             <a href="{% url 'product_details' product.pk %}" class="product-link">
-                                <img src=" {{ product.main_image.url }}" alt="category image" class="img-thumbnail">
+                                <img src=" {{ product.main_image.url }}" alt="product image" class="img-thumbnail">
                                 <h3 class="">{{ product.item_name }}</h3>
                                 <p>{{ product.category }}</p>
                                 <p>£{{ product.price }}</p>
