@@ -11,12 +11,24 @@ class UpdateProfileForm(forms.ModelForm):
     """
     class Meta:
         model = Customer
-        fields = ('profile_pic', 'date_of_wedding', 'website_url')
+        fields = (
+            'profile_pic',
+            'date_of_wedding',
+            'partners_name',
+            'wedding_location',
+            'wedding_theme',
+            'website_url')
         widgets = {
             'profile_pic': forms.FileInput(
                 attrs={'class': 'form-control', 'type': 'file'}),
             'date_of_wedding': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}),
+            'partners_name': forms.TextInput(
+                attrs={'class': 'form-control'}),
+            'wedding_location': forms.TextInput(
+                attrs={'class': 'form-control'}),
+            'wedding_theme': forms.TextInput(
+                attrs={'class': 'form-control'}),
             'website_url': forms.TextInput(
                 attrs={'class': 'form-control'}),
         }
@@ -28,12 +40,24 @@ class CreateNewProfileForm(forms.ModelForm):
     """
     class Meta:
         model = Customer
-        fields = ('profile_pic', 'date_of_wedding', 'website_url')
+        fields = (
+            'profile_pic',
+            'date_of_wedding',
+            'partners_name',
+            'wedding_location',
+            'wedding_theme',
+            'website_url')
         widgets = {
             'profile_pic': forms.FileInput(
                 attrs={'class': 'form-control', 'type': 'file'}),
             'date_of_wedding': forms.DateInput(
                 attrs={'class': 'form-control', 'type': 'date'}),
+            'partners_name': forms.TextInput(
+                attrs={'class': 'form-control'}),
+            'wedding_location': forms.TextInput(
+                attrs={'class': 'form-control'}),
+            'wedding_theme': forms.TextInput(
+                attrs={'class': 'form-control'}),
             'website_url': forms.TextInput(
                 attrs={'class': 'form-control'}),
         }
