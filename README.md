@@ -761,3 +761,10 @@ CSS
 <br>
 
 ### **Acknowledgements**
+Firstly I want to thank my wonderful friend, Samantha Landy, for letting me use her business idea/dream to create this project. She was pure inspiration when speaking about her dream business and I knew I had to build a website for it! I hope this does it justice.
+I'd also like to thank my husband and son for all their support and reassurance that I'm not neglecting them when I'm shut away in the office for hours on end.
+
+I wouldn't have been able to complete this project without the everwise guidance of my Code Institue mentor, Ronan. Also the help of some key Code Institute community members. They are - 
+ - [Roman Rakic](https://github.com/rockroman)
+ - [Andy Guttridge](https://github.com/andy-guttridge)
+ - [Kera Cudmore](https://github.com/kera-cudmore)
