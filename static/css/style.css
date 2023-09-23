@@ -222,9 +222,13 @@ img {
 }
 
 /* All products page styles */
+.products-container {
+    margin: auto;
+}
+
 .product-link * {
     margin-bottom: 0;
-    margin-left: 4px;
+    margin: auto;
 }
 
 .product-link h3 {
