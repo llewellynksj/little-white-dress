@@ -461,6 +461,7 @@ In the future there are features and developments that it would be useful to con
   - ['Django server RW access to self owned google calendar?' Stack Overflow Q&A](https://stackoverflow.com/questions/49480930/django-server-rw-access-to-self-owned-google-calendar)
   - ['Using OAuth 2.0 for Server to Server Applications' Google Documentation](https://developers.google.com/identity/protocols/oauth2/service-account)
 - Further validation to include things such as image size validation. The Profile image container and border can be skewed if the user uploads an image that isn't a suitable size. Further investigation needed to implement proper validation to prevent this.
+- Filter & Search: Due to time contraints I was not able to implement this feature. A future implmentation would include the ability for users to browse products using a filter function.
 
 <br>
 
