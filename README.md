@@ -457,7 +457,11 @@ In addition to being best practice, having an accessible website is extremely hi
 ### **Future Features**
 In the future there are features and developments that it would be useful to consider adding to create an even better user experience of this website. They include:
 
-- 
+- Integration with Google Calendar: To make this site more user-friendly for the business owner/admin I would have liked to integrate the booking calendar with the Google Calendar API. This is something I put a fair amount of research into and could see the potential of, however due to time constraints I was not able to implement in this version. For future developments I would continue to follow instructions laid out by these extremely useful resources:
+  - ['Connecting Google Cal API and Django' Blog post by Ben Hammond](https://blog.benhammond.tech/connecting-google-cal-api-and-django)
+  - ['Django server RW access to self owned google calendar?' Stack Overflow Q&A](https://stackoverflow.com/questions/49480930/django-server-rw-access-to-self-owned-google-calendar)
+  - ['Using OAuth 2.0 for Server to Server Applications' Google Documentation](https://developers.google.com/identity/protocols/oauth2/service-account)
+- Further validation to include things such as image size validation. The Profile image container and border can be skewed if the user uploads an image that isn't a suitable size. Further investigation needed to implement proper validation to prevent this.
 
 <br>
 
