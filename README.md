@@ -4,9 +4,9 @@ Little White Dress (LWD) is a website developed as part of a Portfolio Project f
 
 A visitor to the LWD website can easily browse the products on sale, make a booking to attend the store and try on dresses, and join a community of brides who share recommendations.
 
-![Image of ]()
+![Image of website across different devices](readme_assets/responsive-dark.webp)
 
-[Visit the  live website here]()
+[Visit the  live website here](https://little-white-dress-ad94e830edef.herokuapp.com/)
 
 <br>
 
