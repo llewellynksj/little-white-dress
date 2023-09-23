@@ -5,9 +5,9 @@
 <div class="container-fluid">
     <h1 class="text-center"><em>All Styles</em></h1>
     <div class="col-12">
-        <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 collection-container">
+        <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-around">
             {% for product in product_list %}
-            <div class="card-body">
+            <div class="card-body col-4">
                 <a href="{% url 'product_details' product.pk %}" class="product-link">
                     <div class="image-container product-image">
                         <img src=" {{ product.main_image.url }}" alt="category image">

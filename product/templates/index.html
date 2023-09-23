@@ -5,9 +5,21 @@
 <!-- Hero image -->
 <div class="container-fluid hero-container">
     <div class="text-center big-btn">
-        <a href="" class="link-no-decor">
-            <button class="mb-0" type="button"><em>Book an appointment</em></button>
-        </a>
+        {% if user.is_authenticated %}
+            {% if user.customer.id %}
+                <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
+                    <button class="mb-0" type="button"><em>Book an appointment</em></button>
+                </a>
+            {% else %}
+                <a href="{% url 'create_profile' %}" class="link-no-decor">
+                    <button class="mb-0" type="button"><em>Book an appointment</em></button>
+                </a>
+            {% endif %}
+        {% else %}
+            <a href="{% url 'login' %}" class="link-no-decor">
+                <button class="mb-0" type="button"><em>Book an appointment</em></button>
+            </a>
+        {% endif %}
     </div>
     <div>
         <div class="carousel-inner">
