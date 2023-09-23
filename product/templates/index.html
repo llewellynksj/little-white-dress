@@ -21,6 +21,10 @@
                         <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
                             <button class="hero-btn" type="button"><em>Book an appointment</em></button>
                         </a>
+                        {% else %}
+                        <a href="{% url 'create_profile' %}" class="link-no-decor">
+                            <button class="hero-btn" type="button"><em>Book an appointment</em></button>
+                        </a>
                         {% endif %}
                     {% else %}
                         <a href="{% url 'login' %}" class="link-no-decor">
@@ -71,9 +75,13 @@
         <p class="lead">Bring up to 5 guests, enjoy a glass of fizz, and let's see if we can find your <em>'one' </em>!</p>
         {% if user.is_authenticated %}
             {% if user.customer.id %}
-            <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
+                <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
                 <button class="appt-btn" type="button">Book an Appointment</button>
-            </a>
+                </a>
+            {% else %}
+                <a href="{% url 'create_profile' %}" class="link-no-decor">
+                    <button class="hero-btn" type="button"><em>Book an appointment</em></button>
+                </a>
             {% endif %}
         {% else %}
             <a href="{% url 'login' %}" class="link-no-decor">
