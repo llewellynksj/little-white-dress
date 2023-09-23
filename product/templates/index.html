@@ -17,9 +17,11 @@
                 <div class="carousel-overlay">
                     <h2 id="hero-text"><em>Find your perfect gown</em></h2>
                     {% if user.is_authenticated %}
+                        {% if user.customer.id %}
                         <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
                             <button class="hero-btn" type="button"><em>Book an appointment</em></button>
                         </a>
+                        {% endif %}
                     {% else %}
                         <a href="{% url 'login' %}" class="link-no-decor">
                             <button class="hero-btn" type="button"><em>Book an appointment</em></button>
@@ -68,9 +70,11 @@
         <p class="lead">Trying on dresses is a right of passage for any bride. We'll make your experience as special as it should be.</p>
         <p class="lead">Bring up to 5 guests, enjoy a glass of fizz, and let's see if we can find your <em>'one' </em>!</p>
         {% if user.is_authenticated %}
+            {% if user.customer.id %}
             <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
                 <button class="appt-btn" type="button">Book an Appointment</button>
             </a>
+            {% endif %}
         {% else %}
             <a href="{% url 'login' %}" class="link-no-decor">
                 <button class="appt-btn" type="button">Book an Appointment</button>

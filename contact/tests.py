@@ -37,7 +37,7 @@ class ContactDetailTests(TestCase):
         """
         Test url location correct
         """
-        response = self.client.get('/contact/')
+        response = self.client.get('/contact_us/')
         self.assertEqual(response.status_code, 200)
 
 
