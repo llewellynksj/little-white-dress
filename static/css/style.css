@@ -208,6 +208,17 @@ img {
     max-width: 240px;
 }
 
+/* Animate elements in when user scrolls */
+.scroll-animation {
+    opacity: 0;
+    transition: all 1s;
+}
+
+.scroll-animation-go {
+    opacity: 1;
+    transform: translateX()
+}
+
 /* Homepage 'Join our community of brides' styles */
 .link-hover:hover {
     color: blue;

@@ -320,6 +320,9 @@ Models:
 
 ## Features
 ### **Existing Features**
+<details>
+<summary>Features across whole site</summary>
+
 Admin Portal:
 A link to the admin portal can be found at the bottom of each page in the footer:
 
@@ -337,12 +340,13 @@ Hamburger Menu: A bootstrap collapsible menu has been used to keep the navigatio
 Messages: Messages appear when the User logsout, books an appointment, edits an appointment etc.
 
 ![Example of a Message](readme_assets/messages.webp)
-
+</details>
 <details>
 <summary>Homepage</summary>
 The first view of the site that a user will have will be the hero image on the landing page. Initially the plan was to include a carousel of images, but as development progressed the single hero image that is there felt so impactful that it remains the only one. It's striking, clean, and sophiticated; everything the brand identity wants.
+On the homepage I have implemented a very subtle scroll animation that brings each section on to screen as the user scrolls to it. This has been done using the IntersectionObserver in JavaScript. I have chosen to only implement this on the homepage as it's the only page with multiple sections and it therefore lends itself to the subtle animation to help with a smooth flow.
 
-![Homepage Hero image](readme_assets/hero.webp)
+[![Image from Gyazo](https://i.gyazo.com/18e486467d85ec7a7719241c1840f6d8.gif)](https://gyazo.com/18e486467d85ec7a7719241c1840f6d8)
 
 As the user scrolls down the homepage the next thing the hit are the categories. In conversation with users it became clear that brides looking for dresses sometimes felt overwhelmed by choice when landing on a page full of hundreds of white dresses. Enabling the user to browse by category was an important consideration.
 
@@ -755,6 +759,8 @@ For all testing details visit the [TESTING](TESTING.md) file.
 - [Codemy 'Create a Blog Profile Page'](http://bit.ly/3OsUgy8)
 - [YouTube 'Code with Stein - How to Send Email using Django?'](https://www.youtube.com/watch?v=dnhEnF7_RyM)
 - [Codemy 'Add Blog Posts to Django'](https://bit.ly/3s2sUq4)
+- [MDN 'Intersection Observer API'](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
+- [YouTube 'Beyond Fireship - Subtle, yet Beautiful Scroll Animations'](https://www.youtube.com/watch?v=T33NN_pPeNI)
 
 <br>
 
