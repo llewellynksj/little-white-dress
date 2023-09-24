@@ -234,25 +234,67 @@ For Desktop
 
 ### **Validator Testing**
 HTML
+All pages passed validation testing
 <details>
 <summary>Homepage</summary>
 
-![Screenshot of WC3 testing for homepage]()
+![Screenshot of WC3 testing for homepage](readme_assets/validation/homepage_validated.webp)
 </details>
 <details>
-<summary>Dates Page</summary>
+<summary>Category Page</summary>
 
-![Screenshot of WC3 testing for ]()
+![Screenshot of WC3 testing for category page](readme_assets/validation/category_validated.webp)
 </details>
 <details>
+<summary>All Products Page</summary>
+
+![Screenshot of WC3 testing for all styles page](readme_assets/validation/all_products_validated.webp)
+</details>
+<details>
+<summary>Product Details Page</summary>
+
+![Screenshot of WC3 testing for product details page](readme_assets/validation/product_detail_validated.webp)
+</details>
+<details>
+<summary>About Page</summary>
+
+![Screenshot of WC3 testing for about us page](readme_assets/validation/about_validated.webp)
+</details>
+<details>
+<summary>Contact Page</summary>
+
+![Screenshot of WC3 testing for contact page](readme_assets/validation/contact_validated.webp)
+</details>
+<details>
+<summary>Profile Page</summary>
+
+![Screenshot of WC3 testing for profile page](readme_assets/validation/profile_validated.webp)
+</details>
+<details>
+<summary>Appointment Pages</summary>
+
+![Screenshot of WC3 testing for my appointments page](readme_assets/validation/my_appt_validated.webp)
+
+![Screenshot of WC3 testing for add appointment page](readme_assets/validation/book_validated.webp)
+</details>
+<details>
+<summary>Community Pages</summary>
+
+![Screenshot of WC3 testing for community page](readme_assets/validation/community_validated.webp)
+
+![Screenshot of WC3 testing for my recommendations page](readme_assets/validation/my_recs_validated.webp)
+
+![Screenshot of WC3 testing for add recommendation page](readme_assets/validation/add_rec_validated.webp)
+</details>
 
 <br>
 
 CSS
+Stylesheet passed validation testing
 <details>
 <summary>Stylesheet</summary>
 
-![Screenshot of W3C Jigsaw testing for CSS Stylesheet]()
+![Screenshot of W3C Jigsaw testing for CSS Stylesheet](readme_assets/validation/css-validator.webp)
 </details>
 
   <br>
