@@ -140,7 +140,6 @@ img {
     left: 5%;
     z-index: 11;
     color: #252525;
-    overflow: wrap;
 }
 
 .carousel-overlay button {
