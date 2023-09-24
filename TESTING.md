@@ -233,8 +233,9 @@ For Desktop
 <br>
 
 ### **Validator Testing**
-HTML
-All pages passed validation testing
+#### HTML
+
+All pages passed [WC3](https://validator.w3.org/) validation testing
 <details>
 <summary>Homepage</summary>
 
@@ -289,8 +290,9 @@ All pages passed validation testing
 
 <br>
 
-CSS
-Stylesheet passed validation testing
+#### CSS
+
+Stylesheet passed [WC3](https://jigsaw.w3.org/css-validator/) validation testing
 <details>
 <summary>Stylesheet</summary>
 
@@ -298,6 +300,90 @@ Stylesheet passed validation testing
 </details>
 
   <br>
+
+#### Python Linter
+All .py files passed through the [CI Python Linter](https://pep8ci.herokuapp.com/) with no errors, with the exception of the settings.py file. As the code that caused an error is system generated code I made the decision not to amend it.
+
+<details>
+<summary>Little White Dress</summary>
+
+![Screenshot of CI Python Linter validation for settings.py](readme_assets/python_validation/lwd-settings.webp)
+![Screenshot of CI Python Linter validation for urls.py](readme_assets/python_validation/lwd-urls.webp)
+</details>
+<details>
+<summary>Product App</summary>
+
+![Screenshot of CI Python Linter validation for admin.py](readme_assets/python_validation/product-admin.webp)
+
+![Screenshot of CI Python Linter validation for models.py](readme_assets/python_validation/product-models.webp)
+
+![Screenshot of CI Python Linter validation for tests.py](readme_assets/python_validation/product-tests.webp)
+
+![Screenshot of CI Python Linter validation for urls.py](readme_assets/python_validation/product-urls.webp)
+
+![Screenshot of CI Python Linter validation for views.py](readme_assets/python_validation/product-views.webp)
+</details>
+<details>
+<summary>Customer App</summary>
+
+![Screenshot of CI Python Linter validation for admin.py](readme_assets/python_validation/customer-admin.webp)
+
+![Screenshot of CI Python Linter validation for forms.py](readme_assets/python_validation/customer-forms.webp)
+
+![Screenshot of CI Python Linter validation for models.py](readme_assets/python_validation/customer-models.webp)
+
+![Screenshot of CI Python Linter validation for tests.py](readme_assets/python_validation/customer-tests.webp)
+
+![Screenshot of CI Python Linter validation for urls.py](readme_assets/python_validation/customer-urls.webp)
+
+![Screenshot of CI Python Linter validation for views.py](readme_assets/python_validation/customer-views.webp)
+</details>
+<details>
+<summary>Contact App</summary>
+
+![Screenshot of CI Python Linter validation for admin.py](readme_assets/python_validation/contact-admin.webp)
+
+![Screenshot of CI Python Linter validation for forms.py](readme_assets/python_validation/contact-forms.webp)
+
+![Screenshot of CI Python Linter validation for models.py](readme_assets/python_validation/contact-models.webp)
+
+![Screenshot of CI Python Linter validation for tests.py](readme_assets/python_validation/contact-tests.webp)
+
+![Screenshot of CI Python Linter validation for urls.py](readme_assets/python_validation/contact-urls.webp)
+
+![Screenshot of CI Python Linter validation for views.py](readme_assets/python_validation/contact-views.webp)
+</details>
+<details>
+<summary>Recommendations App</summary>
+
+![Screenshot of CI Python Linter validation for admin.py](readme_assets/python_validation/recommendations-admin.webp)
+
+![Screenshot of CI Python Linter validation for forms.py](readme_assets/python_validation/recommendations-forms.webp)
+
+![Screenshot of CI Python Linter validation for models.py](readme_assets/python_validation/recommendations-models.webp)
+
+![Screenshot of CI Python Linter validation for tests.py](readme_assets/python_validation/recommendations-tests.webp)
+
+![Screenshot of CI Python Linter validation for urls.py](readme_assets/python_validation/recommendations-urls.webp)
+
+![Screenshot of CI Python Linter validation for views.py](readme_assets/python_validation/recommendations-views.webp)
+</details>
+<details>
+<summary>Appointment App</summary>
+
+![Screenshot of CI Python Linter validation for admin.py](readme_assets/python_validation/appt-admin.webp)
+
+![Screenshot of CI Python Linter validation for forms.py](readme_assets/python_validation/appt-forms.webp)
+
+![Screenshot of CI Python Linter validation for models.py](readme_assets/python_validation/appt-models.webp)
+
+![Screenshot of CI Python Linter validation for tests.py](readme_assets/python_validation/appt-tests.webp)
+
+![Screenshot of CI Python Linter validation for urls.py](readme_assets/python_validation/appt-urls.webp)
+
+![Screenshot of CI Python Linter validation for views.py](readme_assets/python_validation/appt-views.webp)
+</details>
+
 
 ### **Bugs**
   
