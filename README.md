@@ -690,6 +690,23 @@ os.environ['DEBUG'] = '1'
 ```
 <br>
 
+### Fork
+
+1. Visit [GitHub]() and login/register an account
+2. Go to the repository page for [Little White Dress]() - (You can also use the search bar)
+3. Select 'Fork' at the top right of the page
+
+### Clone
+
+1. Follow the first 2 steps to Fork
+2. Select 'Code' dropdown and choose the clone option your require
+3. Copy the command that is created
+4. Go to your IDE and in the terminal and paste the command
+5. To install the packages needed input the following code in the terminal:
+```
+pip3 install -r requirements/txt
+```
+
 ----
 
 ## Testing
