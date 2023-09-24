@@ -331,11 +331,11 @@ A link to the admin portal can be found at the bottom of each page in the footer
 Sticky Nav Bar:
 A 'sticky-top' bootstrap class has been used to ensure the user has access to the navigation bar at all times.
 
-[![Image from Gyazo](https://i.gyazo.com/48c3dd04f33807ddf921fcefc20e031b.gif)](https://gyazo.com/48c3dd04f33807ddf921fcefc20e031b)
+![Image from Gyazo](https://i.gyazo.com/48c3dd04f33807ddf921fcefc20e031b.gif)
 
 Hamburger Menu: A bootstrap collapsible menu has been used to keep the navigation bar clean for smaller devices.
 
-[![Image from Gyazo](https://i.gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77.gif)](https://gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77)
+![Image from Gyazo](https://i.gyazo.com/c2e9a2cad0bb3844eca0acb57aaadb77.gif)
 
 Messages: Messages appear when the User logsout, books an appointment, edits an appointment etc.
 
@@ -346,7 +346,7 @@ Messages: Messages appear when the User logsout, books an appointment, edits an 
 The first view of the site that a user will have will be the hero image on the landing page. Initially the plan was to include a carousel of images, but as development progressed the single hero image that is there felt so impactful that it remains the only one. It's striking, clean, and sophiticated; everything the brand identity wants.
 On the homepage I have implemented a very subtle scroll animation that brings each section on to screen as the user scrolls to it. This has been done using the IntersectionObserver in JavaScript. I have chosen to only implement this on the homepage as it's the only page with multiple sections and it therefore lends itself to the subtle animation to help with a smooth flow.
 
-[![Image from Gyazo](https://i.gyazo.com/18e486467d85ec7a7719241c1840f6d8.gif)](https://gyazo.com/18e486467d85ec7a7719241c1840f6d8)
+![Image from Gyazo](https://i.gyazo.com/18e486467d85ec7a7719241c1840f6d8.gif)
 
 As the user scrolls down the homepage the next thing the hit are the categories. In conversation with users it became clear that brides looking for dresses sometimes felt overwhelmed by choice when landing on a page full of hundreds of white dresses. Enabling the user to browse by category was an important consideration.
 
