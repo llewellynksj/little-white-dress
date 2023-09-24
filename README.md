@@ -689,6 +689,14 @@ DEBUG = 'DEBUG' in os.environ
 ```
 os.environ['DEBUG'] = '1'
 ```
+
+### Create a Superuser
+1. In the terminal of your IDE type the following command:
+```
+python3 manage.py createsuperuser
+```
+2. Follow the terminal instructions to set up a password
+
 <br>
 
 ### Fork
