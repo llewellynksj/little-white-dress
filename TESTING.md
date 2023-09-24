@@ -1,6 +1,6 @@
 # Little White Dress
 
-## Testing File
+## TESTING FILE
 
 ![Image of website across different devices](readme_assets/responsive-dark.webp)
 
@@ -428,6 +428,47 @@ views.py
 ![Screenshot of CI Python Linter validation for views.py](readme_assets/python_validation/appt-views.webp)
 </details>
 
+<br>
+
+### **Unit Testing**
+
+Unit testing has been carried out in each app using [Django TestCase](https://docs.djangoproject.com/en/4.2/topics/testing/overview/) to ensure the databases are working correctly. Once a test had been written I would fix any errors that arose before moving on.
+
+Whilst the automated testing in this project is not extensive I recognise the importance of it and intend to deepen my knowledge in this area for future projects.
+
+<details>
+<summary>Product App</summary>
+
+![Screenshot of testing passed in product app](readme_assets/unit_testing/test_product_app.webp)
+
+</details>
+<details>
+<summary>Customer App</summary>
+
+![Screenshot of testing passed in customer app](readme_assets/unit_testing/test_customer_app.webp)
+
+</details>
+<details>
+<summary>Contact App</summary>
+
+![Screenshot of testing passed in contact app](readme_assets/unit_testing/test_contact_app.webp)
+
+</details>
+<details>
+<summary>Recommendations App</summary>
+
+![Screenshot of testing passed in recommendations app](readme_assets/unit_testing/test_recommendation_app.webp)
+
+</details>
+<details>
+<summary>Appointment App</summary>
+
+![Screenshot of testing passed in appointment app](readme_assets/unit_testing/test_appointment_app.webp)
+
+</details>
+
+
+<br>
 
 ### **Bugs**
   
