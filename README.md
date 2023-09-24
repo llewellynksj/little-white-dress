@@ -346,6 +346,8 @@ Messages: Messages appear when the User logsout, books an appointment, edits an 
 The first view of the site that a user will have will be the hero image on the landing page. Initially the plan was to include a carousel of images, but as development progressed the single hero image that is there felt so impactful that it remains the only one. It's striking, clean, and sophiticated; everything the brand identity wants.
 On the homepage I have implemented a very subtle scroll animation that brings each section on to screen as the user scrolls to it. This has been done using the IntersectionObserver in JavaScript. I have chosen to only implement this on the homepage as it's the only page with multiple sections and it therefore lends itself to the subtle animation to help with a smooth flow.
 
+![Image of Hero on homepage](readme_assets/hero.webp)
+
 [![Image from Gyazo](https://i.gyazo.com/f6e4422161533cc762867d3c8f91814b.gif)](https://gyazo.com/f6e4422161533cc762867d3c8f91814b)
 
 As the user scrolls down the homepage the next thing the hit are the categories. In conversation with users it became clear that brides looking for dresses sometimes felt overwhelmed by choice when landing on a page full of hundreds of white dresses. Enabling the user to browse by category was an important consideration.
