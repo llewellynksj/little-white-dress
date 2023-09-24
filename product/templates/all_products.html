@@ -7,18 +7,18 @@
     <div class="container-fluid">
         <div class="row">
             {% for product in product_list %}
-            <div class="card-body products-container col-sm-6 col-lg-4 col-xl-3">
-                <a href="{% url 'product_details' product.pk %}" class="product-link">
-                    <div class="image-container product-image">
-                        <img src=" {{ product.main_image.url }}" alt="product image">
-                    </div>
-                    <div class="text-center">
-                        <h3 class="link-no-decor">{{ product.item_name }}</h3>
-                        <p class="link-no-decor">{{ product.category }}</p>
-                        <p class="link-no-decor">£{{ product.price }}</p>
-                    </div>
-                </a>
-            </div>
+                <div class="card-body products-container col-sm-6 col-lg-4 col-xl-3">
+                    <a href="{% url 'product_details' product.pk %}" class="product-link">
+                        <div class="image-container product-image">
+                            <img src=" {{ product.main_image.url }}" alt="product image">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="link-no-decor">{{ product.item_name }}</h3>
+                            <p class="link-no-decor">{{ product.category }}</p>
+                            <p class="link-no-decor">£{{ product.price }}</p>
+                        </div>
+                    </a>
+                </div>
             {% endfor %}
         </div>  
     </div>

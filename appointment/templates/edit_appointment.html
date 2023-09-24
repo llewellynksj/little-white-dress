@@ -2,25 +2,24 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-        <div class="container-fluid body-content account-container">
+    <div class="container-fluid body-content account-container">
+        {% if user.id == appointment.user.id %}
             <div class="text-center account-card m-4">
                 <h1 class="account-title">Reschedule Appointment</h1>
-                {% if user.id == appointment.user.id %}
                     <div class="form-group">
                         <form method="POST">
                             {% csrf_token %}
                             {{ form.as_p }}
-                            
                             <button class="btn btn-secondary">Reschedule</button>
                         </form>
                     </div>
-                </div>
-            {% else %}
+            </div>
+        {% else %}
             <p class="lead">You are not able to reschedule this appointment as you are not the owner</p>
-        </div>
-            {% endif %}
+    </div>
+{% endif %}
 {% else %}
-    You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
+You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
 {% endif %}
 
 {% endblock %}

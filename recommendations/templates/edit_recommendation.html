@@ -2,33 +2,34 @@
 
 {% block content %}
 {% if user.is_authenticated %}
-        <div class="container-fluid body-content account-container">
-            <div class="text-center account-card m-4">
-                <h1 class="account-title">Edit</h1>
-                {% if user.id == recommendation.user.id %}
-                    <div class="form-group">
-                        <form method="POST">
-                            {% csrf_token %}
-                            {{ form.as_p }}
-                            <div>
-                                <h2>Code of Conduct:</h2>
-                                <ul>
-                                    <li>Always treat others with kindness and respect, even if you don't agree with them</li>
-                                    <li>Stay on topic, don't intentionally derail threads</li>
-                                    <li>Don't troll</li>
-                                    <li>Don't spam</li>
-                                    <li>Use appropriate language</li>
-                                    <li>Do not intentionally insult or offend others</li>
-                                    <li>We do not tolerate hate speech, intimidation, harassment, sexual, racial, or ethnic slurs, and discrimination.</li>
-                                </ul>
-                            </div>
-                            <button class="btn btn-secondary">Update</button>
-                        </form>
-                    </div>
-                {% else %}
-            </div>
-            <p class="lead">You are not able to edit this recommendation as you are not the owner</p>
+    <div class="container-fluid body-content account-container">
+        <div class="text-center account-card m-4">
+            <h1 class="account-title">Edit</h1>
+            {% if user.id == recommendation.user.id %}
+                <div class="form-group">
+                    <form method="POST">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <div>
+                            <h2>Code of Conduct:</h2>
+                            <ul>
+                                <li>Always treat others with kindness and respect, even if you don't agree with them</li>
+                                <li>Stay on topic, don't intentionally derail threads</li>
+                                <li>Don't troll</li>
+                                <li>Don't spam</li>
+                                <li>Use appropriate language</li>
+                                <li>Do not intentionally insult or offend others</li>
+                                <li>We do not tolerate hate speech, intimidation, harassment, sexual, racial, or ethnic slurs,
+                                    and discrimination.</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-secondary">Update</button>
+                    </form>
+                </div>
         </div>
+            {% else %}
+                <p class="lead">You are not able to edit this recommendation as you are not the owner</p>
+    </div>
             {% endif %}
 {% else %}
     You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.

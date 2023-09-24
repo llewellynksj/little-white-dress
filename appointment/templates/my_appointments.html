@@ -25,24 +25,24 @@
             {% else %}
                 <div class="row category row-cols-2 row-cols-sm-3 row-cols-md-4 justify-content-center">
                     {% for item in user_appointments %}
-                    <div class="card-body m-4 appointment-cards">
-                        <div class="p-4">
-                            <h3 class="booking-title text-center pb-3">Booking Confirmed</h3>
-                            <h3>Date: {{ item.booking_date }}</h3>
-                            <h3>Time: {{ item.time }}</h3>
-                            <h4>Date of Wedding: {{ item.date_of_wedding}}</h3>
-                            <h4>Number attending appointment: {{ item.no_in_party }}</h3>
+                        <div class="card-body m-4 appointment-cards">
+                            <div class="p-4">
+                                <h3 class="booking-title text-center pb-3">Booking Confirmed</h3>
+                                <h3>Date: {{ item.booking_date }}</h3>
+                                <h3>Time: {{ item.time }}</h3>
+                                <h4>Date of Wedding: {{ item.date_of_wedding}}</h3>
+                                <h4>Number attending appointment: {{ item.no_in_party }}</h3>
+                            </div>
+                            {% if user.id == item.user.id %}
+                                <div class="d-flex justify-content-center">
+                                    <a class="link-no-decor" href="{% url 'edit_appointment' item.pk %}"><p class="btn btn-outline-secondary mb-4 mx-4 appt-button">Reschedule</p></a>
+                                    <a href="{% url 'cancel' item.pk %}" class="link-no-decor"><p class="btn btn-outline-danger mb-4 mx-4 appt-button">Cancel</p></a>
+                                </div>
+                            {% endif %}
                         </div>
-                        {% if user.id == item.user.id %}
-                        <div class="d-flex justify-content-center">
-                            <a class="link-no-decor" href="{% url 'edit_appointment' item.pk %}"><p class="btn btn-outline-secondary mb-4 mx-4 appt-button">Reschedule</p></a>
-                            <a href="{% url 'cancel' item.pk %}" class="link-no-decor"><p class="btn btn-outline-danger mb-4 mx-4 appt-button">Cancel</p></a>
-                        </div>
-                        {% endif %}
-                    </div>
                     {% endfor %}
-                    {% endif %}
                 </div>
+            {% endif %}
         </div>
 {% else %}
     You are not able to do this. Please <a href="{% url 'login' %}">Login</a>.
