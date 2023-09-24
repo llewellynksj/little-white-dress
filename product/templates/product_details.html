@@ -36,7 +36,6 @@
                     {% else %}
                         <button type="submit", name="product_id", value="{{ product.id }}", class="btn btn-outline-danger btn-sm">Add to Favourites</button>
                     {% endif %}
-                    
                 </form>
             {% else %}
                 <p><em><a href="{% url 'login' %}">Login</a> to save this dress to your Favourites</em></p>

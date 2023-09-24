@@ -10,9 +10,9 @@
         <!-- Profile Buttons -->
         <div class="d-flex my-3 py-3 justify-content-center align-items-center text-center">
             <div class="flex-column">
-                <a class="link-no-decor" href="{% url 'my_appointments' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">My Appointments</button></a>
-                <a class="link-no-decor" href="{% url 'book' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Book a New Appointment</button></a>
-                <a class="link-no-decor" href="{% url 'community' %}"><button class="btn btn-outline-secondary mx-2 page-button">Community Recommendations</button></a>
+                <a class="link-no-decor" href="{% url 'my_appointments' user.customer.id %}"><p class="btn btn-outline-secondary mx-2 page-button">My Appointments</p></a>
+                <a class="link-no-decor" href="{% url 'book' user.customer.id %}"><p class="btn btn-outline-secondary mx-2 page-button">Book a New Appointment</p></a>
+                <a class="link-no-decor" href="{% url 'community' %}"><p class="btn btn-outline-secondary mx-2 page-button">Community Recommendations</p></a>
             </div>
         </div>
 
@@ -35,8 +35,8 @@
         <!-- Account & Profile Settings Buttons -->
         <div class="d-flex my-3 py-3 justify-content-center text-center">
             <div class="flex-column">
-                <a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}"><button class="btn btn-outline-secondary mx-2 page-button">Update Your Profile</button></a>
-                <a class="link-no-decor" href="{% url 'settings' %}"><button class="btn btn-outline-secondary mx-2 page-button">Account Settings</button></a>
+                <a class="link-no-decor" href="{% url 'update_profile' user.customer.id %}"><p class="btn btn-outline-secondary mx-2 page-button">Update Your Profile</p></a>
+                <a class="link-no-decor" href="{% url 'settings' %}"><p class="btn btn-outline-secondary mx-2 page-button">Account Settings</p></a>
             </div>
         </div>
 
