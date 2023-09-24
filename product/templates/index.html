@@ -8,16 +8,16 @@
         {% if user.is_authenticated %}
             {% if user.customer.id %}
                 <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
-                    <button class="mb-0" type="button"><em>Book an appointment</em></button>
+                    <p class="mb-0 mobile-btn py-1"><em>Book an appointment</em></p>
                 </a>
             {% else %}
                 <a href="{% url 'create_profile' %}" class="link-no-decor">
-                    <button class="mb-0" type="button"><em>Book an appointment</em></button>
+                    <p class="mb-0 mobile-btn py-1"><em>Book an appointment</em></p>
                 </a>
             {% endif %}
         {% else %}
             <a href="{% url 'login' %}" class="link-no-decor">
-                <button class="mb-0" type="button"><em>Book an appointment</em></button>
+                <p class="mb-0 mobile-btn py-1"><em>Book an appointment</em></p>
             </a>
         {% endif %}
     </div>
@@ -26,21 +26,21 @@
             <div>
                 <img src="https://res.cloudinary.com/ksjl86/image/upload/v1691570875/hero_3_em3ezd.webp"
                     class="d-block w-100 hero-image" alt="Image of a woman wearing a wedding dress and browsing other wedding dresses that are hanging on hangers">
-                <div class="carousel-overlay">
+                <div class="carousel-overlay text-center">
                     <h2 id="hero-text"><em>Find your perfect gown</em></h2>
                     {% if user.is_authenticated %}
                         {% if user.customer.id %}
                         <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
-                            <button class="hero-btn" type="button"><em>Book an appointment</em></button>
+                            <p class="hero-btn homepage-btn"><em>Book an appointment</em></p>
                         </a>
                         {% else %}
                         <a href="{% url 'create_profile' %}" class="link-no-decor">
-                            <button class="hero-btn" type="button"><em>Book an appointment</em></button>
+                            <p class="hero-btn homepage-btn"><em>Book an appointment</em></p>
                         </a>
                         {% endif %}
                     {% else %}
                         <a href="{% url 'login' %}" class="link-no-decor">
-                            <button class="hero-btn" type="button"><em>Book an appointment</em></button>
+                            <p class="hero-btn homepage-btn"><em>Book an appointment</em></p>
                         </a>
                     {% endif %}
                 </div>
@@ -51,7 +51,7 @@
     <div class="text-center mt-3 pt-4 pb-1">
         <h2><em>Our Collections</em></h2>
         <a href="{% url 'products' %}" class="link-no-decor">
-            <button type="button">Shop all styles</button>
+            <p class="homepage-btn">Shop all styles</p>
         </a>
     </div>
 
@@ -88,16 +88,16 @@
         {% if user.is_authenticated %}
             {% if user.customer.id %}
                 <a href="{% url 'book' user.customer.id %}" class="link-no-decor">
-                <button class="appt-btn" type="button">Book an Appointment</button>
+                    <p class="appt-btn homepage-btn">Book an Appointment</p>
                 </a>
             {% else %}
                 <a href="{% url 'create_profile' %}" class="link-no-decor">
-                    <button class="appt-btn" type="button"><em>Book an appointment</em></button>
+                    <p class="appt-btn homepage-btn"><em>Book an appointment</em></p>
                 </a>
             {% endif %}
         {% else %}
             <a href="{% url 'login' %}" class="link-no-decor">
-                <button class="appt-btn" type="button">Book an Appointment</button>
+                <p class="appt-btn homepage-btn">Book an Appointment</p>
             </a>
         {% endif %}     
     </div>
