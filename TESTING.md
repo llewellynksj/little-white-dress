@@ -27,6 +27,7 @@
 ## Testing
 Testing was performed across a range of devices, including:
 - MacBook Air M1
+- Microsoft Surface Pro
 - Nothing Phone (1)
 - iPhone 15 Plus
 
@@ -100,7 +101,7 @@ Testing was performed across a range of devices, including:
 
 ### **Lighthouse**
 
-For Mobile Devices
+#### For Mobile Devices
 <details>
 <summary>Homepage</summary>
 
@@ -166,7 +167,7 @@ For Mobile Devices
 </details>
 <br>
 
-For Desktop
+#### For Desktop
 <details>
 <summary>Homepage</summary>
 
