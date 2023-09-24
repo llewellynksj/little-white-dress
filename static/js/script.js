@@ -3,7 +3,7 @@
 // https://www.youtube.com/watch?v=T33NN_pPeNI
 const scrollObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('scroll-animation-go');
         }

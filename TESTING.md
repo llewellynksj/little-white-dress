@@ -312,7 +312,13 @@ Stylesheet passed [WC3](https://jigsaw.w3.org/css-validator/) validation testing
 ![Screenshot of W3C Jigsaw testing for CSS Stylesheet](readme_assets/html_css_validation/css-validator.webp)
 </details>
 
-  <br>
+<br>
+
+#### JSHint
+There is only a small amount of customer JavaScript to pass through the validator. Initially I received an error due to an incorrectly placed closing bracket and a missing semi-colon, however now these have been corrected and the code passes:
+
+![Screen shot of JSHint validation](readme_assets/jshint.webp)
+
 
 #### Python Linter
 All .py files passed through the [CI Python Linter](https://pep8ci.herokuapp.com/) with no errors, with the exception of the settings.py file. As the code that caused an error is system generated code I made the decision not to amend it.
