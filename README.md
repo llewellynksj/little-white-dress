@@ -748,8 +748,13 @@ For all testing details visit the [TESTING](TESTING.md) file.
 - [W3Schools 'How to create a Fixed Footer'](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
 - [Sentry 'What does 'on_delete' do in Django Models'](https://sentry.io/answers/django-on-delete/)
 - [FreeCodeCamp 'Python isEmpty() equivalent - How to check if a list is Empty in Python](https://www.freecodecamp.org/news/how-to-check-if-a-list-is-empty-in-python/)
+- [Django 'Form and Field Validation](https://docs.djangoproject.com/en/4.2/ref/forms/validation/)
 - [W3Schools 'Django: Template Filter - Slice'](https://www.w3schools.com/django/ref_filters_slice.php#:~:text=The%20slice%20filter%20returns%20the,the%20second%20last%20item%20etc.)
 - [Github Repo DOdrums 'ProjectPortfolioFour'](https://github.com/DOdrums/PortfolioProjectFour/tree/main): Used for inspiration and research
+- [Codemy 'Profile Account Creation - Django Blog #32'](https://bit.ly/44Ymcjg)
+- [Codemy 'Create a Blog Profile Page'](http://bit.ly/3OsUgy8)
+- [YouTube 'Code with Stein - How to Send Email using Django?'](https://www.youtube.com/watch?v=dnhEnF7_RyM)
+- [Codemy 'Add Blog Posts to Django'](https://bit.ly/3s2sUq4)
 
 <br>
 
