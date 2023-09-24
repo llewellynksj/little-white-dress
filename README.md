@@ -491,6 +491,7 @@ This website has been written in HTML, CSS, JavaScript & Python.
 - [Am I Responsive](https://ui.dev/amiresponsive): To test site responsiveness and capture image across different devices
 - [Birme](https://www.birme.net/): To resize images and convert to webp
 - [Gyazo](https://gyazo.com/): To create GIFs for the README
+- [SVG Crop](https://svgcrop.com/): To crop SVG files
 
 <br>
 
@@ -717,17 +718,30 @@ For all testing details visit the [TESTING](TESTING.md) file.
 
 ## Credits
 ### **Resources**
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Neumorphism](https://neumorphism.io/#e0e0e0): Used to create drop-shadows
+- [Stack Overflow 'Google Calendar Integration with Django](https://stackoverflow.com/questions/37754999/google-calendar-integration-with-django): Used for research
+- [Django Model Field reference](https://docs.djangoproject.com/en/4.2/ref/models/fields/#django.db.models.ForeignKey.on_delete)
+- [Stack Overflow 'What is related_name used for?'](https://stackoverflow.com/questions/2642613/what-is-related-name-used-for): Used for research
+- [Geeks for Geeks 'MultipleChoiceField - Django Forms'](https://www.geeksforgeeks.org/multiplechoicefield-django-forms/)
+- [Plural Sight 'Introduction to Django Views'](https://www.pluralsight.com/guides/introduction-to-django-views)
+- [Nylas 'How to integrate the Google Calendar API into your App'](https://www.nylas.com/blog/integrate-google-calendar-api/): Used for research
+- [testdriven.oi 'Creating a Custom User Model in Django'](https://testdriven.io/blog/django-custom-user-model/)
+- [Stack Overflow 'Adding text over an image in Bootstrap carousel'](https://stackoverflow.com/questions/29734492/adding-text-over-an-image-in-bootstrap-carousel)
+- [YouTube 'Codemy - Django Wednesdays' Playlist](https://www.youtube.com/playlist?list=PLCC34OHNcOtqW9BJmgQPPzUpJ8hl49AGy)
+- [YouTube 'Codemy - Create a Blog with Python and Django' Playlist](https://www.youtube.com/playlist?list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi)
+- [Stack Overflow 'Django FormView pass pk in success_url](https://stackoverflow.com/questions/51123269/django-formview-pass-pk-in-success-url)
+- [Django Authentication System](https://docs.djangoproject.com/en/4.2/topics/auth/default/)
+- [Stack Overflow 'Django - reverse lookups with ManytoManyField'](https://stackoverflow.com/questions/4881783/django-reverse-lookups-with-manytomanyfield/4881840#4881840)
+- [Django Forum 'Help with "Related Field got invalid lookup: contains"'](https://forum.djangoproject.com/t/help-with-related-field-got-invalid-lookup-contains/19045)
+- [Django Documentation 'Built-in class-based generic views'](https://docs.djangoproject.com/en/4.2/topics/class-based-views/generic-display/)
+- [testdriven.io 'How to check for first or last iteration of a for loop in a Django template](https://testdriven.io/tips/2f88aa72-18d4-4c21-9afd-df0f19877553/)
+- [ccbv.co.uk 'Classy Class-Based Views'](https://ccbv.co.uk/)
+- [Stack Overflow 'django template system, calling a function inside a model'](https://stackoverflow.com/questions/1333189/django-template-system-calling-a-function-inside-a-model)
+- [W3Schools 'How to create a Fixed Footer'](https://www.w3schools.com/howto/howto_css_fixed_footer.asp)
+- [Sentry 'What does 'on_delete' do in Django Models'](https://sentry.io/answers/django-on-delete/)
+- [FreeCodeCamp 'Python isEmpty() equivalent - How to check if a list is Empty in Python](https://www.freecodecamp.org/news/how-to-check-if-a-list-is-empty-in-python/)
+- [W3Schools 'Django: Template Filter - Slice'](https://www.w3schools.com/django/ref_filters_slice.php#:~:text=The%20slice%20filter%20returns%20the,the%20second%20last%20item%20etc.)
+- [Github Repo DOdrums 'ProjectPortfolioFour'](https://github.com/DOdrums/PortfolioProjectFour/tree/main): Used for inspiration and research
 
 <br>
 
@@ -735,7 +749,7 @@ For all testing details visit the [TESTING](TESTING.md) file.
 Firstly I want to thank my wonderful friend, Samantha Landy, for letting me use her business idea/dream to create this project. She was pure inspiration when speaking about her dream business and I knew I had to build a website for it! I hope this does it justice.
 I'd also like to thank my husband and son for all their support and reassurance that I'm not neglecting them when I'm shut away in the office for hours on end.
 
-I wouldn't have been able to complete this project without the everwise guidance of my Code Institue mentor, Ronan. Also the help of some key Code Institute community members. They are - 
- - [Roman Rakic](https://github.com/rockroman)
+I wouldn't have been able to complete this project without the ever-wise guidance of my Code Institue mentor, Ronan. Also the help of some key Code Institute community members. They are - 
  - [Andy Guttridge](https://github.com/andy-guttridge)
+ - [Roman Rakic](https://github.com/rockroman)
  - [Kera Cudmore](https://github.com/kera-cudmore)
