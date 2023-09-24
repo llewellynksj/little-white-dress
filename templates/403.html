@@ -6,7 +6,9 @@
     <h1>Oops, you don't have the necessary permissions to access this page!</h1>
     <h1 class="mb-4 pb-4">403 - forbidden</h1>
 
-    <a class="" aria-current="page" href="{% url 'index' %}"><button>Home</button></a>
+    <a class="link-no-decor" href="{% url 'index' %}">
+        <p class="btn btn-outline-secondary mx-2 page-button">Home</p>
+    </a>
 </div>
 
 {% endblock %}

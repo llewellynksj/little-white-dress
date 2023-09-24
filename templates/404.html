@@ -6,7 +6,9 @@
     <h1>Hmm, we can't seem to find that page!</h1>
     <h1 class="mb-4 pb-4">404 - page not found</h1>
 
-    <a class="" aria-current="page" href="{% url 'index' %}"><button>Home</button></a>
+    <a class="link-no-decor" href="{% url 'index' %}">
+        <p class="btn btn-outline-secondary mx-2 page-button">Home</p>
+    </a>
 </div>
 
 {% endblock %}
