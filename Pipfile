@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+asgiref = "==3.7.2"
+boto3 = "==1.28.40"
+botocore = "==1.31.40"
+cloudinary = "==1.33.0"
+dj-database-url = "==0.5.0"
+dj3-cloudinary-storage = "==0.0.6"
+django = "==3.2.20"
+django-ses = "==3.5.0"
+gunicorn = "==21.2.0"
+jmespath = "==1.0.1"
+psycopg2 = "==2.9.6"
+s3transfer = "==0.6.2"
+sqlparse = "==0.4.4"
+urllib3 = "==1.26.16"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
