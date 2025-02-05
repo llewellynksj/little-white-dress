@@ -35,6 +35,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'little-white-dress.herokuapp.com',
     'little-white-dress-ad94e830edef.herokuapp.com',
+    'little-white-dress.vercel.app',
     '127.0.0.1',]
 
 
